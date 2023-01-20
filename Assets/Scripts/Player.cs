@@ -1,8 +1,6 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerMovementGay : MonoBehaviour
+public class Player : MonoBehaviour
 {
     public float moveSpeed;
     public Rigidbody2D rb;
@@ -17,6 +15,6 @@ public class PlayerMovementGay : MonoBehaviour
     void Moveplayer(float _horizontalMovement)
     {
         Vector3 targetVelocity = new Vector2(_horizontalMovement, rb.velocity.y);
-        rb.velocity = Vector3.SmoothDamp(rb.velocity,targetVelocity,ref velocity,.o5f);
+        rb.velocity = Vector3.SmoothDamp(rb.velocity,targetVelocity,ref velocity,.05f);
     }
 }
