@@ -1006,4 +1006,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 250
+  jumpforce: 100
+  isJumping: 0
   rb: {fileID: 1809740028}
