@@ -408,7 +408,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Connexion
+  m_Text: 'Maxime Chien
+
+'
 --- !u!222 &392727965
 CanvasRenderer:
   m_ObjectHideFlags: 0
