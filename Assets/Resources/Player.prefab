@@ -13,9 +13,9 @@ GameObject:
   - component: {fileID: 7592540930517772036}
   - component: {fileID: 7592540930517772038}
   - component: {fileID: 7592540930517772033}
-  - component: {fileID: 7592540930517772027}
   - component: {fileID: 5127847734837760459}
   - component: {fileID: 3157952265772895807}
+  - component: {fileID: 3050187780570057961}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -157,22 +157,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.2649212, y: 0.8349103}
   m_EdgeRadius: 0
---- !u!114 &7592540930517772027
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7592540930517772032}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 006a1055d3652d14cb72728e597efcbb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: 250
-  jumpforce: 100
-  isJumping: 0
-  rb: {fileID: 7592540930517772038}
 --- !u!114 &5127847734837760459
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -212,3 +196,18 @@ MonoBehaviour:
   sceneViewId: 0
   InstantiationId: 0
   isRuntimeInstantiated: 0
+--- !u!114 &3050187780570057961
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7592540930517772032}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04afce455354ee04eb6a52b7644ef7ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 250
+  jumpforce: 100
+  rb: {fileID: 7592540930517772038}
