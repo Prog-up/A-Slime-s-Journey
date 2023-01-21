@@ -1,6 +1,7 @@
 using UnityEngine;
+using Photon.Pun;
 
-public class Pm : MonoBehaviour
+public class Pm : MonoBehaviourPunCallbacks
 {
     public float moveSpeed;
     public float jumpforce;
@@ -9,14 +10,24 @@ public class Pm : MonoBehaviour
     public Rigidbody2D rb;
     private Vector3 velocity = Vector3.zero;
     
-    void FixedUpdate()
-    {
-        float horizontalMovement = Input.GetAxis("Horizontal") * moveSpeed * Time.deltaTime;
+
+	
+	void ProcessInput()
+	{
+		float horizontalMovement = Input.GetAxis("Horizontal") * moveSpeed * Time.deltaTime;
         Moveplayer(horizontalMovement);
         if (Input.GetButtonDown("Jump"))
         {
             isJumping = true;
         }
+	}
+    void FixedUpdate()
+    {
+		if(photonView.IsMine)
+		{
+			ProcessInput();
+   		}
+        
     }
 
     void Moveplayer(float _horizontalMovement)
