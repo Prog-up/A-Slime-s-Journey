@@ -18,7 +18,7 @@ GameObject:
   - component: {fileID: 3050187780570057961}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -209,5 +209,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 250
-  jumpforce: 100
+  jumpforce: 200
   rb: {fileID: 7592540930517772038}
