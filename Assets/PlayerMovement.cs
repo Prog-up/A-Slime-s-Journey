@@ -3,47 +3,45 @@ using Photon.Pun;
 
 public class PlayerMovement : MonoBehaviourPunCallbacks
 {
+    //Declaration de ce qui permet au joueur de se deplacer
+    private float horizontal;
+    private float Move;
     public float moveSpeed;
     public float jumpforce;
 
+    //Declaration des booleans pour savoir si le perso est au sol
     private bool isJumping;
-    private bool IsGrounded;
+
+    //On declare le boolean qui gere le double jump
+    private bool doubleJump;
 
     public Rigidbody2D rb;
-    private Vector3 velocity = Vector3.zero;
+    //private Vector3 velocity = Vector3.zero;
+    [SerializeField] private Transform groundCheck;
+    [SerializeField] private LayerMask groundLayer;
 
 
     void FixedUpdate()
     {
         if (photonView.IsMine)
         {
-            ProcessInput();
+            
         }
     }
 
-    void ProcessInput()
+    private void Update()
     {
-        float horizontalMovement = Input.GetAxis("Horizontal") * moveSpeed * Time.deltaTime;
+        Move = Input.GetAxis("Horizontal");
+        rb.velocity = new Vector2(moveSpeed * Move, rb.velocity.y);
 
-        if (Input.GetButtonDown("Jump"))
+        if(Input.GetButtonDown("Jump"))
         {
-            isJumping = true;
-
+            rb.AddForce(new Vector2(rb.velocity.x, jumpforce));
         }
-
-        Moveplayer(horizontalMovement);
     }
 
-
-
-    void Moveplayer(float _horizontalMovement)
+    private bool IsGrounded()
     {
-        Vector3 targetVelocity = new Vector2(_horizontalMovement, rb.velocity.y);
-        rb.velocity = Vector3.SmoothDamp(rb.velocity, targetVelocity, ref velocity, .05f);
-        if (isJumping == true)
-        {
-            rb.AddForce(new Vector3(0f, jumpforce));
-            isJumping = false;
-        }
+        return Physics2D.OverlapCircle(groundCheck.position, 0.2f, groundLayer);
     }
 }

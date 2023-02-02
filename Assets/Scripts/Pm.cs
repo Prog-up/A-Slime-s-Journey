@@ -3,42 +3,53 @@ using Photon.Pun;
 
 public class Pm : MonoBehaviourPunCallbacks
 {
+
+    //Declaration de ce qui permet au joueur de se deplacer
+    private float horizontal;
     public float moveSpeed;
     public float jumpforce;
 
+    //Declaration des booleans pour savoir si le perso est au sol
     private bool isJumping;
-    private bool IsGrounded;
 
-    public Transform groundCheckLeft;
-    public Transform groundCheckRight;
+    //On declare le boolean qui gere le double jump
+    private bool doubleJump;
 
     public Rigidbody2D rb;
-    private Vector3 velocity = Vector3.zero;
-
-
-    void FixedUpdate()
+    //private Vector3 velocity = Vector3.zero;
+    [SerializeField] private Transform groundCheck;
+    [SerializeField] private LayerMask groundLayer;
+    private void Update()
     {
-        
-    }
-    void ProcessInput()
-    {
-        float horizontalMovement = Input.GetAxis("Horizontal") * moveSpeed * Time.deltaTime;
-        IsGrounded = Physics2D.OverlapArea(groundCheckLeft.position, groundCheckRight.position);
+        horizontal = Input.GetAxisRaw("Horizontal");
+        if (IsGrounded() && !Input.GetButton("Jump"))
+        {
+            doubleJump = false;
+        }
 
-        if (Input.GetButtonDown("Jump") && IsGrounded)
+         if (Input.GetButtonDown("Jump"))
+        {
+            if (IsGrounded() || doubleJump)
             {
-                isJumping = false;
-                rb.AddForce(new Vector2(0f, jumpforce));
+                rb.velocity = new Vector2(rb.velocity.x, jumpforce);
+
+                doubleJump = !doubleJump;
             }
-        Moveplayer(horizontalMovement);
+        }
+
+        if (Input.GetButtonUp("Jump") && rb.velocity.y > 0f)
+        {
+            rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y * 0.5f);
+        }
     }
-        
-    
 
-    void Moveplayer(float _horizontalMovement)
+         private void FixedUpdate()
     {
-        Vector3 targetVelocity = new Vector2(_horizontalMovement, rb.velocity.y);
-        rb.velocity = Vector3.SmoothDamp(rb.velocity,targetVelocity,ref velocity,.05f);
+        rb.velocity = new Vector2(horizontal * moveSpeed, rb.velocity.y);
+    }
 
+    private bool IsGrounded()
+    {
+        return Physics2D.OverlapCircle(groundCheck.position, 0.2f, groundLayer);
     }
 }
