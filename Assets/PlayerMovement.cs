@@ -14,6 +14,7 @@ public class PlayerMovement : MonoBehaviourPunCallbacks
 
     //On declare le boolean qui gere le double jump
     private bool doubleJump;
+    public int nbJump = 2;
 
     public Rigidbody2D rb;
     //private Vector3 velocity = Vector3.zero;
@@ -31,17 +32,23 @@ public class PlayerMovement : MonoBehaviourPunCallbacks
 
     private void Update()
     {
+        
         Move = Input.GetAxis("Horizontal");
         rb.velocity = new Vector2(moveSpeed * Move, rb.velocity.y);
 
-        if(Input.GetButtonDown("Jump"))
+        if(Input.GetButtonDown("Jump") && nbJump > 0)
         {
             rb.AddForce(new Vector2(rb.velocity.x, jumpforce));
+            nbJump--;
         }
     }
 
-    private bool IsGrounded()
+    private bool isGrounded()
     {
-        return Physics2D.OverlapCircle(groundCheck.position, 0.2f, groundLayer);
+        if(Physics2D.OverlapArea(rb.position,rb.position))
+        {
+            nbJump = 2;
+        }
+        return Physics2D.OverlapArea(rb.position,rb.position);
     }
 }

@@ -210,6 +210,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 5
   jumpforce: 200
+  nbJump: 2
   rb: {fileID: 7592540930517772038}
   groundCheck: {fileID: 0}
   groundLayer:
