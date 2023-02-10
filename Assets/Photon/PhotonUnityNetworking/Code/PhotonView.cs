@@ -21,6 +21,7 @@ namespace Photon.Pun
     using UnityEditor;
     #endif
 
+
     /// <summary>
     /// A PhotonView identifies an object across the network (viewID) and configures how the controlling client updates remote instances.
     /// </summary>
@@ -814,6 +815,9 @@ namespace Photon.Pun
             }
         }
 
+
+
+        
 
         #endregion Callback Interfaces
 

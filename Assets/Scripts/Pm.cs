@@ -19,6 +19,10 @@ public class Pm : MonoBehaviourPunCallbacks
     //private Vector3 velocity = Vector3.zero;
     [SerializeField] private Transform groundCheck;
     [SerializeField] private LayerMask groundLayer;
+
+
+
+
     private void Update()
     {
         horizontal = Input.GetAxisRaw("Horizontal");
@@ -29,7 +33,7 @@ public class Pm : MonoBehaviourPunCallbacks
 
          if (Input.GetButtonDown("Jump"))
         {
-            if (IsGrounded() || doubleJump)
+            if (IsGrounded() )
             {
                 rb.velocity = new Vector2(rb.velocity.x, jumpforce);
 

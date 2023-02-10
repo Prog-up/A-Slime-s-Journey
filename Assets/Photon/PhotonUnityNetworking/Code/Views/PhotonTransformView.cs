@@ -39,7 +39,6 @@ namespace Photon.Pun
         {
             m_StoredPosition = transform.localPosition;
             m_NetworkPosition = Vector3.zero;
-
             m_NetworkRotation = Quaternion.identity;
         }
 
@@ -77,8 +76,7 @@ namespace Photon.Pun
         public void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)
         {
             var tr = transform;
-
-            // Write
+            //Write
             if (stream.IsWriting)
             {
                 if (this.m_SynchronizePosition)
