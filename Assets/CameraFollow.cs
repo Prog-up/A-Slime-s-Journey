@@ -10,18 +10,20 @@
 
 using UnityEngine;
 
-namespace Photon.Pun.Demo.PunBasics
+public class CameraFollow : MonoBehaviour
 {
-    
-    public class CameraWork : MonoBehaviour
-    {
-        public float FollowSpeed = 2f;
-        public Transform target;
 
-        void Update()
-        {
-            Vector3 newPos = new Vector3(target.position.x,target.position.y,10f);
-            transform.position = Vector3.Slerp(transform.position,newPos,FollowSpeed*Time.deltaTime);
-        }    
+
+    public GameObject Player;
+    public float timeOffset;
+    public Vector3 posOffset;
+
+    private Vector3 velocity;
+    
+
+    // Update is called once per frame
+    void Update()
+    {
+        transform.position = Vector3.SmoothDamp(transform.position, Player.transform.position + posOffset, ref velocity,timeOffset);
     }
 }
