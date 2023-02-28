@@ -8,18 +8,18 @@ public class PlayerMovement : MonoBehaviourPunCallbacks
     private float Move;
     public float moveSpeed;
     public float jumpforce;
+    public float groundCheckRadius;
+
+    public Transform groundCheck;
+    public LayerMask collisionLayers;
 
     //Declaration des booleans pour savoir si le perso est au sol
     private bool isJumping;
 
-    //On declare le boolean qui gere le double jump
-    private bool doubleJump;
-    public int nbJump = 2;
-
     public Rigidbody2D rb;
-    //private Vector3 velocity = Vector3.zero;
-    [SerializeField] private Transform groundCheck;
-    [SerializeField] private LayerMask groundLayer;
+  
+
+
 
 
     void FixedUpdate()
@@ -36,19 +36,17 @@ public class PlayerMovement : MonoBehaviourPunCallbacks
         Move = Input.GetAxis("Horizontal");
         rb.velocity = new Vector2(moveSpeed * Move, rb.velocity.y);
 
-        if(Input.GetButtonDown("Jump") && nbJump > 0)
+        if(Input.GetButtonDown("Jump"))
         {
-            rb.AddForce(new Vector2(rb.velocity.x, jumpforce));
-            nbJump--;
+            if(isGrounded())
+            {
+                rb.AddForce(new Vector2(rb.velocity.x, jumpforce));
+            }
         }
     }
 
     private bool isGrounded()
     {
-        if(Physics2D.OverlapArea(rb.position,rb.position))
-        {
-            nbJump = 2;
-        }
-        return Physics2D.OverlapArea(rb.position,rb.position);
+        return Physics2D.OverlapCircle(groundCheck.position,groundCheckRadius,collisionLayers);
     }
 }
