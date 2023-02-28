@@ -1,0 +1,4853 @@
+fileFormatVersion: 2
+guid: 120fae8f0e336a8438338afcfaa0371a
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_0
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 915
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7331de1694d93e342b814b7e766c0060
+      internalID: -111109393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_1
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 915
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f66a48cdab3878949aeda1dff90abc5b
+      internalID: 1911015779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_2
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 915
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 861c838d0f335f748bc025909a65f722
+      internalID: 1355889609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_3
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 915
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e11826b0e7581c4c96862a1944983f7
+      internalID: 892332237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_4
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 915
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55c8a0655d0914844bbe21a37e1537d7
+      internalID: -2033692313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_5
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 915
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b552519c1805034a9da58685ebf841d
+      internalID: -1355568552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_6
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 915
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf2bc7776cc84e649945aefcffb0e08c
+      internalID: 1745221491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_7
+      rect:
+        serializedVersion: 2
+        x: 499
+        y: 915
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b5a9cea64ad6b0429706e3c0584d6d4
+      internalID: 900843756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_8
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 915
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc7b161b4df18c64db30fdf2024c7fa1
+      internalID: 910917108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_9
+      rect:
+        serializedVersion: 2
+        x: 619
+        y: 915
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b2e58991056f214f826c2000c22b09a
+      internalID: 1531812775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_10
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 855
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0be65d70d2e858447a217c00f3d851e2
+      internalID: 279480249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_11
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 855
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd622dbe4e9228849b26592c7ef835ca
+      internalID: -1931638169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_12
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 855
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c71e73cc7337d848a4fa559faabc75c
+      internalID: 97378131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_13
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 855
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df8390e581840f84885b4cc7af3b6ff4
+      internalID: -1582218245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_14
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 855
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84e3944a2d2a244408ccf53404a4bc27
+      internalID: -906214838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_15
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 855
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cc11bfa0b6bb404c824fb4af018bbbc
+      internalID: 216406531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_16
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 855
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7212c7fd88e3d6b4b9445f66c57d3537
+      internalID: -389798016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_17
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 855
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb11a2f2412d64640a9548692a9e6315
+      internalID: 1383802368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_18
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 855
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f5c372cf9dbacd49982462303ca5724
+      internalID: -528827774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_19
+      rect:
+        serializedVersion: 2
+        x: 619
+        y: 855
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76fa470c7edcd414c995f2a457b26428
+      internalID: 1819105541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_20
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 795
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0715d0a29fb9dc14ba372c3d36e13668
+      internalID: 637423717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_21
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 795
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48af72795d8ea2e49919c7bc5d17106a
+      internalID: 294529713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_22
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 795
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0345854e6a30ff342b50d78282353b29
+      internalID: 667957076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_23
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 795
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d089de1be26b41d47b6befcbdeef97f2
+      internalID: -1608231023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_24
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 795
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6e64f0bcd6f01046a58a3fa532ce2b9
+      internalID: -1321473720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_25
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 795
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a11317353c7349746b81efb0507a5c94
+      internalID: 1131473130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_26
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 735
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee903d1e7933e684da445722ac79c384
+      internalID: 1128277738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_27
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 735
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c234df718323154b82d35f0e569078b
+      internalID: 1947859702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_28
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 735
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80232456c1581374f8b474b85f32db10
+      internalID: 1298870554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_29
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 735
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ff8ec110b82ccf4e87f4910fb334889
+      internalID: -2065097549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_30
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 735
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e95d0f6285b53e4aa051a0838cfef96
+      internalID: 588440064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_31
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 735
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e05b8236827173643a7a37c98b15ca5f
+      internalID: 1374478681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_32
+      rect:
+        serializedVersion: 2
+        x: 499
+        y: 735
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7da3f77bd9f2ede48a74e026ad0fed07
+      internalID: -956678908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_33
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 735
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7848a3423392af428de016b449ee52a
+      internalID: 1400493898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_34
+      rect:
+        serializedVersion: 2
+        x: 619
+        y: 735
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 292528835492a094aa9398cf64e554f2
+      internalID: -2078630029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_35
+      rect:
+        serializedVersion: 2
+        x: 679
+        y: 735
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07609eea3c3c7674a82555b7577edad5
+      internalID: 604547532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_36
+      rect:
+        serializedVersion: 2
+        x: 739
+        y: 735
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e91c7a92cee775408fcc4d60695e196
+      internalID: -1338870100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_37
+      rect:
+        serializedVersion: 2
+        x: 799
+        y: 735
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13d975faba785f64587fc118fc0f758a
+      internalID: -799587760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_38
+      rect:
+        serializedVersion: 2
+        x: 859
+        y: 735
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0aa069192af27c745931a57b0f72cbe9
+      internalID: -1714967629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_39
+      rect:
+        serializedVersion: 2
+        x: 919
+        y: 735
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad58624e50202654fa7726202b0e6dca
+      internalID: -1103072890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_40
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 675
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ec74db5a3dc816478d64e132b833c69
+      internalID: -2041309861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_41
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 675
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1b7223d1fe73f944b28661594b8429b
+      internalID: -705712321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_42
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 675
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff774f2cbe42fc647afc9a9a94171792
+      internalID: 1049351002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_43
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 675
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a357ebd836d35e045b367b6d892a2af5
+      internalID: -425776176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_44
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 675
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90173744499929b418a180802ef54eca
+      internalID: 1028753182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_45
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 675
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bbb884025d693044b63ee3a20174754
+      internalID: -1732830529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_46
+      rect:
+        serializedVersion: 2
+        x: 499
+        y: 675
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f378687688b60fe43875b100874bf859
+      internalID: 1767823284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_47
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 675
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cfba2298d6a00646821cade1a661d1b
+      internalID: 303427170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_48
+      rect:
+        serializedVersion: 2
+        x: 619
+        y: 675
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3732979712b1cb24ebf7200cbf0a873c
+      internalID: 1204438715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_49
+      rect:
+        serializedVersion: 2
+        x: 679
+        y: 675
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d90288a66cd9894b928e8da5db569f6
+      internalID: 577372280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_50
+      rect:
+        serializedVersion: 2
+        x: 739
+        y: 675
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c827de264e6b0b43a03cc4f0dce9265
+      internalID: -823361575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_51
+      rect:
+        serializedVersion: 2
+        x: 799
+        y: 675
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32a990670d4f9a64a8269011223a4d66
+      internalID: 1421483663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_52
+      rect:
+        serializedVersion: 2
+        x: 859
+        y: 675
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22accc84865ce574c8aa303c252a3b79
+      internalID: 886479548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_53
+      rect:
+        serializedVersion: 2
+        x: 919
+        y: 675
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3e5038519c3fb646aada23bf1019200
+      internalID: -417360436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_54
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 615
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4c4de1c1da2adc4eb3d7644cd79ede0
+      internalID: -1268767127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_55
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 615
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 571f3d41604148841b8c7fed463b130a
+      internalID: 1913265302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_56
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 615
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba1cf0c8416cc05439d3437d35149e1e
+      internalID: 1643989679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_57
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 615
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 867c79f337ea858439df3666e3fce226
+      internalID: 1710459586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_58
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 615
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43af693bb3548c341930fa216ca8635c
+      internalID: -1338546212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_59
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 615
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc1b4b615a4b8ef489efdf4900eb15f9
+      internalID: 236513406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_60
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 615
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9eac227b998e9e84ebfd8b9b7b9d9cdd
+      internalID: 307491789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_61
+      rect:
+        serializedVersion: 2
+        x: 499
+        y: 615
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa5271d7f9c034643a2bc4651bdbc44f
+      internalID: -1605357166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_62
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 615
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99b128f7f2ac73744a38bc395c08e17e
+      internalID: -264113973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_63
+      rect:
+        serializedVersion: 2
+        x: 619
+        y: 615
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2449c85638b6c544c9940684e0e3a59e
+      internalID: -582806325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_64
+      rect:
+        serializedVersion: 2
+        x: 679
+        y: 615
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7955d4d88ad72454fbf826020740cba2
+      internalID: 2102808008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_65
+      rect:
+        serializedVersion: 2
+        x: 739
+        y: 615
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c1204f4e375ef0498ceae8f3d8f1fbe
+      internalID: 1543227035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_66
+      rect:
+        serializedVersion: 2
+        x: 799
+        y: 615
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4803c3f7a43997b4cb1233ac5e254884
+      internalID: 1183524471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_67
+      rect:
+        serializedVersion: 2
+        x: 859
+        y: 615
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc8e7eef82ed72f47b62715691167dcc
+      internalID: 54271659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_68
+      rect:
+        serializedVersion: 2
+        x: 919
+        y: 615
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebae5399a350bd34f8ed03ac2bec20d9
+      internalID: -1356512459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_69
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 555
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc601d7e40e8b634e84caf5ab83b0ada
+      internalID: 1414735605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_70
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 555
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecd0163811764ed45b86deb3836861b7
+      internalID: -1924623986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_71
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 555
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3c95301757495b40b67676466773592
+      internalID: 2042081854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_72
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 555
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ea73cd590e7d4e41a21ea0cc4b1af83
+      internalID: -2076984920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_73
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 555
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29b955d3dbc0076469d631a564839979
+      internalID: 548085535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_74
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 555
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fe7af37e51ea4d4a99ef4ec41e586ba
+      internalID: 305823376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_75
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 555
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d7d9ccbe67f8a941b6c043fffc49e90
+      internalID: 553357541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_76
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 555
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 807862cca9a53814aa28d71cc7a1f77c
+      internalID: 171958044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_77
+      rect:
+        serializedVersion: 2
+        x: 499
+        y: 555
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cd8b1127b84eda438ece30c2abd9103
+      internalID: 372574624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_78
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 555
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f3e207b582f1f44dacdfcbe9c2a0dc9
+      internalID: -949654875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_79
+      rect:
+        serializedVersion: 2
+        x: 619
+        y: 555
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e9c979586df0d147801f85fa3e63a13
+      internalID: -723889841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_80
+      rect:
+        serializedVersion: 2
+        x: 679
+        y: 555
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dca325d498ddd1741af401db9a020663
+      internalID: -571186844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_81
+      rect:
+        serializedVersion: 2
+        x: 739
+        y: 555
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f34ed7a230d589346b3bf1c767852a8d
+      internalID: -1757330440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_82
+      rect:
+        serializedVersion: 2
+        x: 799
+        y: 555
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd58dd1e3e405774aa270518cb4d8c65
+      internalID: -42674002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_83
+      rect:
+        serializedVersion: 2
+        x: 859
+        y: 555
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03b728e63dab8a24daabdccfb8f7923d
+      internalID: 1508853481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_84
+      rect:
+        serializedVersion: 2
+        x: 919
+        y: 555
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db7ad1f0ffff80049b94122c3a5ba622
+      internalID: -1364837368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_85
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 495
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81ede2e1252a8714f973e1b5dea73835
+      internalID: 261579956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_86
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 495
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7c4cc59a44d1f448873fa780a437760
+      internalID: -761735184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_87
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 495
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b673339c4abff9f4c99c658baddc9ec4
+      internalID: 1458816237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_88
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 495
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 234bc90696b07df45a7021503ae9e2fe
+      internalID: -1089039719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_89
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 495
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c30a792462f629488fc04b079ed37ed
+      internalID: 1367141825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_90
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 495
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbb3f5c4fce75e642ba8faa0223c350b
+      internalID: 2039747396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_91
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 495
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b99a5ddca0103b043b5c19e779e8deb9
+      internalID: 598273901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_92
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 495
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2a1bd07bcbb14a4890fcc629702f7a2
+      internalID: -1294197874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_93
+      rect:
+        serializedVersion: 2
+        x: 499
+        y: 495
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e4324524711b5749b9a31fb7e840c77
+      internalID: -275347870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_94
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 495
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 492e1c6c1e93e0d40b3c4dbaea9a266e
+      internalID: 1036560115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_95
+      rect:
+        serializedVersion: 2
+        x: 619
+        y: 495
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82155e5fabaac3c41826d3d240543e79
+      internalID: 1146727307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_96
+      rect:
+        serializedVersion: 2
+        x: 679
+        y: 495
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97b222015a412014991fd22417454ed3
+      internalID: 271469620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_97
+      rect:
+        serializedVersion: 2
+        x: 739
+        y: 495
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 396ee14ae95b81f40a05a47b95908d08
+      internalID: -437999064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_98
+      rect:
+        serializedVersion: 2
+        x: 799
+        y: 495
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1db46905832c5642b3c4a0077b4828c
+      internalID: -1778626574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_99
+      rect:
+        serializedVersion: 2
+        x: 859
+        y: 495
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52439f45c2019e54c83a1e127e961b6d
+      internalID: 1817158598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_100
+      rect:
+        serializedVersion: 2
+        x: 919
+        y: 495
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5d155b83b315504cb894a02253b8d32
+      internalID: -309665666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_101
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 435
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a887fe5761ab24946be4ae8e5b95bf38
+      internalID: 566396095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_102
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 435
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 378a9e39d8939a546bf563e20cbf19bc
+      internalID: -1368025196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_103
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 435
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f40f1c065167025479ed4c814744ff6d
+      internalID: -1217721471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_104
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 435
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 772f4255725c3584a835cd1deca613f7
+      internalID: 103857008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_105
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 435
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f755d477102af77448538697fbe36d05
+      internalID: -1998687031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_106
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 435
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68ddf538cde93df4c8f06e8aa0a7382c
+      internalID: 1006773796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_107
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 435
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51fec9f0e46be814f9e8f89ad8faf330
+      internalID: -266254767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_108
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 435
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e108be634446b54d9697c8e17b839d6
+      internalID: -1875852567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_109
+      rect:
+        serializedVersion: 2
+        x: 499
+        y: 435
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7aff56166e535bd42a674efd699cd377
+      internalID: 463869577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_110
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 435
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 190d0639321134c44a6adb46e701cbe8
+      internalID: -1996331484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_111
+      rect:
+        serializedVersion: 2
+        x: 619
+        y: 435
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd9dabebda934d047ba23e82b58bbb77
+      internalID: -2075978548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_112
+      rect:
+        serializedVersion: 2
+        x: 679
+        y: 435
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7850572ec11186468cef148bbbca2ed
+      internalID: 1357250263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_113
+      rect:
+        serializedVersion: 2
+        x: 739
+        y: 435
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79866050d0d4c3647b733e3e5fba162e
+      internalID: 2103670768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_114
+      rect:
+        serializedVersion: 2
+        x: 799
+        y: 435
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbb29a88a28527a40a157cef31d6c135
+      internalID: 1753977262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_115
+      rect:
+        serializedVersion: 2
+        x: 859
+        y: 435
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 136706807fdad8e4b90ab6226aa07b49
+      internalID: 1548470115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_116
+      rect:
+        serializedVersion: 2
+        x: 919
+        y: 435
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2097334619757748b66b9c70131880d
+      internalID: 764983746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_117
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 375
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84175066edd493f4387332febf918ca3
+      internalID: -1851040734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_118
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 375
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6df8614e570c65f44b892f71868795fd
+      internalID: 330912567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_119
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 375
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b10f2e9265902724ab6cf79e336cb159
+      internalID: 1039875376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_120
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 375
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a47a56bb0c6765f4e8c2197a0748f032
+      internalID: 2008408052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_121
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 375
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5309bede3911b614aa4b50210edc1520
+      internalID: 1582563504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_122
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 375
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8ff2e4563d337a49817d28f31ab99a1
+      internalID: -475852533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_123
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 375
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b6cfa56e0c515b449a7d27ebec05708
+      internalID: -51246379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_124
+      rect:
+        serializedVersion: 2
+        x: 499
+        y: 375
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c5d04da87975a34d9768331a0ded05a
+      internalID: 907823089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_125
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 375
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a75d524de1ff908438e75ae3bfb20046
+      internalID: 1628451016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_126
+      rect:
+        serializedVersion: 2
+        x: 619
+        y: 375
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 624aaba925ac11040a3e15a7f19550f2
+      internalID: -1803063005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_127
+      rect:
+        serializedVersion: 2
+        x: 679
+        y: 375
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42cd15aa24bb27747bb2f2b4fc6b010e
+      internalID: -242501542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_128
+      rect:
+        serializedVersion: 2
+        x: 739
+        y: 375
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28d23a8b72bdbef4383aef59b31fcb40
+      internalID: 393601769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_129
+      rect:
+        serializedVersion: 2
+        x: 799
+        y: 375
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e212ce2c447656d4e9b3301fb0001e9b
+      internalID: -1982609169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_130
+      rect:
+        serializedVersion: 2
+        x: 859
+        y: 375
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73a660f755c51a94fa90474de32b4e45
+      internalID: -1774947925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_131
+      rect:
+        serializedVersion: 2
+        x: 919
+        y: 375
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec91af45d7452c541a876f8c4a384bb3
+      internalID: -900624014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_132
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 315
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66608d387fc882c40a197d4571e696ac
+      internalID: 2142013558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_133
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 315
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c4f0b48af7e618488b43bc55416a77f
+      internalID: 1177303544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_134
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 315
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 413c06d0af05bdd448ea5f2af1261f1f
+      internalID: 64368357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_135
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 315
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c01919ce5b5bb2e41b306c93c6a3cefe
+      internalID: 386194360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_136
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 315
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f44dd7f02c16c1f429c806585b2618b0
+      internalID: 727740646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_137
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 315
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8916d114cabb4a14d85ac33f26eca08d
+      internalID: 1235825943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_138
+      rect:
+        serializedVersion: 2
+        x: 499
+        y: 315
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4d904079344bdc46bb4c2061ce2722a
+      internalID: 1482907311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_139
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 315
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 298f9c3b597fa2c4ea10ae46f19fcb8f
+      internalID: -1087275354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_140
+      rect:
+        serializedVersion: 2
+        x: 619
+        y: 315
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40200326c38e6a4409ab23f872d83b24
+      internalID: 1329413055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_141
+      rect:
+        serializedVersion: 2
+        x: 679
+        y: 315
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0382ff25623afb942bfa6feb93b6baf1
+      internalID: -1825989179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_142
+      rect:
+        serializedVersion: 2
+        x: 739
+        y: 315
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee991278c06f6754698516707c715895
+      internalID: 1240565811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_143
+      rect:
+        serializedVersion: 2
+        x: 799
+        y: 315
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd400da3abd499c41889f284678d2018
+      internalID: -417563547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_144
+      rect:
+        serializedVersion: 2
+        x: 859
+        y: 315
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 557b651dd579c0b439dd595b1ea8e995
+      internalID: -633303518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_145
+      rect:
+        serializedVersion: 2
+        x: 919
+        y: 315
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d96ec3298405cc44b896e251ba493b4d
+      internalID: 838317909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_146
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 255
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69d67272081e94a49b0957ad5e4a0b4c
+      internalID: -748793002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_147
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 255
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fe74d691b1fbc14c8e00231755d0d13
+      internalID: -2028880146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_148
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 255
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3a5db23ba5652946afb75f4b7ba3711
+      internalID: -1659353924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_149
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 255
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bf354358c76c9b49aec9c6124eb218c
+      internalID: 1022968738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_150
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 255
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bf8c4692dc0c4940a17d8a0b7e7f388
+      internalID: 74170838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_151
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 255
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2684373c93237349892133588e17c2c
+      internalID: 194086128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_152
+      rect:
+        serializedVersion: 2
+        x: 499
+        y: 255
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c4e4cc341016444f8c305298c8981b7
+      internalID: 1295824432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_153
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 255
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61c3a35fdc3a0e2438bed0c0ed814e2b
+      internalID: -156897542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_154
+      rect:
+        serializedVersion: 2
+        x: 619
+        y: 255
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 481618b95eba4184eb9a8123d5d672c5
+      internalID: -610516710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_155
+      rect:
+        serializedVersion: 2
+        x: 679
+        y: 255
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d9d4776857f5ae498e98af37df161b2
+      internalID: 129773004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_156
+      rect:
+        serializedVersion: 2
+        x: 739
+        y: 255
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c1ccdb9b26a5164bbde15ee86558fc6
+      internalID: -212732121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_157
+      rect:
+        serializedVersion: 2
+        x: 799
+        y: 255
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecc4c7061df525f48acc91ca2088b990
+      internalID: -1820493131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_158
+      rect:
+        serializedVersion: 2
+        x: 859
+        y: 255
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4fc04654d4e3bb4587404626f33199b
+      internalID: -1002860161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_159
+      rect:
+        serializedVersion: 2
+        x: 919
+        y: 255
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c1cae5fcd80fa340a2eb1e90eb8ea27
+      internalID: -2018226442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_160
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 195
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3104664706a3b6e4a9f68ca5a08170e1
+      internalID: 2119225591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_161
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 195
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ba57008c5b5b624ca705d45d6e9fe47
+      internalID: -965755203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_162
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 195
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d226020fad92f54ab8106cbe06248f6
+      internalID: -1223104074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_163
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 195
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c3494c4e768d3844bbf8c0de65738fc
+      internalID: -19893847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_164
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 195
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02a5080840a483740b00fe81aa000c5d
+      internalID: 630896702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_165
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 195
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8aafb63b95b3e342be12c4c8f596709
+      internalID: -956082400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_166
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 195
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab9105bab7fc6d349b973ff36a03c973
+      internalID: -1633492102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_167
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 195
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79c1182c33187514c98190ce0b212d7b
+      internalID: -2040007452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_168
+      rect:
+        serializedVersion: 2
+        x: 499
+        y: 195
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6622d8dbbb456e1449a70d97d629bde4
+      internalID: 1826251052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_169
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 195
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa717eaeb53daf14cb11efaa02cf8c01
+      internalID: 881864549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_170
+      rect:
+        serializedVersion: 2
+        x: 619
+        y: 195
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84ef5c6a632885246935387a86049c10
+      internalID: 668251704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_171
+      rect:
+        serializedVersion: 2
+        x: 679
+        y: 195
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd4482f3996f8cd4787c28d659fee04a
+      internalID: 255224608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_172
+      rect:
+        serializedVersion: 2
+        x: 739
+        y: 195
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd8326838e37ade46acfd60b4d6f2569
+      internalID: -1068045397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_173
+      rect:
+        serializedVersion: 2
+        x: 799
+        y: 195
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb9d1d2e6695e264687e29599885065b
+      internalID: 1274597870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_174
+      rect:
+        serializedVersion: 2
+        x: 859
+        y: 195
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 260d9c2803f12eb4aabb92f1acd13959
+      internalID: 61019138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_175
+      rect:
+        serializedVersion: 2
+        x: 919
+        y: 195
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2a0748e656a77c4f82bb74c5414d1c9
+      internalID: -537199738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_176
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 135
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: faecf08c64869954ebbb303cb8cd47fe
+      internalID: 769794648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_177
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 135
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42dbd7b7c21132243946a7f59194810d
+      internalID: 1509486358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_178
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 135
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ceaee6a15db93e47b2158250976119c
+      internalID: 1555462871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_179
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 135
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a9dd7a8f5d97d64c817f0834ef43e68
+      internalID: 1691503071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_180
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 135
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94cf3e524449cd848829b46713ce8772
+      internalID: 71146112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_181
+      rect:
+        serializedVersion: 2
+        x: 499
+        y: 135
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d7c615065e6d0b4f9b651e14954e7a5
+      internalID: -36583351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_182
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 135
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51b9344eb03c20e4bad9549d144382b1
+      internalID: 2097070820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_183
+      rect:
+        serializedVersion: 2
+        x: 619
+        y: 135
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e01bbfa8e1046e24c9c982c88bc793e0
+      internalID: -2121542212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_184
+      rect:
+        serializedVersion: 2
+        x: 679
+        y: 135
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2cd7b792b90abe4498f17150278cc8c
+      internalID: 291399712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_185
+      rect:
+        serializedVersion: 2
+        x: 739
+        y: 135
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f10f68b13d3b2e429d7faad8fa2a340
+      internalID: -410976012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_186
+      rect:
+        serializedVersion: 2
+        x: 799
+        y: 135
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77f7b219fd25a7549a27a7c74a3581e4
+      internalID: 364745517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_187
+      rect:
+        serializedVersion: 2
+        x: 859
+        y: 135
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14c1eeb879d750447ad8afa5014ae157
+      internalID: 77787937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_188
+      rect:
+        serializedVersion: 2
+        x: 919
+        y: 135
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81ddd25a7e2662948b16558d13409697
+      internalID: -1567597090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_189
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 75
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a40acb1dfb02d154bbb3a9f345728dd1
+      internalID: 889446574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_190
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 75
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02a8637f1e4e5ec49a220c2afbfdf1d3
+      internalID: -2010252373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_191
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 75
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4697082d8aca85843a92182d36f2f352
+      internalID: 525412736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_192
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 75
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7192153829886554f84585f2a17fda31
+      internalID: 140157432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_193
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 75
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbd3ef3b39151e2479ed19127b996cf0
+      internalID: 2004946392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_194
+      rect:
+        serializedVersion: 2
+        x: 499
+        y: 75
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43d59d5ec28472d4881d3d18bd9a81ea
+      internalID: -1275485381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_195
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 75
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b708f85ad2f23e44dac37921a6b4690d
+      internalID: -1504276239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_196
+      rect:
+        serializedVersion: 2
+        x: 619
+        y: 75
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4de242f86963da34ea1ac3b7d7168a39
+      internalID: 1677745097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_197
+      rect:
+        serializedVersion: 2
+        x: 679
+        y: 75
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1f9d083af805584c84b59a9d8e2cda1
+      internalID: -61428889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_198
+      rect:
+        serializedVersion: 2
+        x: 739
+        y: 75
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddfcae6433d99c94c8eefd6fb17e1da7
+      internalID: 565663533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_199
+      rect:
+        serializedVersion: 2
+        x: 799
+        y: 75
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad0f623298eacc2459c4237ee65df8a6
+      internalID: -2065183700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_200
+      rect:
+        serializedVersion: 2
+        x: 859
+        y: 75
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6269bc6d964d91b40b7f8571089a4002
+      internalID: -1821796369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_201
+      rect:
+        serializedVersion: 2
+        x: 919
+        y: 75
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fa1b0602b5e50143b1350edaf9560b6
+      internalID: 631935042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_202
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 15
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e7945d53becd2d4db387df0a147733f
+      internalID: 1629539237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_203
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 15
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2872d25373a92af48a49ffc46963aab8
+      internalID: 1425300603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_204
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 15
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0795a2036e54ba4794d008fd5dfc763
+      internalID: -1409650804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_205
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 15
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9431c464deb23014086bcba3d7f88c5a
+      internalID: -2114523547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_206
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 15
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6de44889150e22d4cba3c271d5e77543
+      internalID: 1775553198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_207
+      rect:
+        serializedVersion: 2
+        x: 499
+        y: 15
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 323ce45c3f04d504ea56c5fa3d323b4c
+      internalID: 965387473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_208
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 15
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c12c33894e41cc418e18c4c8f9834ad
+      internalID: -1405731695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_209
+      rect:
+        serializedVersion: 2
+        x: 619
+        y: 15
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b569f4874cd4847409ef1aaca6df07a7
+      internalID: 2116024105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_210
+      rect:
+        serializedVersion: 2
+        x: 679
+        y: 15
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfe8ffacaefa34b478c2ed6a020a85a1
+      internalID: 328656382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_211
+      rect:
+        serializedVersion: 2
+        x: 739
+        y: 15
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdf40245149e171459d9a45ac0937285
+      internalID: 376961151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_212
+      rect:
+        serializedVersion: 2
+        x: 799
+        y: 15
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0de4070c880052488cef2c371fd03fd
+      internalID: 374492020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_213
+      rect:
+        serializedVersion: 2
+        x: 859
+        y: 15
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd8444e6816e02741beaa1c6b70a71e8
+      internalID: 350981610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023-02-06 16_23_01-Tile Palette2FB_214
+      rect:
+        serializedVersion: 2
+        x: 919
+        y: 15
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e8c46b58f2d8384c8c61d83f1f44064
+      internalID: -1808374061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      2023-02-06 16_23_01-Tile Palette2FB_115: 1548470115
+      2023-02-06 16_23_01-Tile Palette2FB_98: -1778626574
+      2023-02-06 16_23_01-Tile Palette2FB_72: -2076984920
+      2023-02-06 16_23_01-Tile Palette2FB_44: 1028753182
+      2023-02-06 16_23_01-Tile Palette2FB_8: 910917108
+      2023-02-06 16_23_01-Tile Palette2FB_167: -2040007452
+      2023-02-06 16_23_01-Tile Palette2FB_66: 1183524471
+      2023-02-06 16_23_01-Tile Palette2FB_65: 1543227035
+      2023-02-06 16_23_01-Tile Palette2FB_136: 727740646
+      2023-02-06 16_23_01-Tile Palette2FB_184: 291399712
+      2023-02-06 16_23_01-Tile Palette2FB_46: 1767823284
+      2023-02-06 16_23_01-Tile Palette2FB_142: 1240565811
+      2023-02-06 16_23_01-Tile Palette2FB_160: 2119225591
+      2023-02-06 16_23_01-Tile Palette2FB_106: 1006773796
+      2023-02-06 16_23_01-Tile Palette2FB_0: -111109393
+      2023-02-06 16_23_01-Tile Palette2FB_105: -1998687031
+      2023-02-06 16_23_01-Tile Palette2FB_137: 1235825943
+      2023-02-06 16_23_01-Tile Palette2FB_101: 566396095
+      2023-02-06 16_23_01-Tile Palette2FB_168: 1826251052
+      2023-02-06 16_23_01-Tile Palette2FB_173: 1274597870
+      2023-02-06 16_23_01-Tile Palette2FB_18: -528827774
+      2023-02-06 16_23_01-Tile Palette2FB_182: 2097070820
+      2023-02-06 16_23_01-Tile Palette2FB_161: -965755203
+      2023-02-06 16_23_01-Tile Palette2FB_60: 307491789
+      2023-02-06 16_23_01-Tile Palette2FB_159: -2018226442
+      2023-02-06 16_23_01-Tile Palette2FB_166: -1633492102
+      2023-02-06 16_23_01-Tile Palette2FB_171: 255224608
+      2023-02-06 16_23_01-Tile Palette2FB_117: -1851040734
+      2023-02-06 16_23_01-Tile Palette2FB_201: 631935042
+      2023-02-06 16_23_01-Tile Palette2FB_139: -1087275354
+      2023-02-06 16_23_01-Tile Palette2FB_33: 1400493898
+      2023-02-06 16_23_01-Tile Palette2FB_153: -156897542
+      2023-02-06 16_23_01-Tile Palette2FB_62: -264113973
+      2023-02-06 16_23_01-Tile Palette2FB_49: 577372280
+      2023-02-06 16_23_01-Tile Palette2FB_141: -1825989179
+      2023-02-06 16_23_01-Tile Palette2FB_198: 565663533
+      2023-02-06 16_23_01-Tile Palette2FB_212: 374492020
+      2023-02-06 16_23_01-Tile Palette2FB_123: -51246379
+      2023-02-06 16_23_01-Tile Palette2FB_197: -61428889
+      2023-02-06 16_23_01-Tile Palette2FB_90: 2039747396
+      2023-02-06 16_23_01-Tile Palette2FB_32: -956678908
+      2023-02-06 16_23_01-Tile Palette2FB_91: 598273901
+      2023-02-06 16_23_01-Tile Palette2FB_97: -437999064
+      2023-02-06 16_23_01-Tile Palette2FB_20: 637423717
+      2023-02-06 16_23_01-Tile Palette2FB_162: -1223104074
+      2023-02-06 16_23_01-Tile Palette2FB_176: 769794648
+      2023-02-06 16_23_01-Tile Palette2FB_89: 1367141825
+      2023-02-06 16_23_01-Tile Palette2FB_100: -309665666
+      2023-02-06 16_23_01-Tile Palette2FB_140: 1329413055
+      2023-02-06 16_23_01-Tile Palette2FB_189: 889446574
+      2023-02-06 16_23_01-Tile Palette2FB_64: 2102808008
+      2023-02-06 16_23_01-Tile Palette2FB_174: 61019138
+      2023-02-06 16_23_01-Tile Palette2FB_94: 1036560115
+      2023-02-06 16_23_01-Tile Palette2FB_40: -2041309861
+      2023-02-06 16_23_01-Tile Palette2FB_74: 305823376
+      2023-02-06 16_23_01-Tile Palette2FB_21: 294529713
+      2023-02-06 16_23_01-Tile Palette2FB_13: -1582218245
+      2023-02-06 16_23_01-Tile Palette2FB_82: -42674002
+      2023-02-06 16_23_01-Tile Palette2FB_183: -2121542212
+      2023-02-06 16_23_01-Tile Palette2FB_73: 548085535
+      2023-02-06 16_23_01-Tile Palette2FB_95: 1146727307
+      2023-02-06 16_23_01-Tile Palette2FB_112: 1357250263
+      2023-02-06 16_23_01-Tile Palette2FB_124: 907823089
+      2023-02-06 16_23_01-Tile Palette2FB_121: 1582563504
+      2023-02-06 16_23_01-Tile Palette2FB_205: -2114523547
+      2023-02-06 16_23_01-Tile Palette2FB_42: 1049351002
+      2023-02-06 16_23_01-Tile Palette2FB_15: 216406531
+      2023-02-06 16_23_01-Tile Palette2FB_126: -1803063005
+      2023-02-06 16_23_01-Tile Palette2FB_5: -1355568552
+      2023-02-06 16_23_01-Tile Palette2FB_11: -1931638169
+      2023-02-06 16_23_01-Tile Palette2FB_50: -823361575
+      2023-02-06 16_23_01-Tile Palette2FB_113: 2103670768
+      2023-02-06 16_23_01-Tile Palette2FB_19: 1819105541
+      2023-02-06 16_23_01-Tile Palette2FB_45: -1732830529
+      2023-02-06 16_23_01-Tile Palette2FB_87: 1458816237
+      2023-02-06 16_23_01-Tile Palette2FB_88: -1089039719
+      2023-02-06 16_23_01-Tile Palette2FB_30: 588440064
+      2023-02-06 16_23_01-Tile Palette2FB_17: 1383802368
+      2023-02-06 16_23_01-Tile Palette2FB_51: 1421483663
+      2023-02-06 16_23_01-Tile Palette2FB_132: 2142013558
+      2023-02-06 16_23_01-Tile Palette2FB_213: 350981610
+      2023-02-06 16_23_01-Tile Palette2FB_23: -1608231023
+      2023-02-06 16_23_01-Tile Palette2FB_1: 1911015779
+      2023-02-06 16_23_01-Tile Palette2FB_211: 376961151
+      2023-02-06 16_23_01-Tile Palette2FB_108: -1875852567
+      2023-02-06 16_23_01-Tile Palette2FB_118: 330912567
+      2023-02-06 16_23_01-Tile Palette2FB_54: -1268767127
+      2023-02-06 16_23_01-Tile Palette2FB_78: -949654875
+      2023-02-06 16_23_01-Tile Palette2FB_207: 965387473
+      2023-02-06 16_23_01-Tile Palette2FB_58: -1338546212
+      2023-02-06 16_23_01-Tile Palette2FB_92: -1294197874
+      2023-02-06 16_23_01-Tile Palette2FB_138: 1482907311
+      2023-02-06 16_23_01-Tile Palette2FB_120: 2008408052
+      2023-02-06 16_23_01-Tile Palette2FB_206: 1775553198
+      2023-02-06 16_23_01-Tile Palette2FB_7: 900843756
+      2023-02-06 16_23_01-Tile Palette2FB_129: -1982609169
+      2023-02-06 16_23_01-Tile Palette2FB_35: 604547532
+      2023-02-06 16_23_01-Tile Palette2FB_103: -1217721471
+      2023-02-06 16_23_01-Tile Palette2FB_38: -1714967629
+      2023-02-06 16_23_01-Tile Palette2FB_48: 1204438715
+      2023-02-06 16_23_01-Tile Palette2FB_55: 1913265302
+      2023-02-06 16_23_01-Tile Palette2FB_186: 364745517
+      2023-02-06 16_23_01-Tile Palette2FB_52: 886479548
+      2023-02-06 16_23_01-Tile Palette2FB_209: 2116024105
+      2023-02-06 16_23_01-Tile Palette2FB_202: 1629539237
+      2023-02-06 16_23_01-Tile Palette2FB_70: -1924623986
+      2023-02-06 16_23_01-Tile Palette2FB_210: 328656382
+      2023-02-06 16_23_01-Tile Palette2FB_36: -1338870100
+      2023-02-06 16_23_01-Tile Palette2FB_145: 838317909
+      2023-02-06 16_23_01-Tile Palette2FB_144: -633303518
+      2023-02-06 16_23_01-Tile Palette2FB_172: -1068045397
+      2023-02-06 16_23_01-Tile Palette2FB_143: -417563547
+      2023-02-06 16_23_01-Tile Palette2FB_104: 103857008
+      2023-02-06 16_23_01-Tile Palette2FB_204: -1409650804
+      2023-02-06 16_23_01-Tile Palette2FB_10: 279480249
+      2023-02-06 16_23_01-Tile Palette2FB_119: 1039875376
+      2023-02-06 16_23_01-Tile Palette2FB_188: -1567597090
+      2023-02-06 16_23_01-Tile Palette2FB_59: 236513406
+      2023-02-06 16_23_01-Tile Palette2FB_16: -389798016
+      2023-02-06 16_23_01-Tile Palette2FB_125: 1628451016
+      2023-02-06 16_23_01-Tile Palette2FB_128: 393601769
+      2023-02-06 16_23_01-Tile Palette2FB_61: -1605357166
+      2023-02-06 16_23_01-Tile Palette2FB_31: 1374478681
+      2023-02-06 16_23_01-Tile Palette2FB_76: 171958044
+      2023-02-06 16_23_01-Tile Palette2FB_180: 71146112
+      2023-02-06 16_23_01-Tile Palette2FB_127: -242501542
+      2023-02-06 16_23_01-Tile Palette2FB_12: 97378131
+      2023-02-06 16_23_01-Tile Palette2FB_69: 1414735605
+      2023-02-06 16_23_01-Tile Palette2FB_185: -410976012
+      2023-02-06 16_23_01-Tile Palette2FB_80: -571186844
+      2023-02-06 16_23_01-Tile Palette2FB_199: -2065183700
+      2023-02-06 16_23_01-Tile Palette2FB_39: -1103072890
+      2023-02-06 16_23_01-Tile Palette2FB_9: 1531812775
+      2023-02-06 16_23_01-Tile Palette2FB_203: 1425300603
+      2023-02-06 16_23_01-Tile Palette2FB_208: -1405731695
+      2023-02-06 16_23_01-Tile Palette2FB_26: 1128277738
+      2023-02-06 16_23_01-Tile Palette2FB_133: 1177303544
+      2023-02-06 16_23_01-Tile Palette2FB_81: -1757330440
+      2023-02-06 16_23_01-Tile Palette2FB_116: 764983746
+      2023-02-06 16_23_01-Tile Palette2FB_163: -19893847
+      2023-02-06 16_23_01-Tile Palette2FB_77: 372574624
+      2023-02-06 16_23_01-Tile Palette2FB_67: 54271659
+      2023-02-06 16_23_01-Tile Palette2FB_148: -1659353924
+      2023-02-06 16_23_01-Tile Palette2FB_22: 667957076
+      2023-02-06 16_23_01-Tile Palette2FB_96: 271469620
+      2023-02-06 16_23_01-Tile Palette2FB_147: -2028880146
+      2023-02-06 16_23_01-Tile Palette2FB_158: -1002860161
+      2023-02-06 16_23_01-Tile Palette2FB_122: -475852533
+      2023-02-06 16_23_01-Tile Palette2FB_192: 140157432
+      2023-02-06 16_23_01-Tile Palette2FB_102: -1368025196
+      2023-02-06 16_23_01-Tile Palette2FB_29: -2065097549
+      2023-02-06 16_23_01-Tile Palette2FB_75: 553357541
+      2023-02-06 16_23_01-Tile Palette2FB_196: 1677745097
+      2023-02-06 16_23_01-Tile Palette2FB_156: -212732121
+      2023-02-06 16_23_01-Tile Palette2FB_99: 1817158598
+      2023-02-06 16_23_01-Tile Palette2FB_109: 463869577
+      2023-02-06 16_23_01-Tile Palette2FB_86: -761735184
+      2023-02-06 16_23_01-Tile Palette2FB_169: 881864549
+      2023-02-06 16_23_01-Tile Palette2FB_3: 892332237
+      2023-02-06 16_23_01-Tile Palette2FB_107: -266254767
+      2023-02-06 16_23_01-Tile Palette2FB_195: -1504276239
+      2023-02-06 16_23_01-Tile Palette2FB_6: 1745221491
+      2023-02-06 16_23_01-Tile Palette2FB_57: 1710459586
+      2023-02-06 16_23_01-Tile Palette2FB_154: -610516710
+      2023-02-06 16_23_01-Tile Palette2FB_181: -36583351
+      2023-02-06 16_23_01-Tile Palette2FB_25: 1131473130
+      2023-02-06 16_23_01-Tile Palette2FB_151: 194086128
+      2023-02-06 16_23_01-Tile Palette2FB_155: 129773004
+      2023-02-06 16_23_01-Tile Palette2FB_37: -799587760
+      2023-02-06 16_23_01-Tile Palette2FB_56: 1643989679
+      2023-02-06 16_23_01-Tile Palette2FB_68: -1356512459
+      2023-02-06 16_23_01-Tile Palette2FB_2: 1355889609
+      2023-02-06 16_23_01-Tile Palette2FB_157: -1820493131
+      2023-02-06 16_23_01-Tile Palette2FB_53: -417360436
+      2023-02-06 16_23_01-Tile Palette2FB_170: 668251704
+      2023-02-06 16_23_01-Tile Palette2FB_4: -2033692313
+      2023-02-06 16_23_01-Tile Palette2FB_43: -425776176
+      2023-02-06 16_23_01-Tile Palette2FB_14: -906214838
+      2023-02-06 16_23_01-Tile Palette2FB_28: 1298870554
+      2023-02-06 16_23_01-Tile Palette2FB_165: -956082400
+      2023-02-06 16_23_01-Tile Palette2FB_193: 2004946392
+      2023-02-06 16_23_01-Tile Palette2FB_175: -537199738
+      2023-02-06 16_23_01-Tile Palette2FB_177: 1509486358
+      2023-02-06 16_23_01-Tile Palette2FB_191: 525412736
+      2023-02-06 16_23_01-Tile Palette2FB_178: 1555462871
+      2023-02-06 16_23_01-Tile Palette2FB_34: -2078630029
+      2023-02-06 16_23_01-Tile Palette2FB_47: 303427170
+      2023-02-06 16_23_01-Tile Palette2FB_146: -748793002
+      2023-02-06 16_23_01-Tile Palette2FB_24: -1321473720
+      2023-02-06 16_23_01-Tile Palette2FB_130: -1774947925
+      2023-02-06 16_23_01-Tile Palette2FB_84: -1364837368
+      2023-02-06 16_23_01-Tile Palette2FB_41: -705712321
+      2023-02-06 16_23_01-Tile Palette2FB_110: -1996331484
+      2023-02-06 16_23_01-Tile Palette2FB_71: 2042081854
+      2023-02-06 16_23_01-Tile Palette2FB_83: 1508853481
+      2023-02-06 16_23_01-Tile Palette2FB_93: -275347870
+      2023-02-06 16_23_01-Tile Palette2FB_149: 1022968738
+      2023-02-06 16_23_01-Tile Palette2FB_190: -2010252373
+      2023-02-06 16_23_01-Tile Palette2FB_152: 1295824432
+      2023-02-06 16_23_01-Tile Palette2FB_194: -1275485381
+      2023-02-06 16_23_01-Tile Palette2FB_200: -1821796369
+      2023-02-06 16_23_01-Tile Palette2FB_214: -1808374061
+      2023-02-06 16_23_01-Tile Palette2FB_131: -900624014
+      2023-02-06 16_23_01-Tile Palette2FB_85: 261579956
+      2023-02-06 16_23_01-Tile Palette2FB_150: 74170838
+      2023-02-06 16_23_01-Tile Palette2FB_27: 1947859702
+      2023-02-06 16_23_01-Tile Palette2FB_114: 1753977262
+      2023-02-06 16_23_01-Tile Palette2FB_134: 64368357
+      2023-02-06 16_23_01-Tile Palette2FB_179: 1691503071
+      2023-02-06 16_23_01-Tile Palette2FB_79: -723889841
+      2023-02-06 16_23_01-Tile Palette2FB_164: 630896702
+      2023-02-06 16_23_01-Tile Palette2FB_111: -2075978548
+      2023-02-06 16_23_01-Tile Palette2FB_63: -582806325
+      2023-02-06 16_23_01-Tile Palette2FB_187: 77787937
+      2023-02-06 16_23_01-Tile Palette2FB_135: 386194360
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
