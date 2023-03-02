@@ -52,7 +52,7 @@ public class MenuMove : MonoBehaviour
         {
             if (cameraTransform.position.x < move)
             {
-                cameraTransform.position += cameraTransform.right * Time.deltaTime * 5f;
+                cameraTransform.position += cameraTransform.right * Time.deltaTime * 10f;
             }
             else
             {
@@ -64,7 +64,7 @@ public class MenuMove : MonoBehaviour
         {
             if (cameraTransform.position.x > move)
             {
-                cameraTransform.position -= cameraTransform.right * Time.deltaTime * 5f;
+                cameraTransform.position -= cameraTransform.right * Time.deltaTime * 10f;
             }
             else
             {
