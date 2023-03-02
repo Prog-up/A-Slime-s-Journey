@@ -18,14 +18,6 @@ public class MenuMove : MonoBehaviour
     private bool right = false;
     private bool left = false;
 
-    void Start()
-    {
-    // button1_1.SetActive(false);
-    // button1_3.SetActive(false);
-    // button1_2.SetActive(false);
-    // button1_4.SetActive(false);
-    }
-
     private void ButtonClicked()
     {
     button0_1.SetActive(false);
