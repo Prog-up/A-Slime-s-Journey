@@ -11,6 +11,7 @@ public class GameManager : MonoBehaviourPunCallbacks
     void Start()
     {
        // PhotonNetwork.Instantiate(this.playerPrefab.name, new Vector3(-1, -2, 0), Quaternion.identity , 0);
+       GetComponentInChildren<Camera>().enabled = false;
 
         GameObject myPlayer = (GameObject)PhotonNetwork.Instantiate(this.playerPrefab.name, new Vector3(0f,5f,0f), Quaternion.identity, 0);
 
