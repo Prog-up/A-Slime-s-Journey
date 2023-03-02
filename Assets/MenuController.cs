@@ -12,7 +12,7 @@ public class MenuController : MonoBehaviour
     [SerializeField] private InputField CreateGameInput;
     [SerializeField] private InputField JoinGameInput;
 
-    [SerializeField] private InputField StartButton;
+    [SerializeField] private GameObject StartButton;
 
     private void Awake()
     {
