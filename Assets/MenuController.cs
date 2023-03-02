@@ -39,12 +39,23 @@ public class MenuController : MonoBehaviour
         }
         else
         {
-            StartButton.SetActive(true);
+            StartButton.SetActive(false);
         }
     }
     public void SetUserName()
     {
         UsernameMenu.SetActive(false);
         PhotonNetwork.playerName = UsernameInput.text;
+    }
+     public void CreateGame()
+    {
+        PhotonNetwork.CreateRoom(CreateGameInput.text, new RoomOptions(){maxPlayers = 2}, null);
+    }
+
+    public void JoinGame()
+    {
+        RoomOptions roomOptions = new RoomOptions();
+        roomOptions.maxPlayers = 2;
+        PhotonNetwork.JoinOrCreateRoom(JoinGameInput.text, roomOptions, TypedLobby.Default);
     }
 }
