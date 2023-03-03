@@ -24,6 +24,7 @@ public class Player : Photon.MonoBehaviour
         }
         else
         {
+            PlayerCamera.SetActive(false);
             PlayerNameText.text = photonView.owner.name;
             PlayerNameText.color = Color.red;
         }
