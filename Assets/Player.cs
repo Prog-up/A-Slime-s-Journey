@@ -44,6 +44,10 @@ public class Player : Photon.MonoBehaviour
         {
             photonView.RPC("FlipFalse",PhotonTargets.AllBuffered);
         }
+        if(Input.GetKeyDown(KeyCode.Space))
+        {
+           rb.velocity = new Vector2(rb.velocity.x, JumpForce);
+        }
     }
 
     // Start is called before the first frame update
