@@ -21,7 +21,7 @@ public class MenuController : MonoBehaviour
 
     private void Start()
     {
-        UsernameMenu.SetActive(true);
+        // UsernameMenu.SetActive(true);
     }
 
     private void OnConnectedToMaster()
@@ -45,6 +45,7 @@ public class MenuController : MonoBehaviour
     public void SetUserName()
     {
         UsernameMenu.SetActive(false);
+        ConnectPannel.SetActive(true);
         PhotonNetwork.playerName = UsernameInput.text;
     }
     public void CreateGame()
