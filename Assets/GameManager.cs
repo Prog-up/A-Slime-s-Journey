@@ -8,11 +8,40 @@ public class GameManager : MonoBehaviour
     public GameObject PlayerPrefab;
     public GameObject GameCanvas;
     public GameObject SceneCamera;
+    private bool Off = false;
+    public GameObject disconnectUI;
 
     private void Awake()
     {
         GameCanvas.SetActive(true);
     }
+
+    private void Update()
+    {
+        CheckInput();
+    }
+
+    private void CheckInput()
+    {
+        if (Off && Input.GetKeyDown(KeyCode.Escape))
+        {
+            disconnectUI.SetActive(false);
+            Off = false;
+        }
+        else if (!Off && Input.GetKeyDown(KeyCode.Escape))
+        {
+            disconnectUI.SetActive(true);
+            Off = true;
+        }
+    }
+
+    public void LeaveRoom()
+    {
+        PhotonNetwork.LeaveRoom();
+        PhotonNetwork.LoadLevel("MainMenu");
+    }
+
+    
 
     public void SpawnPlayer()
     {
