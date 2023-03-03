@@ -10,6 +10,8 @@ public class GameManager : MonoBehaviour
     public GameObject SceneCamera;
     private bool Off = false;
     public GameObject disconnectUI;
+    public GameObject PlayerFeed;
+    public GameObject FeedGrid;
 
     private void Awake()
     {
@@ -50,5 +52,21 @@ public class GameManager : MonoBehaviour
         PhotonNetwork.Instantiate(PlayerPrefab.name, new Vector2(this.transform.position.x * randomValue, this.transform.position.y), Quaternion.identity, 0);
         GameCanvas.SetActive(false);
         SceneCamera.SetActive(false);
+    }
+
+    private void OnPhontonPlayerConnected(PhotonPlayer player)
+    {
+        GameObject obj = Instantiate(PlayerFeed, new Vector2(0, 0), Quaternion.identity);
+        obj.transform.SetParent(FeedGrid.transform, false);
+        obj.GetComponent<Text>().text = player.name + " joined the game";
+        obj.GetComponent<Text>().color = Color.green;
+    }
+
+    private void OnPhontonPlayerDisconnected(PhotonPlayer player)
+    {
+        GameObject obj = Instantiate(PlayerFeed, new Vector2(0, 0), Quaternion.identity);
+        obj.transform.SetParent(FeedGrid.transform, false);
+        obj.GetComponent<Text>().text = player.name + " left the game";
+        obj.GetComponent<Text>().color = Color.red;
     }
 }
