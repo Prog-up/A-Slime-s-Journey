@@ -54,7 +54,7 @@ public class GameManager : MonoBehaviour
         SceneCamera.SetActive(false);
     }
 
-    private void OnPhontonPlayerConnected(PhotonPlayer player)
+    private void OnPhotonPlayerConnected(PhotonPlayer player)
     {
         GameObject obj = Instantiate(PlayerFeed, new Vector2(0, 0), Quaternion.identity);
         obj.transform.SetParent(FeedGrid.transform, false);
@@ -62,7 +62,7 @@ public class GameManager : MonoBehaviour
         obj.GetComponent<Text>().color = Color.green;
     }
 
-    private void OnPhontonPlayerDisconnected(PhotonPlayer player)
+    private void OnPhotonPlayerDisconnected(PhotonPlayer player)
     {
         GameObject obj = Instantiate(PlayerFeed, new Vector2(0, 0), Quaternion.identity);
         obj.transform.SetParent(FeedGrid.transform, false);
