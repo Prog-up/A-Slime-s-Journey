@@ -25,7 +25,7 @@ public class Player : Photon.MonoBehaviour
 
     private void CheckInput()
     {
-        var move = new Vector3(Input.GetAxisRaw("Hotizontal"), 0);
+        var move = new Vector3(Input.GetAxisRaw("Horizontal"), 0);
         transform.position += move * MoveSpeed * Time.deltaTime;
 
         if (Input.GetKeyDown(KeyCode.Q))
