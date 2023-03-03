@@ -47,7 +47,7 @@ public class MenuController : MonoBehaviour
         UsernameMenu.SetActive(false);
         PhotonNetwork.playerName = UsernameInput.text;
     }
-     public void CreateGame()
+    public void CreateGame()
     {
         PhotonNetwork.CreateRoom(CreateGameInput.text, new RoomOptions() { MaxPlayers = 2 }, null);
     }
@@ -59,7 +59,7 @@ public class MenuController : MonoBehaviour
         PhotonNetwork.JoinOrCreateRoom(JoinGameInput.text, roomOptions, TypedLobby.Default);
     }
 
-    private void OnJoinRoom()
+    private void OnJoinedRoom()
     {
         PhotonNetwork.LoadLevel("MainGame");
     }
