@@ -20,6 +20,6 @@ public class GameManager : MonoBehaviour
 
         PhotonNetwork.Instantiate(PlayerPrefab.name, new Vector2(this.transform.position.x * randomValue, this.transform.position.y), Quaternion.identity, 0);
         GameCanvas.SetActive(false);
-        SceneCamera.SetActive(true);
+        SceneCamera.SetActive(false);
     }
 }
