@@ -11,17 +11,12 @@ public class MenuController : MonoBehaviour
     [SerializeField] private InputField UsernameInput;
     [SerializeField] private InputField CreateGameInput;
     [SerializeField] private InputField JoinGameInput;
-
     [SerializeField] private GameObject StartButton;
+    [SerializeField] private GameObject JoinButton;
 
     private void Awake()
     {
         PhotonNetwork.ConnectUsingSettings(VersionName);
-    }
-
-    private void Start()
-    {
-        // UsernameMenu.SetActive(true);
     }
 
     private void OnConnectedToMaster()
@@ -48,6 +43,20 @@ public class MenuController : MonoBehaviour
         ConnectPannel.SetActive(true);
         PhotonNetwork.playerName = UsernameInput.text;
     }
+
+    public void ChangeRoomNameInput()
+    {
+
+        if(JoinGameInput.text.Length > 0)
+        {
+            JoinButton.SetActive(true);
+        }
+        else
+        {
+            JoinButton.SetActive(false);
+        }
+    }
+
     public void CreateGame()
     {
         PhotonNetwork.CreateRoom(CreateGameInput.text, new RoomOptions() { MaxPlayers = 2 }, null);

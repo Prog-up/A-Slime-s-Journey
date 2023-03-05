@@ -59,7 +59,7 @@ public class Player : Photon.MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (photonView.isMine)
+        if (photonView.isMine && photonView.gameObject.activeSelf)
         {
             CheckInput();
         }
