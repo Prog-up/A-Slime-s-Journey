@@ -7,7 +7,6 @@ public class Damage : MonoBehaviour
     public GameObject heart1;
     public GameObject heart2;
     public GameObject heart3;
-    public GameObject player;
     private int life = 3;
     
     private void OnTriggerEnter2D(Collider2D collision)
