@@ -15,6 +15,9 @@ public class Player : Photon.MonoBehaviour
     public float MoveSpeed;
     public float JumpForce;
 
+    public Transform GroundCheck;
+    public float GroundCheckRadius;
+    public LayerMask collisionLayers;
     private void Awake()
     {
         if (photonView.isMine)
@@ -44,11 +47,18 @@ public class Player : Photon.MonoBehaviour
         {
             photonView.RPC("FlipFalse",PhotonTargets.AllBuffered);
         }
+
+        IsGrounded = Physics2D.OverlapCircle(GroundCheck.position, GroundCheckRadius, collisionLayers);
         if(Input.GetKeyDown(KeyCode.Space))
         {
-           rb.velocity = new Vector2(rb.velocity.x, JumpForce);
+            if (IsGrounded)
+            {
+                rb.velocity = new Vector2(rb.velocity.x, JumpForce);
+            }
         }
     }
+
+    
 
     // Start is called before the first frame update
     void Start()
