@@ -6,9 +6,18 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/MylaucherScene.unity
-    guid: 80e6004a69501b14eb2aace096f58278
+    path: Assets/Scenes/MainMenu.unity
+    guid: 12917453c03014a438eacdc7c3759da4
   - enabled: 1
     path: Assets/Scenes/MyRoom.unity
     guid: cadbc81f9ea093f469f79bb4ea3e0d72
+  - enabled: 0
+    path: Assets/Scenes/leveltest.unity
+    guid: 169bbf3f600f52e4d877bd79c24e2c46
+  - enabled: 0
+    path: Assets/Scenes/MylaucherScene.unity
+    guid: 80e6004a69501b14eb2aace096f58278
+  - enabled: 0
+    path: Assets/Scenes/SampleScene.unity
+    guid: 2cda990e2423bbf4892e6590ba056729
   m_configObjects: {}
