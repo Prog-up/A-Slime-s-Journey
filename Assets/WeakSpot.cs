@@ -6,11 +6,18 @@ public class WeakSpot : MonoBehaviour
 {
 	public Animator animator;
 
+	public bool alive = true;
+
+	public bool IsAlive()
+	{
+		return alive;
+	}
     private void OnTriggerEnter2D(Collider2D collision)
 	{
 		if (collision.CompareTag("Player"))
 			{
 				animator.SetTrigger("Die");
+				alive = false;
 				Destroy(transform.parent.gameObject, 1f);
 			}
 	}
