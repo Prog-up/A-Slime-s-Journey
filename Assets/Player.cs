@@ -49,9 +49,9 @@ public class Player : Photon.MonoBehaviour
         }
 
         IsGrounded = Physics2D.OverlapCircle(GroundCheck.position, GroundCheckRadius, collisionLayers);
-        if(Input.GetKeyDown(KeyCode.Space))
+        if(IsGrounded)
         {
-            if (IsGrounded)
+            if (Input.GetKeyDown(KeyCode.Space))
             {
                 rb.velocity = new Vector2(rb.velocity.x, JumpForce);
             }

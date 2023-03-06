@@ -25,6 +25,13 @@ public class MenuController : MonoBehaviour
         Debug.Log("Connected");
     }
 
+    void update()
+    {
+        if(Input.GetButtonDown("Enter"))
+        {
+            JoinGame();
+        }
+    }
     public void ChangeUserNameInput()
     {
 
