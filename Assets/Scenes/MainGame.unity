@@ -159,6 +159,7 @@ MonoBehaviour:
   waypoints:
   - {fileID: 2089924178}
   - {fileID: 1802138825}
+  Alive: 1
   graphic: {fileID: 45511751}
 --- !u!95 &45511749
 Animator:
@@ -2491,6 +2492,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 45511749}
+  alive: 1
 --- !u!61 &1820746327
 BoxCollider2D:
   m_ObjectHideFlags: 0
