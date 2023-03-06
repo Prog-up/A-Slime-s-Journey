@@ -554,7 +554,19 @@ MonoBehaviour:
       m_Calls: []
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1107083656}
+        m_TargetAssemblyTypeName: MenuController, Assembly-CSharp
+        m_MethodName: ChangeRoomNameInput
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_CaretColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
   m_CustomCaretColor: 0
   m_SelectionColor: {r: 0.65882355, g: 0.80784315, b: 1, a: 0.7529412}
@@ -2620,6 +2632,7 @@ MonoBehaviour:
   CreateGameInput: {fileID: 2109289026}
   JoinGameInput: {fileID: 187101938}
   StartButton: {fileID: 1786086075}
+  JoinButton: {fileID: 1175341405}
 --- !u!1 &1175341405
 GameObject:
   m_ObjectHideFlags: 0
@@ -2638,7 +2651,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1175341406
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3301,6 +3314,14 @@ PrefabInstance:
     - target: {fileID: 2427767059139800518, guid: 885a6267dd6f05546a5517816efeb8a5, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2692900734264476035, guid: 885a6267dd6f05546a5517816efeb8a5, type: 3}
+      propertyPath: maxX
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 2692900734264476035, guid: 885a6267dd6f05546a5517816efeb8a5, type: 3}
+      propertyPath: minX
+      value: -20
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 885a6267dd6f05546a5517816efeb8a5, type: 3}

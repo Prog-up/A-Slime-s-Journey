@@ -21,7 +21,7 @@ public class GameManager : MonoBehaviour
     private void Update()
     {
         CheckInput();
-    }
+    }   
 
     private void CheckInput()
     {
@@ -42,8 +42,6 @@ public class GameManager : MonoBehaviour
         PhotonNetwork.LeaveRoom();
         PhotonNetwork.LoadLevel("MainMenu");
     }
-
-    
 
     public void SpawnPlayer()
     {
