@@ -585,7 +585,7 @@ TextureImporter:
       213: 3819963029724104715
     second: TX Tileset Ground_156
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -645,6 +645,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 1
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -684,6 +685,18 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 4
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: 4
@@ -4005,7 +4018,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      TX Tileset Ground_150: 4945285195332565790
+      TX Tileset Ground_130: 1921895609169914298
       TX Tileset Ground_14: -7833218270530847676
       TX Tileset Ground_50: 724395971767576797
       TX Tileset Ground_2: 21300030
@@ -4034,7 +4047,6 @@ TextureImporter:
       TX Tileset Ground_27: -4052481170798748698
       TX Tileset Ground_88: -4688770256011149041
       TX Tileset Ground_128: 7916991415720903365
-      TX Tileset Ground_151: 59002303270103204
       TX Tileset Ground_72: 6589154805462139212
       TX Tileset Ground_101: -4074374073859113712
       TX Tileset Ground_74: -1853060765068681175
@@ -4151,17 +4163,18 @@ TextureImporter:
       TX Tileset Ground_112: -4242970487987488601
       TX Tileset Ground_43: 1922864012054007380
       TX Tileset Ground_83: -48007363876803032
+      TX Tileset Ground_125: -8241012424202210315
       TX Tileset Ground_8: -5568849602974404179
-      TX Tileset Ground_102: -9023639060672660837
+      TX Tileset Ground_151: 59002303270103204
       TX Tileset Ground_108: -4971725082711922011
       TX Tileset Ground_51: -2198753249273810656
       TX Tileset Ground_0: 8652677587666043219
-      TX Tileset Ground_95: 2013731596871720695
-      TX Tileset Ground_113: -2205998391313803506
+      TX Tileset Ground_102: -9023639060672660837
       TX Tileset Ground_116: -3812786896775926999
+      TX Tileset Ground_95: 2013731596871720695
       TX Tileset Ground_144: -1748285848841930389
-      TX Tileset Ground_125: -8241012424202210315
-      TX Tileset Ground_130: 1921895609169914298
+      TX Tileset Ground_150: 4945285195332565790
+      TX Tileset Ground_113: -2205998391313803506
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

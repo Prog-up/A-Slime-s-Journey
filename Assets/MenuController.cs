@@ -25,7 +25,7 @@ public class MenuController : MonoBehaviour
         Debug.Log("Connected");
     }
 
-    void update()
+    void Update()
     {
         if(Input.GetButtonDown("Enter"))
         {
@@ -79,5 +79,16 @@ public class MenuController : MonoBehaviour
     private void OnJoinedRoom()
     {
         PhotonNetwork.LoadLevel("MainGame");
+    }
+
+    public void ExitGame() 
+    {
+        Application.Quit();
+    }
+
+    public void Back()
+    {
+        ConnectPannel.SetActive(false);
+        UsernameMenu.SetActive(true);
     }
 }
