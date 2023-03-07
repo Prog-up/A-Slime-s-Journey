@@ -18,7 +18,7 @@ public class WeakSpot : MonoBehaviour
 			{
 				animator.SetTrigger("Die");
 				alive = false;
-				Destroy(transform.parent.gameObject, 1f);
+				Destroy(transform.parent.gameObject, 0.5f);
 			}
 	}
 }

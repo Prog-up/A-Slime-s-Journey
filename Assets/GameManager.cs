@@ -15,7 +15,8 @@ public class GameManager : MonoBehaviour
 
     private void Awake()
     {
-        GameCanvas.SetActive(true);
+        // GameCanvas.SetActive(true);
+        SpawnPlayer();
     }
 
     private void Update()
