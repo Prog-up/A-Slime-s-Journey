@@ -1,0 +1,11 @@
+p {
+    color: rgb(135, 132, 132);
+    text-align: center;
+  }
+.titre{
+  position: relative;
+}
+  body {
+	background: url("mainMenu.png") no-repeat scroll;
+	background-size : cover;
+}
