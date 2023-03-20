@@ -49,13 +49,16 @@ public class Player : Photon.MonoBehaviour
         }
 
         IsGrounded = Physics2D.OverlapCircle(GroundCheck.position, GroundCheckRadius, collisionLayers);
-        if(IsGrounded)
+        if (IsGrounded)
         {
             if (Input.GetKeyDown(KeyCode.Space))
             {
                 rb.velocity = new Vector2(rb.velocity.x, JumpForce);
+                anim.SetBool("Isjumping",!IsGrounded);
             }
         }
+        anim.SetBool("Isjumping",!IsGrounded);
+        
     }
 
     
@@ -65,6 +68,7 @@ public class Player : Photon.MonoBehaviour
     {
         
     }
+    
 
     // Update is called once per frame
     void Update()
@@ -72,6 +76,7 @@ public class Player : Photon.MonoBehaviour
         if (photonView.isMine && photonView.gameObject.activeSelf)
         {
             CheckInput();
+            
         }
     }
 

@@ -477,7 +477,7 @@ Animator:
   m_GameObject: {fileID: 8179612259239588881}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 89aaebe355d346b40af738d224f2010f, type: 2}
+  m_Controller: {fileID: 9100000, guid: ad727a32a47a5e54ea54d75cee22c2d6, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -548,7 +548,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   photonView: {fileID: 2196262747904822369}
   rb: {fileID: 2196262747904822371}
-  anim: {fileID: 0}
+  anim: {fileID: 8179612259239588886}
   PlayerCamera: {fileID: 2196262746963074609}
   sr: {fileID: 8179612259239588887}
   PlayerNameText: {fileID: 1310640232072840924}

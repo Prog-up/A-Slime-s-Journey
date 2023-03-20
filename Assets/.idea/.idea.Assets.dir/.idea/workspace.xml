@@ -3,7 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="1ef5a0e2-4927-4b72-9202-ccefae5c0efd" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Assets.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Assets.dir/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scenes/MainGame.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Scenes/MainGame.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Photon Unity Networking/Resources/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Photon Unity Networking/Resources/Player.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pixel Art/Slime Enemy - Pixel Art/Animation/Idle/Green/Green Idle - Controller.controller" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pixel Art/Slime Enemy - Pixel Art/Animation/Idle/Green/Green Idle - Controller.controller.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Player.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,6 +57,7 @@
       <workItem from="1678276956647" duration="26000" />
       <workItem from="1678285598409" duration="487000" />
       <workItem from="1678286638536" duration="1899000" />
+      <workItem from="1679318343580" duration="3234000" />
     </task>
     <servers />
   </component>
