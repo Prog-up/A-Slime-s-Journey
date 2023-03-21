@@ -18,6 +18,8 @@ public class Player : Photon.MonoBehaviour
     public Transform GroundCheck;
     public float GroundCheckRadius;
     public LayerMask collisionLayers;
+
+    public AudioSource jumpsound;
     private void Awake()
     {
         if (photonView.isMine)
@@ -54,6 +56,7 @@ public class Player : Photon.MonoBehaviour
             if (Input.GetKeyDown(KeyCode.Space))
             {
                 rb.velocity = new Vector2(rb.velocity.x, JumpForce);
+                jumpsound.Play();
                 anim.SetBool("Isjumping",!IsGrounded);
             }
         }
