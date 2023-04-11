@@ -512,7 +512,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.1256568, y: 0.68729866}
+  m_Size: {x: 1.2, y: 0.7}
   m_EdgeRadius: 0
 --- !u!50 &2196262747904822371
 Rigidbody2D:
@@ -531,9 +531,9 @@ Rigidbody2D:
   m_AngularDrag: 0.05
   m_GravityScale: 1
   m_Material: {fileID: 0}
-  m_Interpolate: 0
+  m_Interpolate: 2
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 4
 --- !u!114 &2196262747904822368
 MonoBehaviour:
