@@ -37,7 +37,11 @@ public class MenuController : MonoBehaviour
 
         if(UsernameInput.text.Length >= 3)
         {
-            StartButton.SetActive(true);
+            for(int i = 0; i < UsernameInput.text.Length; i++)
+                if(UsernameInput.text[i] != ' ')
+                {
+                    StartButton.SetActive(true);
+                }
         }
         else
         {
