@@ -6,6 +6,8 @@ public class WeakSpot : MonoBehaviour
 {
 	public Animator animator;
 
+	public AudioSource mortcochon;
+
 	public bool alive = true;
 
 	public bool IsAlive()
@@ -19,6 +21,7 @@ public class WeakSpot : MonoBehaviour
 				animator.SetTrigger("Die");
 				alive = false;
 				Destroy(transform.parent.gameObject, 0.5f);
+				mortcochon.Play();
 			}
 	}
 }
