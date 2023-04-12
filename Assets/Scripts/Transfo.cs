@@ -12,8 +12,8 @@ public class Transfo : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.X))
         {
-            Destroy(ToDestroy);
             Instantiate(ToInstanciate);
+            Destroy(ToDestroy);
         }
     }
 }
