@@ -13,7 +13,7 @@ public class GameManager : MonoBehaviour
     public GameObject PlayerFeed;
     public GameObject FeedGrid;
     public GameObject Enemy;
-    public (float, float)[] pos = new (float, float)[2] {(27.94f, -2.33f), (53.84f, 1.63f)};
+    public (float, float)[] pos = new (float, float)[2] {(27.94f, -2.44f), (53.84f, 1.52f)};
 
     private void Awake()
     {
