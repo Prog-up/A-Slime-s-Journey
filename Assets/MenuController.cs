@@ -27,7 +27,7 @@ public class MenuController : MonoBehaviour
 
     void Update()
     {
-        if(Input.GetButtonDown("Enter"))
+        if(Input.GetButtonDown("Enter")) // Input Buon Enter is not setup
         {
             JoinGame();
         }

@@ -12,11 +12,16 @@ public class GameManager : MonoBehaviour
     public GameObject disconnectUI;
     public GameObject PlayerFeed;
     public GameObject FeedGrid;
+    public GameObject Enemy;
+    public (float, float)[] pos = new (float, float)[2] {(27.94f, -2.33f), (53.84f, 1.63f)};
 
     private void Awake()
     {
-        // GameCanvas.SetActive(true);
         SpawnPlayer();
+        for (int i = 0; i < pos.Length; i++)
+        {
+            PhotonNetwork.InstantiateSceneObject(Enemy.name, new Vector2(pos[i].Item1, pos[i].Item2), Quaternion.identity, 0, null);
+        }
     }
 
     private void Update()
