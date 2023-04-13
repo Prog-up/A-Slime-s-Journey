@@ -1479,5 +1479,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: Monster 1 (Sanglier)
       objectReference: {fileID: 0}
+    - target: {fileID: 5406123164437367432, guid: 499a68c6f0b50264eae794e9d01f87ea, type: 3}
+      propertyPath: viewIdField
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5406123164437367432, guid: 499a68c6f0b50264eae794e9d01f87ea, type: 3}
+      propertyPath: instantiationId
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 499a68c6f0b50264eae794e9d01f87ea, type: 3}
