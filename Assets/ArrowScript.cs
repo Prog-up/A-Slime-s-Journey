@@ -29,7 +29,7 @@ public class ArrowScript : MonoBehaviour
     void Update()
     {
         timer += Time.deltaTime;
-        if (timer > 15)
+        if (timer > 10)
         {
             Destroy(gameObject);
         }
@@ -37,9 +37,10 @@ public class ArrowScript : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.CompareTag("Player"))
-        {
-            Destroy(gameObject);
-        }
+        //if (other.gameObject.CompareTag("Player"))
+        //{
+            //Destroy(gameObject, 0.3f);
+        //}
+        Destroy(gameObject, 0.1f);
     }
 }

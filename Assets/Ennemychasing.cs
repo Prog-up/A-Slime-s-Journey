@@ -57,7 +57,7 @@ public class Ennemychasing : MonoBehaviour
 			graphic.flipX = false;
 		}
 
-		IsGrounded = (Physics2D.OverlapCircle(Capteur.position, 0.4f, collisionLayers) || (Physics2D.OverlapCircle(Capteur2.position, 0.4f, collisionLayers)));
+		IsGrounded = (Physics2D.OverlapCircle(Capteur.position, 0.3f, collisionLayers) || (Physics2D.OverlapCircle(Capteur2.position, 0.3f, collisionLayers)));
         if (IsGrounded)
         {
            rb.velocity = new Vector2(rb.velocity.x, JumpForce);
