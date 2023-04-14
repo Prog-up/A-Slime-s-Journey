@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 5021893488156874248}
   m_Layer: 7
   m_Name: Villager
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -128,17 +128,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c4dd7d6e8bdfc648935f3d6f28f98f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1.5
+  speed: 1.1
   waypoints: []
   target: {fileID: 8179612259239588884, guid: 43bab9ca1ca5c714ea2e21c108c6d61e, type: 3}
   rb: {fileID: 5021893488156874248}
   Alive: 0
   graphic: {fileID: 5021893488156874253}
+  player: {fileID: 0}
   collisionLayers:
     serializedVersion: 2
     m_Bits: 0
   IsGrounded: 0
-  JumpForce: 5
+  JumpForce: 2
   Capteur: {fileID: 5021893488973713953}
   Capteur2: {fileID: 5021893488901458780}
 --- !u!95 &5021893488156874255

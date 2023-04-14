@@ -27,14 +27,13 @@ public class MenuController : MonoBehaviour
 
     void Update()
     {
-        if(Input.GetButtonDown("Enter")) // Input Buon Enter is not setup
+        if(Input.GetKeyDown(KeyCode.Return)) // Input Button Enter is not setup
         {
             JoinGame();
         }
     }
     public void ChangeUserNameInput()
     {
-
         if(UsernameInput.text.Length >= 3)
         {
             for(int i = 0; i < UsernameInput.text.Length; i++)
@@ -57,9 +56,9 @@ public class MenuController : MonoBehaviour
 
     public void ChangeRoomNameInput()
     {
-
         if(JoinGameInput.text.Length > 0)
-        {
+        { for(int i = 0; i < JoinGameInput.text.Length; i++)
+                if(JoinGameInput.text[i] != ' ')
             JoinButton.SetActive(true);
         }
         else
@@ -75,9 +74,12 @@ public class MenuController : MonoBehaviour
 
     public void JoinGame()
     {
-        RoomOptions roomOptions = new RoomOptions();
-        roomOptions.MaxPlayers = 2;
-        PhotonNetwork.JoinOrCreateRoom(JoinGameInput.text, roomOptions, TypedLobby.Default);
+        if(JoinGameInput.text.Length > 0)
+        {
+            RoomOptions roomOptions = new RoomOptions();
+            roomOptions.MaxPlayers = 2;
+            PhotonNetwork.JoinOrCreateRoom(JoinGameInput.text, roomOptions, TypedLobby.Default);
+        }
     }
 
     private void OnJoinedRoom()

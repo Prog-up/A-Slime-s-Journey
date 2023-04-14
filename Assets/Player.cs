@@ -5,21 +5,30 @@ using UnityEngine.UI;
 
 public class Player : Photon.MonoBehaviour
 {
+
     public PhotonView photonView;
     public Rigidbody2D rb;
     public Animator anim;
     public GameObject PlayerCamera;
     public SpriteRenderer sr;
     public Text PlayerNameText;
+   
+   //Deplacements
     public bool IsGrounded = false;
     public float MoveSpeed;
     public float JumpForce;
-
-    public Transform GroundCheck;
+     public Transform GroundCheck;
     public float GroundCheckRadius;
+   
+    // Apparence + son
     public LayerMask collisionLayers;
-
     public AudioSource jumpsound;
+    public SpriteRenderer Destination; //TODO : Fix me
+
+    //Permet de connaitre la forme actuelle
+    public bool IsDefault = true;
+    public bool IsRock = false;
+    
     private void Awake()
     {
         if (photonView.isMine)
@@ -37,7 +46,13 @@ public class Player : Photon.MonoBehaviour
 
     private void CheckInput()
     {
-        GetComponent<Rigidbody2D>().velocity = new Vector2(Input.GetAxisRaw("Horizontal")*MoveSpeed, GetComponent<Rigidbody2D>().velocity.y);
+        Hor();
+        Jump();
+    }
+
+    private void Hor()
+    {
+         GetComponent<Rigidbody2D>().velocity = new Vector2(Input.GetAxisRaw("Horizontal")*MoveSpeed, GetComponent<Rigidbody2D>().velocity.y);
 
         if (Input.GetKeyDown(KeyCode.Q))
         {
@@ -48,7 +63,9 @@ public class Player : Photon.MonoBehaviour
         {
             photonView.RPC("FlipFalse",PhotonTargets.AllBuffered);
         }
-
+    }
+    private void Jump()
+    {
         IsGrounded = Physics2D.OverlapCircle(GroundCheck.position, GroundCheckRadius, collisionLayers);
         if (IsGrounded)
         {
@@ -60,28 +77,28 @@ public class Player : Photon.MonoBehaviour
             }
         }
         anim.SetBool("Isjumping",!IsGrounded);
-        
     }
-
-    
-
-    // Start is called before the first frame update
-    void Start()
+    void ChangeSprite()
     {
-        
+       if(Input.GetKeyDown(KeyCode.X))
+       {
+            sr = Destination;
+            if(sr == Destination)
+            {
+                IsRock = true;
+            }
+       }
     }
-    
 
     // Update is called once per frame
     void Update()
     {
         if (photonView.isMine && photonView.gameObject.activeSelf)
         {
-            CheckInput();
-            
+            CheckInput();   
+            ChangeSprite();
         }
     }
-
 
     [PunRPC]
     private void FlipTrue()
