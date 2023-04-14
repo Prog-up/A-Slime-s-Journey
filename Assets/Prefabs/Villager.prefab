@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 5021893488156874248}
   m_Layer: 7
   m_Name: Villager
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -134,6 +134,7 @@ MonoBehaviour:
   rb: {fileID: 5021893488156874248}
   Alive: 0
   graphic: {fileID: 5021893488156874253}
+  player: {fileID: 0}
   collisionLayers:
     serializedVersion: 2
     m_Bits: 0
