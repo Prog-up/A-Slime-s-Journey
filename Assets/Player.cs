@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class Player : Photon.MonoBehaviour
 {
+
     public PhotonView photonView;
     public Rigidbody2D rb;
     public Animator anim;
@@ -19,12 +20,12 @@ public class Player : Photon.MonoBehaviour
      public Transform GroundCheck;
     public float GroundCheckRadius;
    
-   
+    // Apparence + son
     public LayerMask collisionLayers;
     public AudioSource jumpsound;
     public SpriteRenderer Destination; //TODO : Fix me
 
-
+    //Permet de connaitre la forme actuelle
     public bool IsDefault = true;
     public bool IsRock = false;
     
@@ -45,7 +46,13 @@ public class Player : Photon.MonoBehaviour
 
     private void CheckInput()
     {
-        GetComponent<Rigidbody2D>().velocity = new Vector2(Input.GetAxisRaw("Horizontal")*MoveSpeed, GetComponent<Rigidbody2D>().velocity.y);
+        Hor();
+        Jump();
+    }
+
+    private void Hor()
+    {
+         GetComponent<Rigidbody2D>().velocity = new Vector2(Input.GetAxisRaw("Horizontal")*MoveSpeed, GetComponent<Rigidbody2D>().velocity.y);
 
         if (Input.GetKeyDown(KeyCode.Q))
         {
@@ -56,7 +63,9 @@ public class Player : Photon.MonoBehaviour
         {
             photonView.RPC("FlipFalse",PhotonTargets.AllBuffered);
         }
-
+    }
+    private void Jump()
+    {
         IsGrounded = Physics2D.OverlapCircle(GroundCheck.position, GroundCheckRadius, collisionLayers);
         if (IsGrounded)
         {
@@ -69,7 +78,6 @@ public class Player : Photon.MonoBehaviour
         }
         anim.SetBool("Isjumping",!IsGrounded);
     }
-
     void ChangeSprite()
     {
        if(Input.GetKeyDown(KeyCode.X))
@@ -77,7 +85,7 @@ public class Player : Photon.MonoBehaviour
             sr = Destination;
             if(sr == Destination)
             {
-                Debug.Log("Ca marche");
+                IsRock = true;
             }
        }
     }
