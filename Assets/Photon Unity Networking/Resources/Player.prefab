@@ -566,6 +566,7 @@ MonoBehaviour:
   Destination: {fileID: 1087809053463547743}
   IsDefault: 1
   IsRock: 0
+  ToDestroy: {fileID: 8179612259239588881}
 --- !u!114 &2196262747904822369
 MonoBehaviour:
   m_ObjectHideFlags: 0

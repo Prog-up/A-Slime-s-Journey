@@ -28,6 +28,10 @@ public class Player : Photon.MonoBehaviour
     //Permet de connaitre la forme actuelle
     public bool IsDefault = true;
     public bool IsRock = false;
+
+
+    //Permet de destroy
+    public GameObject ToDestroy;
     
     private void Awake()
     {
@@ -111,4 +115,15 @@ public class Player : Photon.MonoBehaviour
     {
         sr.flipX = false;
     }
+
+
+    private void OnTriggerEnter2D(Collider2D collision)
+	{
+		if (collision.CompareTag("GG"))
+        {
+            PhotonNetwork.LoadLevel("GG");
+            Destroy(ToDestroy);
+        }
+    }
+
 }
