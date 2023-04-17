@@ -7,6 +7,7 @@ TagManager:
   - Enemy
   - EnnemyArea
   - Waypoint
+  - GG
   layers:
   - Default
   - TransparentFX
