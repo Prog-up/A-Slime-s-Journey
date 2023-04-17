@@ -17,7 +17,8 @@ public class Player : Photon.MonoBehaviour
     public bool IsGrounded = false;
     public float MoveSpeed;
     public float JumpForce;
-     public Transform GroundCheck;
+    private float MoveForce;
+    public Transform GroundCheck;
     public float GroundCheckRadius;
    
     // Apparence + son
@@ -56,17 +57,21 @@ public class Player : Photon.MonoBehaviour
 
     private void Hor()
     {
-         GetComponent<Rigidbody2D>().velocity = new Vector2(Input.GetAxisRaw("Horizontal")*MoveSpeed, GetComponent<Rigidbody2D>().velocity.y);
-
-        if (Input.GetKeyDown(KeyCode.Q))
+        if (Input.GetKeyDown(KeyCode.Q) || (int)Input.GetAxisRaw("Horizontal") == -1)
         {
             photonView.RPC("FlipTrue",PhotonTargets.AllBuffered);
+            MoveForce = -1;
         }
-
-        if (Input.GetKeyDown(KeyCode.D))
+        else if (Input.GetKeyDown(KeyCode.D) || (int)Input.GetAxisRaw("Horizontal") == 1)
         {
             photonView.RPC("FlipFalse",PhotonTargets.AllBuffered);
+            MoveForce = 1;
         }
+        else
+        {
+            MoveForce = 0;
+        }
+        GetComponent<Rigidbody2D>().velocity = new Vector2(MoveForce*MoveSpeed, GetComponent<Rigidbody2D>().velocity.y);
     }
     private void Jump()
     {
