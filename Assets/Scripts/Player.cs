@@ -117,11 +117,12 @@ public class Player : Photon.MonoBehaviour
     }
 
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    void OnCollisionEnter2D(Collision2D collision)
 	{
-		if (collision.CompareTag("GG"))
+		if (collision.gameObject.tag == "GG")
         {
-            PhotonNetwork.LoadLevel("GG");
+            PhotonNetwork.LoadLevel("GameOver");
+            PhotonNetwork.LeaveRoom();
             Destroy(ToDestroy);
         }
     }
