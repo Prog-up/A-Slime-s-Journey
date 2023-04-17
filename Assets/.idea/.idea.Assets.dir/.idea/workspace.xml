@@ -3,9 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="1ef5a0e2-4927-4b72-9202-ccefae5c0efd" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Assets.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Assets.dir/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ArrowScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ArrowScript.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ennemychasing.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Ennemychasing.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Photon Unity Networking/Resources/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Photon Unity Networking/Resources/Player.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts/Damage.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/Damage.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/../UserSettings/EditorUserSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/../UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -14,9 +13,6 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/ArrowScript.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/EnnemyPatrol.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/EnnemyShooting.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Player.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Scripts/Damage.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Text.cs" root0="SKIP_HIGHLIGHTING" />
@@ -67,6 +63,7 @@
       <workItem from="1681219069329" duration="2137000" />
       <workItem from="1681406236201" duration="2720000" />
       <workItem from="1681476736003" duration="7309000" />
+      <workItem from="1681580394272" duration="1688000" />
     </task>
     <servers />
   </component>

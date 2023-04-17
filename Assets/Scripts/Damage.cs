@@ -8,10 +8,16 @@ public class Damage : MonoBehaviour
     public GameObject heart2;
     public GameObject heart3;
     private int life = 3;
+    public bool IsAvailable = true;
+    public float CooldownDuration = 2.0f;
     
     private void OnTriggerEnter2D(Collider2D collision)
 	{
-		if (collision.CompareTag("Enemy"))
+        if (IsAvailable == false)
+        {
+            return;
+        }
+        if (collision.CompareTag("Enemy"))
         {
             life--;
             Debug.Log("Damage");
@@ -19,9 +25,11 @@ public class Damage : MonoBehaviour
             {
                 case 2:
                     heart3.SetActive(false);
+                    StartCoroutine(StartCooldown());
                     break;
                 case 1:
                     heart2.SetActive(false);
+                    StartCoroutine(StartCooldown());
                     break;
                 case 0:
                     heart1.SetActive(false);
@@ -33,6 +41,12 @@ public class Damage : MonoBehaviour
             }
         }
 	}
+    public IEnumerator StartCooldown()
+    {
+        IsAvailable = false;
+        yield return new WaitForSeconds(CooldownDuration);
+        IsAvailable = true;
+    }
 
     void Update()
     {
