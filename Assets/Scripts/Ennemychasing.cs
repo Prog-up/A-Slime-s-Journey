@@ -17,6 +17,8 @@ public class Ennemychasing : MonoBehaviour
 	public Transform Capteur;
 	public Transform Capteur2;
 
+	public Animator anim;
+
 
     // Start is called before the first frame update
     void Start()
@@ -41,23 +43,39 @@ public class Ennemychasing : MonoBehaviour
 
         if (villager.x-player.transform.position.x > 0)
 		{
-			if (Vector2.Distance(transform.position, player.transform.position) < 8f) //(transform.position.x-pos.x < 10)
+			if (Vector2.Distance(transform.position, player.transform.position) < 7f) //(transform.position.x-pos.x < 10)
 			{
 				rb.AddForce(Vector2.left * speed, ForceMode2D.Force);
+				if (Vector2.Distance(transform.position, player.transform.position) < 2f) //(transform.position.x-pos.x < 10)
+				{
+					anim.SetBool("punch", true);
+				}
+				else
+				{
+					anim.SetBool("punch", false);
+				}
 			}
 			graphic.flipX = true;
 		}
 		else
 		{
 			
-			if (Vector3.Distance(transform.position, player.transform.position) < 8f)//(villager.x-pos.x > -10)
+			if (Vector3.Distance(transform.position, player.transform.position) < 7f)//(villager.x-pos.x > -10)
 			{
 				rb.AddForce(Vector2.right * speed, ForceMode2D.Force);
+				if (Vector2.Distance(transform.position, player.transform.position) < 2f) //(transform.position.x-pos.x < 10)
+				{
+					anim.SetBool("punch", true);
+				}
+				else
+				{
+					anim.SetBool("punch", false);
+				}
 			}
 			graphic.flipX = false;
 		}
 
-		IsGrounded = (Physics2D.OverlapCircle(Capteur.position, 0.3f, collisionLayers) || (Physics2D.OverlapCircle(Capteur2.position, 0.3f, collisionLayers)));
+		IsGrounded = (Physics2D.OverlapCircle(Capteur.position, 0.2f, collisionLayers) || (Physics2D.OverlapCircle(Capteur2.position, 0.2f, collisionLayers)));
         if (IsGrounded)
         {
            rb.velocity = new Vector2(rb.velocity.x, JumpForce);
