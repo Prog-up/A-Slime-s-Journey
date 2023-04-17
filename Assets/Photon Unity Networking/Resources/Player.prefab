@@ -347,6 +347,8 @@ MonoBehaviour:
   heart1: {fileID: 4131235225637655259}
   heart2: {fileID: 7861324218445774647}
   heart3: {fileID: 4957809794393590064}
+  IsAvailable: 1
+  CooldownDuration: 2
 --- !u!61 &3831711764170469016
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -390,6 +392,7 @@ GameObject:
   - component: {fileID: 2196262747904822369}
   - component: {fileID: 6119785910271422001}
   - component: {fileID: 8749882682037212534}
+  - component: {fileID: 7443399605779741199}
   m_Layer: 6
   m_Name: Player
   m_TagString: Player
@@ -768,6 +771,22 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!58 &7443399605779741199
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8179612259239588881}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.014693111, y: -0.10774851}
+  serializedVersion: 2
+  m_Radius: 0.4176172
 --- !u!1 &9081377441895844714
 GameObject:
   m_ObjectHideFlags: 0
