@@ -2,11 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="41efc358-9661-4df0-8f50-f1b472aee9bb" name="Changes" comment="">
+<<<<<<< Updated upstream
       <change beforePath="$PROJECT_DIR$/../Prefabs/Villager.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/../Prefabs/Villager.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Scenes/LevelTest.unity" beforeDir="false" afterPath="$PROJECT_DIR$/../Scenes/LevelTest.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Scripts.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Scripts.dir/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ArrowScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ArrowScript.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Ennemychasing.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Ennemychasing.cs" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/../Sprites/SlimeRock/roulade.png.meta" beforeDir="false" />
+>>>>>>> Stashed changes
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,6 +18,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="HighlightingSettingsPerFile">
+<<<<<<< Updated upstream
     <setting file="file://$PROJECT_DIR$/ArrowScript.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Ennemychasing.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Player.cs" root0="SKIP_HIGHLIGHTING" />
@@ -21,6 +26,9 @@
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+=======
+    <setting file="file://$PROJECT_DIR$/Damage.cs" root0="SKIP_HIGHLIGHTING" />
+>>>>>>> Stashed changes
   </component>
   <component name="ProjectId" id="2NKa0oUBlBCJiOYGjmA7IPVCQt0" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -28,6 +36,7 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
+<<<<<<< Updated upstream
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
@@ -41,8 +50,16 @@
       "C:\\Users\\omshf\\AppData\\Roaming\\JetBrains\\Rider2022.3\\resharper-host\\SourcesCache",
       "C:\\Users\\omshf\\AppData\\Local\\Symbols\\src"
     ]
+=======
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+>>>>>>> Stashed changes
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
