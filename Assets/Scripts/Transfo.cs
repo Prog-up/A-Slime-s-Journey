@@ -7,9 +7,13 @@ public class Transfo : MonoBehaviour
     
     public GameObject ToDestroy;
     public GameObject ToInstanciate;
-    // Update is called once per frame
-    void Update()
+
+    void OnCollisionEnter2D(Collision2D collision)
     {
-       
+        if (collision.gameObject.tag == "Player")
+        {
+            ToDestroy.SetActive(false);
+            ToInstanciate.SetActive(true);
+        }
     }
 }

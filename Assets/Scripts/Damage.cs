@@ -11,7 +11,7 @@ public class Damage : MonoBehaviour
     public bool IsAvailable = true;
     public float CooldownDuration = 2.0f;
     
-    private void OnTriggerEnter2D(Collider2D collision)
+    void OnTriggerEnter2D(Collider2D collision)
 	{
         if (IsAvailable == false)
         {
