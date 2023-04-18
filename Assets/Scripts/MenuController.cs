@@ -9,8 +9,8 @@ public class MenuController : MonoBehaviour
     [SerializeField] private GameObject UsernameMenu;
     [SerializeField] private GameObject ConnectPannel;
     [SerializeField] private InputField UsernameInput;
-    [SerializeField] private InputField CreateGameInput;
-    [SerializeField] private InputField JoinGameInput;
+    [SerializeField] public InputField CreateGameInput;
+    [SerializeField] public InputField JoinGameInput;
     [SerializeField] private GameObject StartButton;
     [SerializeField] private GameObject JoinButton;
 
@@ -86,6 +86,7 @@ public class MenuController : MonoBehaviour
     {
         PhotonNetwork.LoadLevel("MainGame");
     }
+    
 
     public void ExitGame() 
     {
