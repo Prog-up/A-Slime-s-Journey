@@ -89,13 +89,15 @@ public class Player : Photon.MonoBehaviour
     }
     void ChangeSprite()
     {
-       if(Input.GetKeyDown(KeyCode.X))
+       if(Input.GetKeyDown(KeyCode.X) && IsDefault)
+       {                
+            IsRock = true;
+            IsDefault = false;
+       }
+       if(Input.GetKeyDown(KeyCode.X) && IsRock)
        {
-            sr = Destination;
-            if(sr == Destination)
-            {
-                IsRock = true;
-            }
+            IsRock = false;
+            IsDefault = true;
        }
     }
 
