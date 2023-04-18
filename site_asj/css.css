@@ -8,7 +8,7 @@ h3{
 	
   }
   
-p{
+h1{
 	text-align: center;
 	
 }
@@ -20,5 +20,56 @@ body {
 	background-size: cover;
 	
 }
+
+a span{
+	position:absolute; 
+	margin-top:23px;
+    margin-left:-35px;
+    color:#09c;
+    background:rgba(0,0,0,.9);
+    padding:15px;
+    border-radius:3px;
+    box-shadow:0 0 2px rgba(0,0,0,.5);
+	
+    transform:scale(0) rotate(-12deg);
+	transition: all .25s;
+	white-space: pre-line;
+
+}
+
+a:hover span, a:focus span{
+     transform:scale(1) rotate(0);        
+}
+
+.maxime {
+    margin-left:280px;
+    float:left
+}
+
+.alexis {
+	margin-left :-250px;
+    float:left;
+}
+
+.enzo{
+    margin-left: 770px;
+	margin-top: -165px;
+    float:left;
+}
+
+.omid {
+    margin-right:0px;
+	margin-top: -165px;
+    float:right;
+}
+
+.img {
+  
+  width: 30%;
+  float:left;
+}
+
+
+
 
 
