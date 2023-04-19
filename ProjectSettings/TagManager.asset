@@ -9,6 +9,7 @@ TagManager:
   - Waypoint
   - GG
   - Wall
+  - Rock
   layers:
   - Default
   - TransparentFX

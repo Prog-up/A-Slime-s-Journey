@@ -48,24 +48,35 @@ public class Player : Photon.MonoBehaviour
     private float climbSpeed = 3f;
     private float verticalInput;
 
+    private bool Isrolling = false;
+
     private void Escalade()
     {
-        isTouchingWall = Physics2D.OverlapCircle(WallCheckRight.position, GroundCheckRadius, collisionLayers)||Physics2D.OverlapCircle(WallCheckLeft.position, GroundCheckRadius, collisionLayers);
-        verticalInput = Input.GetAxis("Vertical");
-
-        if (isTouchingWall && verticalInput > 0)
+        if (IsRock)
         {
-            // disable gravity
-            rb.gravityScale = 0f;
+            
+            isTouchingWall = Physics2D.OverlapCircle(WallCheckRight.position, GroundCheckRadius, collisionLayers)||Physics2D.OverlapCircle(WallCheckLeft.position, GroundCheckRadius, collisionLayers);
+            verticalInput = Input.GetAxis("Vertical");
 
-            // move the character up
-            transform.position += new Vector3(0f, climbSpeed * Time.deltaTime, 0f);
+            if (isTouchingWall && verticalInput>0)
+            {
+                // disable gravity
+                rb.gravityScale = 0f;
+
+                // move the character up
+                transform.position += new Vector3(0f, climbSpeed * Time.deltaTime, 0f);
+                Isrolling = true;
+                anim.SetBool("Isrolling", Isrolling);
+            }
+            else
+            {
+                // enable gravity
+                rb.gravityScale = 1f;
+                Isrolling = false;
+            }
+            anim.SetBool("Isrolling", Isrolling);
         }
-        else
-        {
-            // enable gravity
-            rb.gravityScale = 1f;
-        }
+        
     }
 
     private void Awake()
@@ -124,16 +135,28 @@ public class Player : Photon.MonoBehaviour
     }
     void ChangeSprite()
     {
-       if(Input.GetKeyDown(KeyCode.X) && IsDefault)
-       {                
+        
+       if(Input.GetKeyDown(KeyCode.T) && IsDefault)
+       {
             IsRock = true;
             IsDefault = false;
+            anim.SetBool("IsRock", IsRock);
        }
-       if(Input.GetKeyDown(KeyCode.X) && IsRock)
+       if(Input.GetKeyDown(KeyCode.T) && IsRock)
        {
             IsRock = false;
             IsDefault = true;
        }
+       anim.SetBool("IsRock", IsRock);
+    }
+    
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.CompareTag("Rock"))
+        {
+            IsRock = true;
+        }
+        
     }
 
     // Update is called once per frame
