@@ -47,24 +47,29 @@ public class Player : Photon.MonoBehaviour
     
     private float climbSpeed = 3f;
     private float verticalInput;
+    public ProjectileBehaviour projectile;
+    public Transform LaunchOffset;
 
     private void Escalade()
     {
-        isTouchingWall = Physics2D.OverlapCircle(WallCheckRight.position, GroundCheckRadius, collisionLayers)||Physics2D.OverlapCircle(WallCheckLeft.position, GroundCheckRadius, collisionLayers);
-        verticalInput = Input.GetAxis("Vertical");
-
-        if (isTouchingWall && verticalInput > 0)
+        if (IsRock)
         {
-            // disable gravity
-            rb.gravityScale = 0f;
+            isTouchingWall = Physics2D.OverlapCircle(WallCheckRight.position, GroundCheckRadius, collisionLayers)||Physics2D.OverlapCircle(WallCheckLeft.position, GroundCheckRadius, collisionLayers);
+            verticalInput = Input.GetAxis("Vertical");
 
-            // move the character up
-            transform.position += new Vector3(0f, climbSpeed * Time.deltaTime, 0f);
-        }
-        else
-        {
-            // enable gravity
-            rb.gravityScale = 1f;
+            if (isTouchingWall && verticalInput > 0)
+            {
+                // disable gravity
+                rb.gravityScale = 0f;
+
+                // move the character up
+                transform.position += new Vector3(0f, climbSpeed * Time.deltaTime, 0f);
+            }
+            else
+            {
+                // enable gravity
+                rb.gravityScale = 1f;
+            }
         }
     }
 
@@ -88,6 +93,7 @@ public class Player : Photon.MonoBehaviour
         Hor();
         Jump();
         Escalade();
+        Tir();
     }
 
     private void Hor()
@@ -134,6 +140,17 @@ public class Player : Photon.MonoBehaviour
             IsRock = false;
             IsDefault = true;
        }
+    }
+
+    private void Tir()
+    {
+        if (IsRock)
+        {
+            if (Input.GetKeyDown(KeyCode.E))
+            {
+                Instantiate(projectile, LaunchOffset.position, transform.rotation);
+            }
+        }
     }
 
     // Update is called once per frame
