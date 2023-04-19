@@ -70043,7 +70043,8 @@ MonoBehaviour:
   disconnectUI: {fileID: 1125257061}
   PlayerFeed: {fileID: 7003413973778861776, guid: c6585b268d1a32c4ca6a9935297700e9, type: 3}
   FeedGrid: {fileID: 2058057174}
-  Enemy: {fileID: 3584023813913654732, guid: 499a68c6f0b50264eae794e9d01f87ea, type: 3}
+  Enemy1: {fileID: 3584023813913654732, guid: 499a68c6f0b50264eae794e9d01f87ea, type: 3}
+  Enemy2: {fileID: 5021893488156874258, guid: cbb928bb6ad115b4d950408df48e181c, type: 3}
 --- !u!1001 &1914382982
 PrefabInstance:
   m_ObjectHideFlags: 0
