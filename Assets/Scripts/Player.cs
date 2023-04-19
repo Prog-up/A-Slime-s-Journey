@@ -15,11 +15,16 @@ public class Player : Photon.MonoBehaviour
    
    //Deplacements
     public bool IsGrounded = false;
+    private bool IsWalledRight = false;
+    private bool IsWalledLeft = false;
     public float MoveSpeed;
     public float JumpForce;
     private float MoveForce;
     public Transform GroundCheck;
     public float GroundCheckRadius;
+
+    //public Transform WallCheckRight;
+    //public Transform WallCheckLeft;
    
     // Apparence + son
     public LayerMask collisionLayers;
@@ -33,7 +38,36 @@ public class Player : Photon.MonoBehaviour
 
     //Permet de destroy
     public GameObject ToDestroy;
+    public float vitesseEscalade = 2f; // Vitesse d'escalade
+    public float distanceDetectionMur = 5; // Distance pour détecter la collision avec le mur
+
+    private bool isTouchingWall;
+    public Transform WallCheckRight;
+    public Transform WallCheckLeft;
     
+    private float climbSpeed = 3f;
+    private float verticalInput;
+
+    private void Escalade()
+    {
+        isTouchingWall = Physics2D.OverlapCircle(WallCheckRight.position, GroundCheckRadius, collisionLayers)||Physics2D.OverlapCircle(WallCheckLeft.position, GroundCheckRadius, collisionLayers);
+        verticalInput = Input.GetAxis("Vertical");
+
+        if (isTouchingWall && verticalInput > 0)
+        {
+            // disable gravity
+            rb.gravityScale = 0f;
+
+            // move the character up
+            transform.position += new Vector3(0f, climbSpeed * Time.deltaTime, 0f);
+        }
+        else
+        {
+            // enable gravity
+            rb.gravityScale = 1f;
+        }
+    }
+
     private void Awake()
     {
         if (photonView.isMine)
@@ -53,6 +87,7 @@ public class Player : Photon.MonoBehaviour
     {
         Hor();
         Jump();
+        Escalade();
     }
 
     private void Hor()
@@ -89,13 +124,15 @@ public class Player : Photon.MonoBehaviour
     }
     void ChangeSprite()
     {
-       if(Input.GetKeyDown(KeyCode.X))
+       if(Input.GetKeyDown(KeyCode.X) && IsDefault)
+       {                
+            IsRock = true;
+            IsDefault = false;
+       }
+       if(Input.GetKeyDown(KeyCode.X) && IsRock)
        {
-            sr = Destination;
-            if(sr == Destination)
-            {
-                IsRock = true;
-            }
+            IsRock = false;
+            IsDefault = true;
        }
     }
 
@@ -122,14 +159,14 @@ public class Player : Photon.MonoBehaviour
     }
 
 
-    void OnCollisionEnter2D(Collision2D collision)
-	{
-		if (collision.gameObject.tag == "GG")
-        {
-            PhotonNetwork.LoadLevel("GameOver");
-            PhotonNetwork.LeaveRoom();
-            Destroy(ToDestroy);
-        }
-    }
+    //void OnCollisionEnter2D(Collision2D collision)
+	//{
+	//	if (collision.gameObject.tag == "GG")
+      //  {
+        //    PhotonNetwork.LoadLevel("GameOver");
+          //  PhotonNetwork.LeaveRoom();
+            //Destroy(ToDestroy);
+        //}
+    //}
 
 }
