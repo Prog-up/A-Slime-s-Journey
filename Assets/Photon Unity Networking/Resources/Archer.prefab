@@ -44,6 +44,7 @@ GameObject:
   - component: {fileID: 5500201517696075116}
   - component: {fileID: 5500201517696075119}
   - component: {fileID: 5507329303564947855}
+  - component: {fileID: 1953672683582243135}
   m_Layer: 0
   m_Name: Archer
   m_TagString: Untagged
@@ -59,8 +60,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5500201517696075118}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 82.2679, y: 1.066, z: 0}
-  m_LocalScale: {x: 5.148029, y: 7.5743947, z: 1}
+  m_LocalPosition: {x: 82.3167, y: 1.0172, z: 0}
+  m_LocalScale: {x: 4.6836767, y: 7.238092, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 3869476454765773189}
@@ -108,7 +109,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: -593737622, guid: 4b10611c4a438894f83b6945036c96c8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -133,7 +134,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.013346121, y: -0.000000014901161}
+  m_Offset: {x: 0.025189545, y: -0.0032197535}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -144,7 +145,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.18330777, y: 0.27712104}
+  m_Size: {x: 0.15962091, y: 0.27068156}
   m_EdgeRadius: 0
 --- !u!95 &5500201517696075119
 Animator:
@@ -179,7 +180,34 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   arrow: {fileID: 235142921082614097, guid: e765049c438928845b5ed50079b7b321, type: 3}
-  arrowPos: {fileID: 0}
+  arrowPos: {fileID: 3869476454765773189}
+--- !u!114 &1953672683582243135
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5500201517696075118}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ownerId: 0
+  group: 0
+  OwnerShipWasTransfered: 0
+  prefixBackup: -1
+  synchronization: 3
+  onSerializeTransformOption: 3
+  onSerializeRigidBodyOption: 2
+  ownershipTransfer: 0
+  ObservedComponents:
+  - {fileID: 5500201517696075106}
+  ObservedComponentsFoldoutOpen: 1
+  viewIdField: 0
+  instantiationId: -1
+  currentMasterID: -1
+  isRuntimeInstantiated: 0
 --- !u!1 &6098119754376116012
 GameObject:
   m_ObjectHideFlags: 0
@@ -206,7 +234,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6098119754376116012}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.028, z: 0}
+  m_LocalPosition: {x: 0.015, y: -0.028, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

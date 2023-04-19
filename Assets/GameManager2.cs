@@ -3,8 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-
-public class GameManager : MonoBehaviour
+public class GameManager2 : MonoBehaviour
 {
     public GameObject PlayerPrefab;
     public GameObject GameCanvas;
@@ -16,7 +15,11 @@ public class GameManager : MonoBehaviour
     public GameObject Enemy1;
 
     public GameObject Enemy2;
-    public (float, float)[] pos = new (float, float)[2] {(27.94f, -2.44f), (53.84f, 1.52f)};
+    public (float, float)[] pos = new (float, float)[2] {(33f, -3f), (278f, 7.4512f)};
+    public (float, float)[] pos2 = new (float, float)[4] {(191.8088f, 10.6205f), (166.94f, 7.99f), (98.65985f, 7.866865f), (255f, 7.866865f)};
+
+	public GameObject Enemy3;
+	public (float, float)[] pos3 = new (float, float)[3] {(227.7694f, 10.87978f), (207f, 13.57f), (123.22f,10.48f)};
 
     private void Awake()
     {
@@ -24,6 +27,14 @@ public class GameManager : MonoBehaviour
         for (int i = 0; i < pos.Length; i++)
         {
             PhotonNetwork.InstantiateSceneObject(Enemy1.name, new Vector2(pos[i].Item1, pos[i].Item2), Quaternion.identity, 0, null);
+        }
+        for (int i = 0; i < pos2.Length; i++)
+        {
+            PhotonNetwork.InstantiateSceneObject(Enemy2.name, new Vector2(pos2[i].Item1, pos2[i].Item2), Quaternion.identity, 0, null);
+        }
+		for (int i = 0; i < pos3.Length; i++)
+        {
+            PhotonNetwork.InstantiateSceneObject(Enemy3.name, new Vector2(pos3[i].Item1, pos3[i].Item2), Quaternion.identity, 0, null);
         }
     }
 

@@ -12,7 +12,7 @@ public class Player : Photon.MonoBehaviour
     public GameObject PlayerCamera;
     public SpriteRenderer sr;
     public Text PlayerNameText;
-   
+
    //Deplacements
     public bool IsGrounded = false;
     private bool IsWalledRight = false;
@@ -25,7 +25,7 @@ public class Player : Photon.MonoBehaviour
 
     //public Transform WallCheckRight;
     //public Transform WallCheckLeft;
-   
+
     // Apparence + son
     public LayerMask collisionLayers;
     public AudioSource jumpsound;
@@ -44,33 +44,41 @@ public class Player : Photon.MonoBehaviour
     private bool isTouchingWall;
     public Transform WallCheckRight;
     public Transform WallCheckLeft;
-    
+
     private float climbSpeed = 3f;
     private float verticalInput;
     public ProjectileBehaviour projectile;
     public Transform LaunchOffset;
 
+    private bool Isrolling = false;
+
     private void Escalade()
     {
         if (IsRock)
         {
-            isTouchingWall = Physics2D.OverlapCircle(WallCheckRight.position, GroundCheckRadius, collisionLayers)||Physics2D.OverlapCircle(WallCheckLeft.position, GroundCheckRadius, collisionLayers);
+
+            isTouchingWall = Physics2D.OverlapCircle(WallCheckRight.position, GroundCheckRadius-0.1f, collisionLayers)||Physics2D.OverlapCircle(WallCheckLeft.position, GroundCheckRadius, collisionLayers);
             verticalInput = Input.GetAxis("Vertical");
 
-            if (isTouchingWall && verticalInput > 0)
+            if (isTouchingWall && verticalInput>0)
             {
                 // disable gravity
                 rb.gravityScale = 0f;
 
                 // move the character up
                 transform.position += new Vector3(0f, climbSpeed * Time.deltaTime, 0f);
+                Isrolling = true;
+                anim.SetBool("Isrolling", Isrolling);
             }
             else
             {
                 // enable gravity
                 rb.gravityScale = 1f;
+                Isrolling = false;
             }
+            anim.SetBool("Isrolling", Isrolling);
         }
+
     }
 
     private void Awake()
@@ -130,16 +138,28 @@ public class Player : Photon.MonoBehaviour
     }
     void ChangeSprite()
     {
-       if(Input.GetKeyDown(KeyCode.X) && IsDefault)
-       {                
+
+       if(Input.GetKeyDown(KeyCode.T) && IsDefault)
+       {
             IsRock = true;
             IsDefault = false;
+            anim.SetBool("IsRock", IsRock);
        }
-       if(Input.GetKeyDown(KeyCode.X) && IsRock)
+       if(Input.GetKeyDown(KeyCode.T) && IsRock)
        {
             IsRock = false;
             IsDefault = true;
        }
+       anim.SetBool("IsRock", IsRock);
+    }
+
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.CompareTag("Rock"))
+        {
+            IsRock = true;
+        }
+
     }
 
     private void Tir()
@@ -158,7 +178,7 @@ public class Player : Photon.MonoBehaviour
     {
         if (photonView.isMine && photonView.gameObject.activeSelf)
         {
-            CheckInput();   
+            CheckInput();
             ChangeSprite();
         }
     }

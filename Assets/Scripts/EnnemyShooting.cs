@@ -34,7 +34,7 @@ public class EnnemyShooting : MonoBehaviour
 
     void Shoot()
     {
-        Instantiate(arrow, arrowPos.position, Quaternion.identity);
-        
+        //Instantiate(arrow, arrowPos.position, Quaternion.identity);
+        PhotonNetwork.InstantiateSceneObject(arrow.name, arrowPos.position, Quaternion.identity, 0, null);
     }
 }
