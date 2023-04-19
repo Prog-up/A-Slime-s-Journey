@@ -55,7 +55,7 @@ public class Player : Photon.MonoBehaviour
         if (IsRock)
         {
             
-            isTouchingWall = Physics2D.OverlapCircle(WallCheckRight.position, GroundCheckRadius, collisionLayers)||Physics2D.OverlapCircle(WallCheckLeft.position, GroundCheckRadius, collisionLayers);
+            isTouchingWall = Physics2D.OverlapCircle(WallCheckRight.position, GroundCheckRadius-0.1f, collisionLayers)||Physics2D.OverlapCircle(WallCheckLeft.position, GroundCheckRadius, collisionLayers);
             verticalInput = Input.GetAxis("Vertical");
 
             if (isTouchingWall && verticalInput>0)

@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 5021893488156874259}
   - component: {fileID: 5021893488156874255}
   - component: {fileID: 5021893488156874248}
+  - component: {fileID: 2127381233183497244}
   m_Layer: 7
   m_Name: Villager
   m_TagString: Enemy
@@ -79,7 +80,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 273502175, guid: 68bcaefe5adefd54c8fde44fc56827b1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 1
@@ -100,7 +101,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 5021893488156874258}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 2382e08be6658d7418b5a22cf81c4cdc, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -185,6 +186,33 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &2127381233183497244
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5021893488156874258}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ownerId: 0
+  group: 0
+  OwnerShipWasTransfered: 0
+  prefixBackup: -1
+  synchronization: 3
+  onSerializeTransformOption: 3
+  onSerializeRigidBodyOption: 2
+  ownershipTransfer: 0
+  ObservedComponents:
+  - {fileID: 5021893488156874254}
+  ObservedComponentsFoldoutOpen: 1
+  viewIdField: 0
+  instantiationId: -1
+  currentMasterID: -1
+  isRuntimeInstantiated: 0
 --- !u!1 &5021893488901458787
 GameObject:
   m_ObjectHideFlags: 0
@@ -293,7 +321,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.01545006, y: 0.38036418}
+  m_Offset: {x: 0.0028093457, y: 0.36287454}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -304,7 +332,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.24433184, y: 0.15379691}
+  m_Size: {x: 0.28085065, y: 0.11881763}
   m_EdgeRadius: 0
 --- !u!114 &4893766052767810022
 MonoBehaviour:

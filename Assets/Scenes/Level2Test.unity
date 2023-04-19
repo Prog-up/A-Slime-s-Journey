@@ -4021,6 +4021,7 @@ MonoBehaviour:
   FeedGrid: {fileID: 1526996628}
   Enemy1: {fileID: 3584023813913654732, guid: 499a68c6f0b50264eae794e9d01f87ea, type: 3}
   Enemy2: {fileID: 5021893488156874258, guid: cbb928bb6ad115b4d950408df48e181c, type: 3}
+  Enemy3: {fileID: 5500201517696075118, guid: 0f3f8e451f440f14f84e901a12097262, type: 3}
 --- !u!1 &650769676
 GameObject:
   m_ObjectHideFlags: 0
@@ -9180,7 +9181,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1474299238}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 157.57, y: 9.0002, z: 0}
+  m_LocalPosition: {x: 158.31, y: 9.0002, z: 0}
   m_LocalScale: {x: 2.9666514, y: 2.2152092, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
