@@ -61,7 +61,7 @@ public class Player : Photon.MonoBehaviour
         if (IsRock)
         {
 
-            isTouchingWall = Physics2D.OverlapCircle(WallCheckRight.position, GroundCheckRadius-0.1f, collisionLayers)||Physics2D.OverlapCircle(WallCheckLeft.position, GroundCheckRadius, collisionLayers);
+            isTouchingWall = Physics2D.OverlapCircle(WallCheckRight.position, 0.1f, collisionLayers)||Physics2D.OverlapCircle(WallCheckLeft.position, 0.1f, collisionLayers);
             verticalInput = Input.GetAxis("Vertical");
 
             if (isTouchingWall && verticalInput>0)
@@ -177,9 +177,9 @@ public class Player : Photon.MonoBehaviour
     {
         if (IsRock)
         {
-            if (Input.GetKeyDown(KeyCode.E))
+            if (Input.GetKeyDown(KeyCode.P))
             {
-                Instantiate(projectile, LaunchOffset.position, transform.rotation);
+                PhotonNetwork.InstantiateSceneObject(projectile.name, LaunchOffset.position, Quaternion.identity, 0, null);
             }
         }
     }
