@@ -166,9 +166,9 @@ public class Player : Photon.MonoBehaviour
     {
         if (IsRock)
         {
-            if (Input.GetKeyDown(KeyCode.E))
+            if (Input.GetKeyDown(KeyCode.P))
             {
-                Instantiate(projectile, LaunchOffset.position, transform.rotation);
+                PhotonNetwork.InstantiateSceneObject(projectile.name, LaunchOffset.position, Quaternion.identity, 0, null);
             }
         }
     }
