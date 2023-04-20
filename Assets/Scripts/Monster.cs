@@ -11,6 +11,7 @@ public class Monster : MonoBehaviour
     // public Animator animator;
 	// public AudioSource mortcochon;
     private int timer = 0;
+    
 
     void Start()
     {
