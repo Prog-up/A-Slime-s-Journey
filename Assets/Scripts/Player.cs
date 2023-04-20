@@ -12,7 +12,7 @@ public class Player : Photon.MonoBehaviour
     public GameObject PlayerCamera;
     public SpriteRenderer sr;
     public Text PlayerNameText;
-   
+
    //Deplacements
     public bool IsGrounded = false;
     private bool IsWalledRight = false;
@@ -25,7 +25,7 @@ public class Player : Photon.MonoBehaviour
 
     //public Transform WallCheckRight;
     //public Transform WallCheckLeft;
-   
+
     // Apparence + son
     public LayerMask collisionLayers;
     public AudioSource jumpsound;
@@ -44,9 +44,11 @@ public class Player : Photon.MonoBehaviour
     private bool isTouchingWall;
     public Transform WallCheckRight;
     public Transform WallCheckLeft;
-    
+
     private float climbSpeed = 3f;
     private float verticalInput;
+    public ProjectileBehaviour projectile;
+    public Transform LaunchOffset;
 
     private bool Isrolling = false;
 
@@ -54,7 +56,7 @@ public class Player : Photon.MonoBehaviour
     {
         if (IsRock)
         {
-            
+
             isTouchingWall = Physics2D.OverlapCircle(WallCheckRight.position, GroundCheckRadius-0.1f, collisionLayers)||Physics2D.OverlapCircle(WallCheckLeft.position, GroundCheckRadius, collisionLayers);
             verticalInput = Input.GetAxis("Vertical");
 
@@ -76,7 +78,7 @@ public class Player : Photon.MonoBehaviour
             }
             anim.SetBool("Isrolling", Isrolling);
         }
-        
+
     }
 
     private void Awake()
@@ -99,6 +101,7 @@ public class Player : Photon.MonoBehaviour
         Hor();
         Jump();
         Escalade();
+        Tir();
     }
 
     private void Hor()
@@ -135,7 +138,7 @@ public class Player : Photon.MonoBehaviour
     }
     void ChangeSprite()
     {
-        
+
        if(Input.GetKeyDown(KeyCode.T) && IsDefault)
        {
             IsRock = true;
@@ -149,14 +152,25 @@ public class Player : Photon.MonoBehaviour
        }
        anim.SetBool("IsRock", IsRock);
     }
-    
+
     void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.CompareTag("Rock"))
         {
             IsRock = true;
         }
-        
+
+    }
+
+    private void Tir()
+    {
+        if (IsRock)
+        {
+            if (Input.GetKeyDown(KeyCode.E))
+            {
+                Instantiate(projectile, LaunchOffset.position, transform.rotation);
+            }
+        }
     }
 
     // Update is called once per frame
@@ -164,7 +178,7 @@ public class Player : Photon.MonoBehaviour
     {
         if (photonView.isMine && photonView.gameObject.activeSelf)
         {
-            CheckInput();   
+            CheckInput();
             ChangeSprite();
         }
     }
