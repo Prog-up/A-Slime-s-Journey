@@ -53,8 +53,9 @@ public class Player : Photon.MonoBehaviour
     private bool Isrolling = false;
 
     private bool Hurt1 = false;
-    
+    private bool Hurt2 = false;
     private float timer;
+    private float timer2;
 
     private void Escalade()
     {
@@ -166,8 +167,17 @@ public class Player : Photon.MonoBehaviour
 
         if (other.gameObject.CompareTag("Enemy"))
         {
-            anim.SetBool("Hurt1", true);
-            Hurt1 = true;
+            if (IsRock)
+            {
+                anim.SetBool("Hurt2", true);
+                Hurt2 = true;
+            }
+            else
+            {
+                anim.SetBool("Hurt1", true);
+                Hurt1 = true;
+            }
+            
         }
         
 
@@ -197,11 +207,22 @@ public class Player : Photon.MonoBehaviour
         {
             timer += Time.deltaTime;
         }
+
+        if (Hurt2)
+        {
+            timer2 += Time.deltaTime;
+        }
         if (timer > 2)
         {
             timer = 0;
             anim.SetBool("Hurt1", false);
             Hurt1 = false;
+        }
+        if (timer2 > 2)
+        {
+            timer2 = 0;
+            anim.SetBool("Hurt2", false);
+            Hurt2 = false;
         }
     }
 
