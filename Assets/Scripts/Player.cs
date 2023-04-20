@@ -51,6 +51,8 @@ public class Player : Photon.MonoBehaviour
     public Transform LaunchOffset;
 
     private bool Isrolling = false;
+    public float CooldownDuration = 1.5f;
+    public bool IsAvailable = true;
 
     private bool Hurt1 = false;
     private bool Hurt2 = false;
@@ -187,11 +189,24 @@ public class Player : Photon.MonoBehaviour
     {
         if (IsRock)
         {
+            if (!IsAvailable)
+            {
+                return;
+            }
             if (Input.GetKeyDown(KeyCode.P))
             {
                 PhotonNetwork.InstantiateSceneObject(projectile.name, LaunchOffset.position, Quaternion.identity, 0, null);
+                StartCoroutine(StartCooldown());
             }
         }
+    }
+    
+    
+    public IEnumerator StartCooldown()
+    {
+        IsAvailable = false;
+        yield return new WaitForSeconds(CooldownDuration);
+        IsAvailable = true;
     }
 
     // Update is called once per frame
@@ -238,7 +253,7 @@ public class Player : Photon.MonoBehaviour
         sr.flipX = false;
     }
 
-
+    
     //void OnCollisionEnter2D(Collision2D collision)
 	//{
 	//	if (collision.gameObject.tag == "GG")

@@ -17,11 +17,18 @@ public class WeakSpot : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
 	{
 		if (collision.CompareTag("Player"))
-			{
-				animator.SetTrigger("Die");
-				alive = false;
-				Destroy(transform.parent.gameObject, 0.5f);
-				mortcochon.Play();
-			}
+		{
+			animator.SetTrigger("Die");
+			alive = false;
+			Destroy(transform.parent.gameObject, 0.5f);
+			mortcochon.Play();
+		}
+		if (collision.CompareTag("Cailloux"))
+		{
+			animator.SetTrigger("Die");
+			alive = false;
+			Destroy(transform.parent.gameObject, 0.5f);
+			mortcochon.Play();
+		}
 	}
 }
