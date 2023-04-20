@@ -52,6 +52,10 @@ public class Player : Photon.MonoBehaviour
 
     private bool Isrolling = false;
 
+    private bool Hurt1 = false;
+    
+    private float timer;
+
     private void Escalade()
     {
         if (IsRock)
@@ -160,6 +164,13 @@ public class Player : Photon.MonoBehaviour
             IsRock = true;
         }
 
+        if (other.gameObject.CompareTag("Enemy"))
+        {
+            anim.SetBool("Hurt1", true);
+            Hurt1 = true;
+        }
+        
+
     }
 
     private void Tir()
@@ -180,6 +191,17 @@ public class Player : Photon.MonoBehaviour
         {
             CheckInput();
             ChangeSprite();
+        }
+
+        if (Hurt1 == true)
+        {
+            timer += Time.deltaTime;
+        }
+        if (timer > 2)
+        {
+            timer = 0;
+            anim.SetBool("Hurt1", false);
+            Hurt1 = false;
         }
     }
 
