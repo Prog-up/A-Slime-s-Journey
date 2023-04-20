@@ -10,6 +10,8 @@ public class Damage : MonoBehaviour
     private int life = 3;
     public bool IsAvailable = true;
     public float CooldownDuration = 2.0f;
+
+    
     
     void OnTriggerEnter2D(Collider2D collision)
 	{

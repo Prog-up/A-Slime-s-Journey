@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class Teleporteur : MonoBehaviour
 {
-    public string SceneName;
     // public GameObject Player1;
     // public GameObject Player2;
     // Start is called before the first frame update

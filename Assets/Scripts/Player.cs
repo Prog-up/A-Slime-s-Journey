@@ -54,12 +54,17 @@ public class Player : Photon.MonoBehaviour
     public float CooldownDuration = 1.5f;
     public bool IsAvailable = true;
 
+    private bool Hurt1 = false;
+    private bool Hurt2 = false;
+    private float timer;
+    private float timer2;
+
     private void Escalade()
     {
         if (IsRock)
         {
 
-            isTouchingWall = Physics2D.OverlapCircle(WallCheckRight.position, GroundCheckRadius-0.1f, collisionLayers)||Physics2D.OverlapCircle(WallCheckLeft.position, GroundCheckRadius, collisionLayers);
+            isTouchingWall = Physics2D.OverlapCircle(WallCheckRight.position, 0.1f, collisionLayers)||Physics2D.OverlapCircle(WallCheckLeft.position, 0.1f, collisionLayers);
             verticalInput = Input.GetAxis("Vertical");
 
             if (isTouchingWall && verticalInput>0)
@@ -162,6 +167,22 @@ public class Player : Photon.MonoBehaviour
             IsRock = true;
         }
 
+        if (other.gameObject.CompareTag("Enemy"))
+        {
+            if (IsRock)
+            {
+                anim.SetBool("Hurt2", true);
+                Hurt2 = true;
+            }
+            else
+            {
+                anim.SetBool("Hurt1", true);
+                Hurt1 = true;
+            }
+            
+        }
+        
+
     }
 
     private void Tir()
@@ -195,6 +216,28 @@ public class Player : Photon.MonoBehaviour
         {
             CheckInput();
             ChangeSprite();
+        }
+
+        if (Hurt1 == true)
+        {
+            timer += Time.deltaTime;
+        }
+
+        if (Hurt2)
+        {
+            timer2 += Time.deltaTime;
+        }
+        if (timer > 2)
+        {
+            timer = 0;
+            anim.SetBool("Hurt1", false);
+            Hurt1 = false;
+        }
+        if (timer2 > 2)
+        {
+            timer2 = 0;
+            anim.SetBool("Hurt2", false);
+            Hurt2 = false;
         }
     }
 
