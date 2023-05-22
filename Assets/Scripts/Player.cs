@@ -8,7 +8,7 @@ public class Player : Photon.MonoBehaviour
 
     public PhotonView photonView;
     public Rigidbody2D rb;
-    public Animator anim;
+    private Animator anim;
     public GameObject PlayerCamera;
     public SpriteRenderer sr;
     public Text PlayerNameText;
@@ -23,8 +23,6 @@ public class Player : Photon.MonoBehaviour
     public Transform GroundCheck;
     public float GroundCheckRadius;
 
-    //public Transform WallCheckRight;
-    //public Transform WallCheckLeft;
 
     // Apparence + son
     public LayerMask collisionLayers;
@@ -94,6 +92,7 @@ public class Player : Photon.MonoBehaviour
         {
             PlayerCamera.SetActive(true);
             PlayerNameText.text = PhotonNetwork.playerName;
+            anim = GetComponent<Animator>();
         }
         else
         {
@@ -155,6 +154,7 @@ public class Player : Photon.MonoBehaviour
        {
             IsRock = false;
             IsDefault = true;
+            anim.SetBool("IsRock", IsDefault);
        }
        anim.SetBool("IsRock", IsRock);
     }
@@ -251,16 +251,5 @@ public class Player : Photon.MonoBehaviour
     {
         sr.flipX = false;
     }
-
-    
-    //void OnCollisionEnter2D(Collision2D collision)
-	//{
-	//	if (collision.gameObject.tag == "GG")
-      //  {
-        //    PhotonNetwork.LoadLevel("GameOver");
-          //  PhotonNetwork.LeaveRoom();
-            //Destroy(ToDestroy);
-        //}
-    //}
 
 }

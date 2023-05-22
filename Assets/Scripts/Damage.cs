@@ -10,16 +10,15 @@ public class Damage : MonoBehaviour
     private int life = 3;
     public bool IsAvailable = true;
     public float CooldownDuration = 2.0f;
+    public PhotonView photonView;
 
-    
-    
     void OnTriggerEnter2D(Collider2D collision)
 	{
         if (IsAvailable == false)
         {
             return;
         }
-        if (collision.CompareTag("Enemy"))
+        if (collision.CompareTag("Enemy") && photonView.isMine)
         {
             life--;
             Debug.Log("Damage");
@@ -35,11 +34,18 @@ public class Damage : MonoBehaviour
                     break;
                 case 0:
                     heart1.SetActive(false);
-                    PhotonNetwork.LeaveRoom();
                     PhotonNetwork.LoadLevel("GameOver");
                     break;
                 default:
                     break;
+            }
+            
+        }
+        if(life == 0)
+        {
+            if(this.photonView.isMine)
+            {
+                Destroy(this);
             }
         }
 	}
@@ -54,7 +60,6 @@ public class Damage : MonoBehaviour
     {
         if (transform.position.y < -5)
         {
-            PhotonNetwork.LeaveRoom();
             PhotonNetwork.LoadLevel("GameOver");
         }
     }

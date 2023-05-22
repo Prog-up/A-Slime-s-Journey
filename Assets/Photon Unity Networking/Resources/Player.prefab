@@ -380,6 +380,7 @@ MonoBehaviour:
   heart3: {fileID: 4957809794393590064}
   IsAvailable: 1
   CooldownDuration: 2
+  photonView: {fileID: 2196262747904822369}
 --- !u!61 &3831711764170469016
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -486,6 +487,7 @@ GameObject:
   - component: {fileID: 6119785910271422001}
   - component: {fileID: 8749882682037212534}
   - component: {fileID: 7443399605779741199}
+  - component: {fileID: 1197869246203979812}
   m_Layer: 6
   m_Name: Player
   m_TagString: Player
@@ -649,7 +651,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   photonView: {fileID: 2196262747904822369}
   rb: {fileID: 2196262747904822371}
-  anim: {fileID: 8179612259239588886}
   PlayerCamera: {fileID: 2196262746963074609}
   sr: {fileID: 8179612259239588887}
   PlayerNameText: {fileID: 1310640232072840924}
@@ -666,12 +667,14 @@ MonoBehaviour:
   IsDefault: 1
   IsRock: 0
   ToDestroy: {fileID: 8179612259239588881}
-  vitesseEscalade: 2
-  distanceDetectionMur: 5
+  vitesseEscalade: 321
+  distanceDetectionMur: 235621
   WallCheckRight: {fileID: 3468281861604190669}
   WallCheckLeft: {fileID: 5771771229128592085}
   projectile: {fileID: 6016551358141180298, guid: d4b825117826a1d43a14a78133661e7a, type: 3}
   LaunchOffset: {fileID: 2603438787816082114}
+  CooldownDuration: 1.5
+  IsAvailable: 1
 --- !u!114 &2196262747904822369
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -694,6 +697,8 @@ MonoBehaviour:
   ownershipTransfer: 0
   ObservedComponents:
   - {fileID: 8179612259239588884}
+  - {fileID: 1197869246203979812}
+  - {fileID: 6119785910271422001}
   ObservedComponentsFoldoutOpen: 1
   viewIdField: 0
   instantiationId: -1
@@ -889,6 +894,39 @@ CircleCollider2D:
   m_Offset: {x: 0.014693111, y: -0.10774851}
   serializedVersion: 2
   m_Radius: 0.4176172
+--- !u!114 &1197869246203979812
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8179612259239588881}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b8c4a61274f60b4ea5fb4299cfdbf14, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShowLayerWeightsInspector: 1
+  ShowParameterInspector: 1
+  m_SynchronizeParameters:
+  - Type: 4
+    SynchronizeType: 2
+    Name: Isjumping
+  - Type: 4
+    SynchronizeType: 2
+    Name: Isrolling
+  - Type: 4
+    SynchronizeType: 2
+    Name: IsRock
+  - Type: 4
+    SynchronizeType: 2
+    Name: Hurt1
+  - Type: 4
+    SynchronizeType: 2
+    Name: Hurt2
+  m_SynchronizeLayers:
+  - SynchronizeType: 2
+    LayerIndex: 0
 --- !u!1 &9081377441895844714
 GameObject:
   m_ObjectHideFlags: 0
