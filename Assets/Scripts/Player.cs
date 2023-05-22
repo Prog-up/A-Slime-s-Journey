@@ -8,7 +8,7 @@ public class Player : Photon.MonoBehaviour
 
     public PhotonView photonView;
     public Rigidbody2D rb;
-    public Animator anim;
+    private Animator anim;
     public GameObject PlayerCamera;
     public SpriteRenderer sr;
     public Text PlayerNameText;
@@ -94,6 +94,7 @@ public class Player : Photon.MonoBehaviour
         {
             PlayerCamera.SetActive(true);
             PlayerNameText.text = PhotonNetwork.playerName;
+            anim = GetComponent<Animator>();
         }
         else
         {
