@@ -86,6 +86,11 @@ public class Player : Photon.MonoBehaviour
 
     }
 
+    public string getplayername()
+    {
+        return PlayerNameText.text;
+    }
+
     private void Awake()
     {
         if (photonView.isMine)

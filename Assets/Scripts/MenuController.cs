@@ -19,6 +19,11 @@ public class MenuController : MonoBehaviour
         PhotonNetwork.ConnectUsingSettings(VersionName);
     }
 
+    public string getgamename()
+    {
+        return CreateGameInput.text;
+    }
+
     private void OnConnectedToMaster()
     {
         PhotonNetwork.JoinLobby(TypedLobby.Default);
