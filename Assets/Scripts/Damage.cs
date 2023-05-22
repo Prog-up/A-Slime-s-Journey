@@ -35,11 +35,17 @@ public class Damage : MonoBehaviour
                 case 0:
                     heart1.SetActive(false);
                     Debug.Log(transform.parent.name);
-                    Destroy(this);
                     PhotonNetwork.LoadLevel("GameOver");
                     break;
                 default:
                     break;
+            }
+        }
+        if(life == 0)
+        {
+            if(this.photonView.isMine)
+            {
+                Destroy(this);
             }
         }
 	}
