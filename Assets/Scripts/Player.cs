@@ -145,7 +145,6 @@ public class Player : Photon.MonoBehaviour
     }
     void ChangeSprite()
     {
-
        if(Input.GetKeyDown(KeyCode.T) && IsDefault)
        {
             IsRock = true;
