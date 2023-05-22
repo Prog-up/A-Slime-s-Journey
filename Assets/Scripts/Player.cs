@@ -23,8 +23,6 @@ public class Player : Photon.MonoBehaviour
     public Transform GroundCheck;
     public float GroundCheckRadius;
 
-    //public Transform WallCheckRight;
-    //public Transform WallCheckLeft;
 
     // Apparence + son
     public LayerMask collisionLayers;
@@ -156,6 +154,7 @@ public class Player : Photon.MonoBehaviour
        {
             IsRock = false;
             IsDefault = true;
+            anim.SetBool("IsRock", IsDefault);
        }
        anim.SetBool("IsRock", IsRock);
     }

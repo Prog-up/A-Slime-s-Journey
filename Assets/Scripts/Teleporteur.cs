@@ -8,7 +8,7 @@ public class Teleporteur : MonoBehaviour
     // public GameObject Player2;
     // Start is called before the first frame update
 
-    void OnCollisionEnter2D(Collision2D collision)
+    void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "Player")
         {
