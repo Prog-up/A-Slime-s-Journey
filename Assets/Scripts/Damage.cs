@@ -35,7 +35,7 @@ public class Damage : MonoBehaviour
                 case 0:
                     heart1.SetActive(false);
                     Debug.Log(transform.parent.name);
-                    PhotonNetwork.LeaveRoom();
+                    Destroy(this);
                     PhotonNetwork.LoadLevel("GameOver");
                     break;
                 default:
@@ -54,7 +54,6 @@ public class Damage : MonoBehaviour
     {
         if (transform.position.y < -5)
         {
-            PhotonNetwork.LeaveRoom();
             PhotonNetwork.LoadLevel("GameOver");
         }
     }
