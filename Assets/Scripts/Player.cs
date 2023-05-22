@@ -23,16 +23,15 @@ public class Player : Photon.MonoBehaviour
     public Transform GroundCheck;
     public float GroundCheckRadius;
 
-
     // Apparence + son
     public LayerMask collisionLayers;
     public AudioSource jumpsound;
     public SpriteRenderer Destination; //TODO : Fix me
+    public GameObject Life;
 
     //Permet de connaitre la forme actuelle
     public bool IsDefault = true;
     public bool IsRock = false;
-
 
     //Permet de destroy
     public GameObject ToDestroy;
@@ -104,6 +103,7 @@ public class Player : Photon.MonoBehaviour
             PlayerCamera.SetActive(false);
             PlayerNameText.text = photonView.owner.name;
             PlayerNameText.color = Color.red;
+            Life.SetActive(false);
         }
     }
 
