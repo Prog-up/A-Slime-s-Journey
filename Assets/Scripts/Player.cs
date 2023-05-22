@@ -252,15 +252,4 @@ public class Player : Photon.MonoBehaviour
         sr.flipX = false;
     }
 
-    
-    //void OnCollisionEnter2D(Collision2D collision)
-	//{
-	//	if (collision.gameObject.tag == "GG")
-      //  {
-        //    PhotonNetwork.LoadLevel("GameOver");
-          //  PhotonNetwork.LeaveRoom();
-            //Destroy(ToDestroy);
-        //}
-    //}
-
 }

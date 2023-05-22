@@ -4,9 +4,6 @@ using UnityEngine;
 
 public class Teleporteur : MonoBehaviour
 {
-    // public GameObject Player1;
-    // public GameObject Player2;
-    // Start is called before the first frame update
 
     void OnTriggerEnter2D(Collider2D collision)
     {

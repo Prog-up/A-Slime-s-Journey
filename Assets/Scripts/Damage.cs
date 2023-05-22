@@ -34,12 +34,12 @@ public class Damage : MonoBehaviour
                     break;
                 case 0:
                     heart1.SetActive(false);
-                    Debug.Log(transform.parent.name);
                     PhotonNetwork.LoadLevel("GameOver");
                     break;
                 default:
                     break;
             }
+            
         }
         if(life == 0)
         {
