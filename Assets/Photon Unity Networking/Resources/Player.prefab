@@ -380,6 +380,7 @@ MonoBehaviour:
   heart3: {fileID: 4957809794393590064}
   IsAvailable: 1
   CooldownDuration: 2
+  photonView: {fileID: 2196262747904822369}
 --- !u!61 &3831711764170469016
 BoxCollider2D:
   m_ObjectHideFlags: 0
