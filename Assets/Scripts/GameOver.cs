@@ -5,7 +5,7 @@ using UnityEngine.UI;
 using static GameManager;
 public class GameOver : MonoBehaviour
 {
-    public void Respawn() // bug
+    public void Respawn()
     {
         PhotonNetwork.LoadLevel("MainGame");
     }
