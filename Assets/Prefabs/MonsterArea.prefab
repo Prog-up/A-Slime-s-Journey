@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7108524901635721884}
   - component: {fileID: 7108524901635721887}
   - component: {fileID: 7108524901635721885}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: MonsterArea
   m_TagString: EnnemyArea
   m_Icon: {fileID: 0}
