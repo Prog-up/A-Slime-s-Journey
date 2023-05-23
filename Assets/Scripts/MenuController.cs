@@ -13,6 +13,7 @@ public class MenuController : MonoBehaviour
     [SerializeField] public InputField JoinGameInput;
     [SerializeField] private GameObject StartButton;
     [SerializeField] private GameObject JoinButton;
+    [SerializeField] private GameObject JoinSoloButton;
     private RoomOptions roomOptions;
 
     private void Awake()
@@ -67,10 +68,12 @@ public class MenuController : MonoBehaviour
             for(int i = 0; i < JoinGameInput.text.Length; i++)
                 if(JoinGameInput.text[i] != ' ')
             JoinButton.SetActive(true);
+            JoinSoloButton.SetActive(true);
         }
         else
         {
             JoinButton.SetActive(false);
+            JoinSoloButton.SetActive(false);
         }
     }
 
