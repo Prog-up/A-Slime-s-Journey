@@ -62,7 +62,8 @@ public class MenuController : MonoBehaviour
     public void ChangeRoomNameInput()
     {
         if(JoinGameInput.text.Length > 0)
-        { for(int i = 0; i < JoinGameInput.text.Length; i++)
+        { 
+            for(int i = 0; i < JoinGameInput.text.Length; i++)
                 if(JoinGameInput.text[i] != ' ')
             JoinButton.SetActive(true);
         }
@@ -72,17 +73,22 @@ public class MenuController : MonoBehaviour
         }
     }
 
-    public void CreateGame()
-    {
-        PhotonNetwork.CreateRoom(CreateGameInput.text.ToUpper(), new RoomOptions() { MaxPlayers = 2 }, null);
-    }
-
     public void JoinGame()
     {
         if(JoinGameInput.text.Length > 0)
         {
             RoomOptions roomOptions = new RoomOptions();
             roomOptions.MaxPlayers = 2;
+            PhotonNetwork.JoinOrCreateRoom(JoinGameInput.text.ToUpper(), roomOptions, TypedLobby.Default);
+        }
+    }
+    
+    public void JoinSoloGame()
+    {
+        if(JoinGameInput.text.Length > 0)
+        {
+            RoomOptions roomOptions = new RoomOptions();
+            roomOptions.MaxPlayers = 1;
             PhotonNetwork.JoinOrCreateRoom(JoinGameInput.text.ToUpper(), roomOptions, TypedLobby.Default);
         }
     }
