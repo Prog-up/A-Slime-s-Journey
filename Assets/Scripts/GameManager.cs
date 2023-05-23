@@ -7,9 +7,6 @@ using UnityEngine.UI;
 public class GameManager : MonoBehaviour
 {
     public GameObject PlayerPrefab;
-    private GameObject ActualPlayer;
-    public GameObject GameCanvas;
-    public GameObject SceneCamera;
     private bool Off = false;
     public GameObject disconnectUI;
     public GameObject PlayerFeed;
@@ -17,8 +14,6 @@ public class GameManager : MonoBehaviour
     public GameObject Enemy1;
     public GameObject Enemy2;
     public (float, float)[] pos = new (float, float)[2] {(27.94f, -2.44f), (53.84f, 1.52f)};
-    private int life = 3;
-    private Player script;
 
     private void Awake()
     {
@@ -27,14 +22,11 @@ public class GameManager : MonoBehaviour
         {
             PhotonNetwork.InstantiateSceneObject(Enemy1.name, new Vector2(pos[i].Item1, pos[i].Item2), Quaternion.identity, 0, null);
         }
-
-        script = ActualPlayer.GetComponent<Player>();
     }
 
     private void Update()
     {
         CheckInput();
-        //Debug.Log(script.Life.activeSelf());
     }   
 
     private void CheckInput()
@@ -61,9 +53,7 @@ public class GameManager : MonoBehaviour
     {
         float randomValue = Random.Range(-1f, 1f);
 
-        ActualPlayer = PhotonNetwork.Instantiate(PlayerPrefab.name, new Vector2(this.transform.position.x * randomValue, this.transform.position.y), Quaternion.identity, 0);
-        GameCanvas.SetActive(false);
-        SceneCamera.SetActive(false);
+        PhotonNetwork.Instantiate(PlayerPrefab.name, new Vector2(this.transform.position.x * randomValue, this.transform.position.y), Quaternion.identity, 0);
     }
 
     private void OnPhotonPlayerConnected(PhotonPlayer player)
