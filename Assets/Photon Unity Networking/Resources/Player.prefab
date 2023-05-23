@@ -769,7 +769,7 @@ MonoBehaviour:
   IsDefault: 1
   IsRock: 0
   ToDestroy: {fileID: 8179612259239588881}
-  vitesseEscalade: 321
+  vitesseEscalade: 9000
   distanceDetectionMur: 235621
   WallCheckRight: {fileID: 3468281861604190669}
   WallCheckLeft: {fileID: 5771771229128592085}

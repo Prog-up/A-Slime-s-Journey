@@ -70,6 +70,7 @@ public class Player : Photon.MonoBehaviour
                 rb.gravityScale = 0f;
 
                 // move the character up
+                rb.velocity = new Vector2(rb.velocity.x, JumpForce);
                 transform.position += new Vector3(0f, climbSpeed * Time.deltaTime, 0f);
                 Isrolling = true;
                 anim.SetBool("Isrolling", Isrolling);
