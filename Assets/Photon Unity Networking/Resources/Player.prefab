@@ -765,7 +765,7 @@ MonoBehaviour:
     m_Bits: 1
   jumpsound: {fileID: 8749882682037212534}
   Destination: {fileID: 1087809053463547743}
-  Life: {fileID: 0}
+  Life: {fileID: 5605803289352097218}
   IsDefault: 1
   IsRock: 0
   ToDestroy: {fileID: 8179612259239588881}

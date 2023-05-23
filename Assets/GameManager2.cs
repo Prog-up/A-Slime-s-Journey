@@ -41,7 +41,7 @@ public class GameManager2 : MonoBehaviour
     private void Update()
     {
         CheckInput();
-    }   
+    }
 
     private void CheckInput()
     {
