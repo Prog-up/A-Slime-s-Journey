@@ -65,6 +65,7 @@ public class Damage : MonoBehaviour
     {
         if (transform.position.y < -5)
         {
+            if (photonView.isMine)
             PhotonNetwork.LoadLevel("GameOver");
         }
     }
