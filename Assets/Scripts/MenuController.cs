@@ -13,6 +13,7 @@ public class MenuController : MonoBehaviour
     [SerializeField] public InputField JoinGameInput;
     [SerializeField] private GameObject StartButton;
     [SerializeField] private GameObject JoinButton;
+    private RoomOptions roomOptions;
 
     private void Awake()
     {
@@ -77,7 +78,7 @@ public class MenuController : MonoBehaviour
     {
         if(JoinGameInput.text.Length > 0)
         {
-            RoomOptions roomOptions = new RoomOptions();
+            roomOptions = new RoomOptions();
             roomOptions.MaxPlayers = 2;
             PhotonNetwork.JoinOrCreateRoom(JoinGameInput.text.ToUpper(), roomOptions, TypedLobby.Default);
         }
@@ -87,7 +88,7 @@ public class MenuController : MonoBehaviour
     {
         if(JoinGameInput.text.Length > 0)
         {
-            RoomOptions roomOptions = new RoomOptions();
+            roomOptions = new RoomOptions();
             roomOptions.MaxPlayers = 1;
             PhotonNetwork.JoinOrCreateRoom(JoinGameInput.text.ToUpper(), roomOptions, TypedLobby.Default);
         }
@@ -95,8 +96,14 @@ public class MenuController : MonoBehaviour
 
     private void OnJoinedRoom()
     {
-        //PhotonNetwork.LoadLevel("MainGame");
-        PhotonNetwork.LoadLevel("Lobby");
+        if (roomOptions.MaxPlayers == 2)
+        {
+            PhotonNetwork.LoadLevel("Lobby");
+        }
+        else
+        {
+            PhotonNetwork.LoadLevel("MainGame");
+        }
     }
     
 
