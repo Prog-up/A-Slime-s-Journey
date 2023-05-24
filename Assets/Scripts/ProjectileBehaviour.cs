@@ -8,15 +8,23 @@ public class ProjectileBehaviour : MonoBehaviour
     public float force;
     private Rigidbody2D rb;
     // Update is called once per frame
-    
+    private GameObject player;
 
     void Start()
     {
+        player = GameObject.FindGameObjectWithTag("Player");
         rb = GetComponent<Rigidbody2D>();
-        rb.velocity = new Vector2(5, 0).normalized * force;
+        if (player.GetComponent<SpriteRenderer>().flipX)
+        {
+            rb.velocity = new Vector2(5,0).normalized * force * -1;
+        }
+        else
+        {
+            rb.velocity = new Vector2(5, 0).normalized * force;
+        }
     }
     
-    private void OnCollisionEnter2D(Collision2D collision)
+    void OnCollisionEnter2D(Collision2D collision)
     {
         Destroy(gameObject);
     }
