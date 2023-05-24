@@ -1,7 +1,9 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using Random = UnityEngine.Random;
 
 
 public class GameManager : MonoBehaviour
@@ -18,7 +20,11 @@ public class GameManager : MonoBehaviour
     private void Awake()
     {
         SpawnPlayer();
-        if (!(PhotonNetwork.isMasterClient && PhotonNetwork.playerList.Length != 2))
+    }
+
+    private void Start()
+    {
+        if (PhotonNetwork.playerList.Length == 1)
         {
             for (int i = 0; i < pos.Length; i++)
             {
