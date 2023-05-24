@@ -110,7 +110,7 @@ public class MenuController : MonoBehaviour
             }
         }
         
-        if (roomOptions.MaxPlayers == 2 && !pres)
+        if (false && roomOptions.MaxPlayers == 2 && !pres)
         {
             PhotonNetwork.LoadLevel("Lobby");
         }

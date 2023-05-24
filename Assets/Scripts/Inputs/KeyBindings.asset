@@ -12,3 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a3d73d2f6fd3d1240b83eae76d322d72, type: 3}
   m_Name: KeyBindings
   m_EditorClassIdentifier: 
+  Jump: 32
+  MoveLeft: 113
+  MoveRight: 100
+  Transfo: 116
+  Climb: 99
+  Shoot: 101
+  Pause: 27

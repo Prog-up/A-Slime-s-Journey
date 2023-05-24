@@ -119,12 +119,12 @@ public class Player : Photon.MonoBehaviour
 
     private void Hor()
     {
-        if (Input.GetKeyDown(KeyCode.Q) || (int)Input.GetAxisRaw("Horizontal") == -1)
+        if (InputManager.instance.KeyDown("MoveRight") || (int)Input.GetAxisRaw("Horizontal") == -1)
         {
             photonView.RPC("FlipTrue",PhotonTargets.AllBuffered);
             MoveForce = -1;
         }
-        else if (Input.GetKeyDown(KeyCode.D) || (int)Input.GetAxisRaw("Horizontal") == 1)
+        else if (InputManager.instance.KeyDown("MoveLeft") || (int)Input.GetAxisRaw("Horizontal") == 1)
         {
             photonView.RPC("FlipFalse",PhotonTargets.AllBuffered);
             MoveForce = 1;
@@ -140,24 +140,25 @@ public class Player : Photon.MonoBehaviour
         IsGrounded = Physics2D.OverlapCircle(GroundCheck.position, GroundCheckRadius, collisionLayers);
         if (IsGrounded)
         {
-            if (Input.GetKeyDown(KeyCode.Space))
+            if (InputManager.instance.KeyDown("Jump"))
             {
                 rb.velocity = new Vector2(rb.velocity.x, JumpForce);
                 jumpsound.Play();
                 anim.SetBool("Isjumping",!IsGrounded);
+                Debug.Log("Ca marche");
             }
         }
         anim.SetBool("Isjumping",!IsGrounded);
     }
     void ChangeSprite()
     {
-       if(Input.GetKeyDown(KeyCode.T) && IsDefault)
+       if(InputManager.instance.KeyDown("Transfo") && IsDefault)
        {
             IsRock = true;
             IsDefault = false;
             anim.SetBool("IsRock", IsRock);
        }
-       if(Input.GetKeyDown(KeyCode.T) && IsRock)
+       if(InputManager.instance.KeyDown("Transfo") && IsRock)
        {
             IsRock = false;
             IsDefault = true;
@@ -184,11 +185,8 @@ public class Player : Photon.MonoBehaviour
             {
                 anim.SetBool("Hurt1", true);
                 Hurt1 = true;
-            }
-            
-        }
-        
-
+            }  
+        } 
     }
 
     private void Tir()
@@ -199,7 +197,7 @@ public class Player : Photon.MonoBehaviour
             {
                 return;
             }
-            if (Input.GetKeyDown(KeyCode.P))
+            if (InputManager.instance.KeyDown("Shoot"))
             {
                 if (sr.flipX)
                 {

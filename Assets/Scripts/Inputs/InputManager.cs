@@ -4,15 +4,28 @@ using UnityEngine;
 
 public class InputManager : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public static InputManager instance;
+    public KeyBingdings keybingdings;
+
+    private void Awake()
     {
-        
+        if(instance == null)
+        {
+            instance = this;
+        }
+        else if(instance != this)
+        {
+            Destroy(this);
+        }
+        DontDestroyOnLoad(this);
     }
 
-    // Update is called once per frame
-    void Update()
+    public bool KeyDown(string key)
     {
-        
+        if(Input.GetKeyDown(keybingdings.CheckKey(key)))
+        {
+            return true;
+        }
+        return false;
     }
 }
