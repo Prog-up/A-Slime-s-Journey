@@ -46,6 +46,7 @@ public class Player : Photon.MonoBehaviour
     private float verticalInput;
     public ProjectileBehaviour projectile;
     public Transform LaunchOffset;
+    public Transform LaunchOffset2;
 
     private bool Isrolling = false;
     public float CooldownDuration = 1.5f;
@@ -198,7 +199,15 @@ public class Player : Photon.MonoBehaviour
             }
             if (InputManager.instance.KeyDown("Shoot"))
             {
-                PhotonNetwork.InstantiateSceneObject(projectile.name, LaunchOffset.position, Quaternion.identity, 0, null);
+                if (sr.flipX)
+                {
+                    PhotonNetwork.InstantiateSceneObject(projectile.name, LaunchOffset2.position, Quaternion.identity, 0, null);
+                }
+                else
+                {
+                    PhotonNetwork.InstantiateSceneObject(projectile.name, LaunchOffset.position, Quaternion.identity, 0, null);
+                }
+                
                 StartCoroutine(StartCooldown());
             }
         }
