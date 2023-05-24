@@ -18,7 +18,7 @@ public class GameManager : MonoBehaviour
     private void Awake()
     {
         SpawnPlayer();
-        if (PhotonNetwork.isMasterClient)
+        if (PhotonNetwork.isMasterClient && PhotonNetwork.playerList.Length != 2)
         {
             for (int i = 0; i < pos.Length; i++)
             {
