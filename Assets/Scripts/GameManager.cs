@@ -17,9 +17,9 @@ public class GameManager : MonoBehaviour
 
     private void Awake()
     {
+        SpawnPlayer();
         if (PhotonNetwork.isMasterClient)
         {
-            SpawnPlayer();
             for (int i = 0; i < pos.Length; i++)
             {
                 PhotonNetwork.InstantiateSceneObject(Enemy1.name, new Vector2(pos[i].Item1, pos[i].Item2), Quaternion.identity, 0, null);
