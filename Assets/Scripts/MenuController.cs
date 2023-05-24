@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -99,7 +100,17 @@ public class MenuController : MonoBehaviour
 
     private void OnJoinedRoom()
     {
-        if (roomOptions.MaxPlayers == 2)
+        bool pres = false;
+        foreach (RoomInfo roomInfo in PhotonNetwork.GetRoomList())
+        {
+            if (roomInfo.Name == JoinGameInput.text)
+            {
+                pres = true;
+                break;
+            }
+        }
+        
+        if (roomOptions.MaxPlayers == 2 && !pres)
         {
             PhotonNetwork.LoadLevel("Lobby");
         }
@@ -109,11 +120,6 @@ public class MenuController : MonoBehaviour
         }
     }
 
-    private void OnCreateRoom()
-    {
-        PhotonNetwork.LoadLevel("MainGame");
-    }
-    
     public void ExitGame() 
     {
         Application.Quit();
