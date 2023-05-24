@@ -109,7 +109,6 @@ public class MenuController : MonoBehaviour
         }
     }
     
-
     public void ExitGame() 
     {
         Application.Quit();
@@ -119,5 +118,14 @@ public class MenuController : MonoBehaviour
     {
         ConnectPannel.SetActive(false);
         UsernameMenu.SetActive(true);
+    }
+    
+    public void OnJoinRoomFailed(short returnCode, string message)
+    {
+        if (returnCode == ErrorCode.GameFull)
+        {
+            Debug.Log("La room est pleine. Impossible de rejoindre."); // TODO: test
+            // Affichez un message à l'utilisateur ou déclenchez une action appropriée.
+        }
     }
 }

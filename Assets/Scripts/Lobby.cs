@@ -21,6 +21,7 @@ public class Lobby : MonoBehaviour
         CheckInput();
         if (PhotonNetwork.playerList.Length == 2)
         {
+            PhotonNetwork.automaticallySyncScene = true;
             PhotonNetwork.LoadLevel("MainGame");
         }
     }   
