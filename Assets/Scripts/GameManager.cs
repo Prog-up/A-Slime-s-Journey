@@ -17,25 +17,11 @@ public class GameManager : MonoBehaviour
     public GameObject Enemy2;
     public (float, float)[] pos1 = new (float, float)[2] {(27.94f, -2.44f), (53.84f, 1.52f)};
     public (float, float)[] pos2 = new (float, float)[1] {(43.09f, -0.89f)};
+    private bool ShouldSpawn = true;
 
     private void Awake()
     {
         SpawnPlayer();
-    }
-
-    private void Start()
-    {
-        if (PhotonNetwork.room.PlayerCount == 1)
-        {
-            for (int i = 0; i < pos1.Length; i++)
-            {
-                PhotonNetwork.InstantiateSceneObject(Enemy1.name, new Vector2(pos1[i].Item1, pos1[i].Item2), Quaternion.identity, 0, null);
-            }
-            for (int i = 0; i < pos2.Length; i++)
-            {
-                PhotonNetwork.InstantiateSceneObject(Enemy2.name, new Vector2(pos2[i].Item1, pos2[i].Item2), Quaternion.identity, 0, null);
-            }
-        }
     }
 
     private void Update()
@@ -78,6 +64,22 @@ public class GameManager : MonoBehaviour
         obj.transform.SetParent(FeedGrid.transform, false);
         obj.GetComponent<Text>().text = player.name + " joined the game";
         obj.GetComponent<Text>().color = Color.green;
+        if (PhotonNetwork.room.PlayerCount != 1)
+        {
+            ShouldSpawn = false;
+        }
+        if (ShouldSpawn)
+        {
+            for (int i = 0; i < pos1.Length; i++)
+            {
+                PhotonNetwork.InstantiateSceneObject(Enemy1.name, new Vector2(pos1[i].Item1, pos1[i].Item2), Quaternion.identity, 0, null);
+            }
+            for (int i = 0; i < pos2.Length; i++)
+            {
+                PhotonNetwork.InstantiateSceneObject(Enemy2.name, new Vector2(pos2[i].Item1, pos2[i].Item2), Quaternion.identity, 0, null);
+            }
+        }
+        // ShouldSpawn = false;
     }
 
     private void OnPhotonPlayerDisconnected(PhotonPlayer player)
