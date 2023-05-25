@@ -21,6 +21,7 @@ public class GameManager : MonoBehaviour
 
     private void Awake()
     {
+        PhotonNetwork.automaticallySyncScene = true;
         SpawnPlayer();
     }
 
@@ -33,6 +34,7 @@ public class GameManager : MonoBehaviour
 
         if (ShouldSpawn && PhotonNetwork.room.PlayerCount == 1)
         {
+            Debug.Log("Apparition");
             for (int i = 0; i < pos1.Length; i++)
             {
                 PhotonNetwork.InstantiateSceneObject(Enemy1.name, new Vector2(pos1[i].Item1, pos1[i].Item2), Quaternion.identity, 0, null);
