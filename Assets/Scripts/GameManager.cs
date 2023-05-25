@@ -21,7 +21,6 @@ public class GameManager : MonoBehaviour
 
     private void Awake()
     {
-        PhotonNetwork.automaticallySyncScene = true;
         SpawnPlayer();
     }
 
