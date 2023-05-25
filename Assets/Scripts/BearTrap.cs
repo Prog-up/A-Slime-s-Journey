@@ -18,7 +18,7 @@ public class BearTrap : MonoBehaviour
 
 	void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.CompareTag("Player"))
+        if (other.gameObject.CompareTag("Player") || other.gameObject.CompareTag("Cailloux"))
         {
             animator.SetTrigger("activated");
 			Destroy(Hitbox, 0.3f);

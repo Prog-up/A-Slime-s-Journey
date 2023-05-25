@@ -38,10 +38,13 @@ public class Damage : MonoBehaviour
                     StartCoroutine(StartCooldown());
                     break;
                 case 1:
+                    heart3.SetActive(false);
                     heart2.SetActive(false);
                     StartCoroutine(StartCooldown());
                     break;
                 case 0:
+                    heart3.SetActive(false);
+                    heart2.SetActive(false);
                     heart1.SetActive(false);
                     ShowDeathScreen();
                     break;
