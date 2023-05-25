@@ -48,6 +48,27 @@ public class Damage : MonoBehaviour
             }
             
         }
+        if (collision.CompareTag("Heal") && photonView.isMine)
+        {
+            switch (life)
+            {
+                case 2:
+                    life += 1;
+                    heart3.SetActive(true);
+                    break;
+                case 1:
+                    life += 1;
+                    heart2.SetActive(true);
+                    break;
+                case 3:
+                    break;
+                default:
+                    break;
+            }
+            
+        }
+        
+        
         if(life == 0)
         {
             if(this.photonView.isMine)
