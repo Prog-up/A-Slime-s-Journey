@@ -1257,7 +1257,7 @@ Rigidbody2D:
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDrag: 0
-  m_AngularDrag: 0.05
+  m_AngularDrag: 0
   m_GravityScale: 1
   m_Material: {fileID: 0}
   m_Interpolate: 2
@@ -1301,6 +1301,7 @@ MonoBehaviour:
   WallCheckLeft: {fileID: 5771771229128592085}
   projectile: {fileID: 6016551358141180298, guid: d4b825117826a1d43a14a78133661e7a, type: 3}
   LaunchOffset: {fileID: 2603438787816082114}
+  LaunchOffset2: {fileID: 0}
   CooldownDuration: 1.5
   IsAvailable: 1
 --- !u!114 &2196262747904822369

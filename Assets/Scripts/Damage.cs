@@ -16,11 +16,6 @@ public class Damage : MonoBehaviour
     public Button restartButton;
     public Button mainMenuButton;
 
-    public static int GetLife()
-    {
-        return life;
-    }
-    
     void OnTriggerEnter2D(Collider2D collision)
 	{
         if (IsAvailable == false)
@@ -46,7 +41,7 @@ public class Damage : MonoBehaviour
                     heart3.SetActive(false);
                     heart2.SetActive(false);
                     heart1.SetActive(false);
-                    ShowDeathScreen();
+                    PhotonNetwork.LoadLevel("GameOver");
                     break;
                 default:
                     break;
@@ -72,30 +67,8 @@ public class Damage : MonoBehaviour
     {
         if (transform.position.y < -5)
         {
-            if (photonView.isMine)
-            PhotonNetwork.LoadLevel("GameOver");
+            if (photonView.isMine) 
+                PhotonNetwork.LoadLevel("GameOver");
         }
-    }
-	
-
-    private void Start()
-    {
-        restartButton.onClick.AddListener(RestartGame);
-        mainMenuButton.onClick.AddListener(ReturnToMainMenu);
-    }
-
-    public void ShowDeathScreen()
-    {
-        deathScreenUI.SetActive(true);
-    }
-
-    private void RestartGame()
-    {
-        deathScreenUI.SetActive(false);
-    }
-
-    private void ReturnToMainMenu()
-    {
-        PhotonNetwork.LoadLevel("MainMenu");
     }
 }
