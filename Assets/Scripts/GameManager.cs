@@ -22,6 +22,9 @@ public class GameManager : MonoBehaviour
     private void Awake()
     {
         SpawnPlayer();
+        Debug.Log("0PlayerList = " + PhotonNetwork.playerList.Length);
+        Debug.Log("0PlayerCount = " + PhotonNetwork.room.PlayerCount);
+        Debug.Log("0ShouldSpawn = " + ShouldSpawn);
     }
 
     private void Update()
@@ -29,6 +32,7 @@ public class GameManager : MonoBehaviour
         CheckInput();
         Debug.Log("PlayerList = " + PhotonNetwork.playerList.Length);
         Debug.Log("PlayerCount = " + PhotonNetwork.room.PlayerCount);
+        Debug.Log("ShouldSpawn = " + ShouldSpawn);
     }   
 
     private void CheckInput()
@@ -64,7 +68,8 @@ public class GameManager : MonoBehaviour
         obj.transform.SetParent(FeedGrid.transform, false);
         obj.GetComponent<Text>().text = player.name + " joined the game";
         obj.GetComponent<Text>().color = Color.green;
-        if (PhotonNetwork.room.PlayerCount != 1)
+        Debug.Log("test = " + PhotonNetwork.room.PlayerCount);
+        if (PhotonNetwork.room.PlayerCount == 1)
         {
             ShouldSpawn = false;
         }
