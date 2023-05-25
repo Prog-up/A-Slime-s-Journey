@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Damage : MonoBehaviour
 {
@@ -11,6 +12,9 @@ public class Damage : MonoBehaviour
     public bool IsAvailable = true;
     public float CooldownDuration = 2.0f;
     public PhotonView photonView;
+	public GameObject deathScreenUI;
+    public Button restartButton;
+    public Button mainMenuButton;
 
     public static int GetLife()
     {
@@ -39,7 +43,7 @@ public class Damage : MonoBehaviour
                     break;
                 case 0:
                     heart1.SetActive(false);
-                    PhotonNetwork.LoadLevel("GameOver");
+                    ShowDeathScreen();
                     break;
                 default:
                     break;
@@ -68,5 +72,27 @@ public class Damage : MonoBehaviour
             if (photonView.isMine)
             PhotonNetwork.LoadLevel("GameOver");
         }
+    }
+	
+
+    private void Start()
+    {
+        restartButton.onClick.AddListener(RestartGame);
+        mainMenuButton.onClick.AddListener(ReturnToMainMenu);
+    }
+
+    public void ShowDeathScreen()
+    {
+        deathScreenUI.SetActive(true);
+    }
+
+    private void RestartGame()
+    {
+        deathScreenUI.SetActive(false);
+    }
+
+    private void ReturnToMainMenu()
+    {
+        PhotonNetwork.LoadLevel("MainMenu");
     }
 }
