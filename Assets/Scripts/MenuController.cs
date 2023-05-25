@@ -10,11 +10,9 @@ public class MenuController : MonoBehaviour
     [SerializeField] private GameObject UsernameMenu;
     [SerializeField] private GameObject ConnectPannel;
     [SerializeField] private InputField UsernameInput;
-    [SerializeField] public InputField CreateGameInput;
     [SerializeField] public InputField JoinGameInput;
     [SerializeField] private GameObject StartButton;
     [SerializeField] private GameObject JoinButton;
-    [SerializeField] private GameObject JoinSoloButton;
     private RoomOptions roomOptions;
 
     private void Awake()
@@ -22,9 +20,9 @@ public class MenuController : MonoBehaviour
         PhotonNetwork.ConnectUsingSettings(VersionName);
     }
 
-    public string getgamename()
+    public string Getgamename()
     {
-        return CreateGameInput.text;
+        return JoinGameInput.text;
     }
 
     private void OnConnectedToMaster()
@@ -69,12 +67,10 @@ public class MenuController : MonoBehaviour
             for(int i = 0; i < JoinGameInput.text.Length; i++)
                 if(JoinGameInput.text[i] != ' ')
             JoinButton.SetActive(true);
-            JoinSoloButton.SetActive(true);
         }
         else
         {
             JoinButton.SetActive(false);
-            JoinSoloButton.SetActive(false);
         }
     }
 
@@ -85,16 +81,6 @@ public class MenuController : MonoBehaviour
             roomOptions = new RoomOptions();
             roomOptions.MaxPlayers = 2;
             PhotonNetwork.JoinOrCreateRoom(JoinGameInput.text.ToUpper(), roomOptions, TypedLobby.Default);
-        }
-    }
-    
-    public void JoinSoloGame()
-    {
-        if(JoinGameInput.text.Length > 0)
-        {
-            roomOptions = new RoomOptions();
-            roomOptions.MaxPlayers = 1;
-            PhotonNetwork.CreateRoom(JoinGameInput.text.ToUpper(), roomOptions, null);
         }
     }
 

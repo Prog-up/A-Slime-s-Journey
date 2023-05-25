@@ -21,7 +21,7 @@ public class KeyBingdings : ScriptableObject
                 return Jump;
             case "MoveLeft":
                 return MoveLeft;
-                case "MoveRight":
+            case "MoveRight":
                 return MoveRight;
             case "Transfo":
                 return Transfo;
@@ -31,7 +31,6 @@ public class KeyBingdings : ScriptableObject
                 return Shoot;
             case "Pause":
                 return Pause;
-
             default:
                 return KeyCode.None;
             

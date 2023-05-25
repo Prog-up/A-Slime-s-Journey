@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Cloud : MonoBehaviour
 {
+    public float speed = 0.1f;
     public float minX;
     public float maxX;
     private Vector3 origin;
@@ -15,7 +16,7 @@ public class Cloud : MonoBehaviour
 
     void Update() // use instead .Lerp()
     {
-        transform.position += transform.right * Time.deltaTime * 0.1f;
+        transform.position += transform.right * Time.deltaTime * speed;
         if (transform.position.x > maxX)
         {
             transform.position = origin;
