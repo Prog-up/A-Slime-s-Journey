@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Damage : MonoBehaviour
 {
@@ -11,12 +12,10 @@ public class Damage : MonoBehaviour
     public bool IsAvailable = true;
     public float CooldownDuration = 2.0f;
     public PhotonView photonView;
+	public GameObject deathScreenUI;
+    public Button restartButton;
+    public Button mainMenuButton;
 
-    public static int GetLife()
-    {
-        return life;
-    }
-    
     void OnTriggerEnter2D(Collider2D collision)
 	{
         if (IsAvailable == false)
@@ -68,8 +67,8 @@ public class Damage : MonoBehaviour
     {
         if (transform.position.y < -5)
         {
-            if (photonView.isMine)
-            PhotonNetwork.LoadLevel("GameOver");
+            if (photonView.isMine) 
+                PhotonNetwork.LoadLevel("GameOver");
         }
     }
 }

@@ -20,14 +20,14 @@ public class WeakSpot : MonoBehaviour
 		{
 			animator.SetTrigger("Die");
 			alive = false;
-			Destroy(transform.parent.gameObject, 0.5f);
+			PhotonNetwork.Destroy(transform.parent.gameObject);
 			mortcochon.Play();
 		}
 		if (collision.CompareTag("Cailloux"))
 		{
 			animator.SetTrigger("Die");
 			alive = false;
-			Destroy(transform.parent.gameObject, 0.5f);
+			PhotonNetwork.Destroy(transform.parent.gameObject);
 			mortcochon.Play();
 		}
 	}
