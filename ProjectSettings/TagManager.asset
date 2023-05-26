@@ -11,6 +11,7 @@ TagManager:
   - Wall
   - Rock
   - Cailloux
+  - Heal
   layers:
   - Default
   - TransparentFX

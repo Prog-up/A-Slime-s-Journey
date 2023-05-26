@@ -21,7 +21,7 @@ public class BearTrap : MonoBehaviour
         if (other.gameObject.CompareTag("Player") || other.gameObject.CompareTag("Cailloux"))
         {
             animator.SetTrigger("activated");
-			PhotonNetwork.Destroy(Hitbox);
+            Destroy(Hitbox, 0.1f);
         }
     }
 }
