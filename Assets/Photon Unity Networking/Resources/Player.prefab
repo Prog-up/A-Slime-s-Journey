@@ -696,8 +696,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
+    m_Font: {fileID: 12800000, guid: 652f7165b7c30ab46af6c4aad90a639b, type: 2}
+    m_FontSize: 16
     m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 10
@@ -1742,6 +1742,7 @@ MonoBehaviour:
   Life: {fileID: 5605803289352097218}
   IsDefault: 1
   IsRock: 0
+  IsFlame: 0
   ToDestroy: {fileID: 8179612259239588881}
   vitesseEscalade: 9000
   distanceDetectionMur: 235621

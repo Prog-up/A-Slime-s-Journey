@@ -90,7 +90,7 @@ public class Player : Photon.MonoBehaviour
 
     }
 
-    public string getplayername()
+    public string Getplayername()
     {
         return PlayerNameText.text;
     }
@@ -154,7 +154,7 @@ public class Player : Photon.MonoBehaviour
         anim.SetBool("Isjumping",!IsGrounded);
     }
 
-    void ChangeSprite()
+    /*void ChangeSprite()
     {
        if(Input.GetKey(GameManager.GM.transfo) && IsDefault)
        {
@@ -169,14 +169,17 @@ public class Player : Photon.MonoBehaviour
             anim.SetBool("IsRock", IsDefault);
        }
        anim.SetBool("IsRock", IsRock);
-    }
+    }*/
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.CompareTag("Rock"))
+        /*if (other.gameObject.CompareTag("Rock") && Input.GetKey(GameManager.GM.transfo))
         {
             IsRock = true;
-        }
+            IsDefault = false;
+            IsFlame = false;
+            anim.SetBool("IsRock", IsRock);
+        }*/
 
         if (other.gameObject.CompareTag("Enemy"))
         {
@@ -224,13 +227,28 @@ public class Player : Photon.MonoBehaviour
         IsAvailable = true;
     }
 
+    private void OnTriggerStay2D(Collider2D other)
+    { 
+        if (other.gameObject.CompareTag("Rock") && Input.GetKey(GameManager.GM.transfo))
+        {
+            IsRock = true;
+            IsDefault = false;
+            IsFlame = false;
+            anim.SetBool("IsRock", IsRock);
+        }
+        else if (other.gameObject.CompareTag("Rock") && !IsRock)
+        {
+            Debug.Log("Press Transfo !");
+        }
+    }
+
     // Update is called once per frame
     void Update()
     {
         if (photonView.isMine && photonView.gameObject.activeSelf)
         {
             CheckInput();
-            ChangeSprite();
+            //ChangeSprite();
         }
 
         if (Hurt1 == true)
