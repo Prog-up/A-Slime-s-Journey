@@ -5,7 +5,6 @@ using UnityEngine.UI;
 
 public class Player : Photon.MonoBehaviour
 {
-
     public PhotonView photonView;
     public Rigidbody2D rb;
     private Animator anim;
@@ -32,6 +31,7 @@ public class Player : Photon.MonoBehaviour
     //Permet de connaitre la forme actuelle
     public bool IsDefault = true;
     public bool IsRock = false;
+    public bool IsFlame = false;
 
     //Permet de destroy
     public GameObject ToDestroy;
@@ -56,14 +56,17 @@ public class Player : Photon.MonoBehaviour
     private bool Hurt2 = false;
     private float timer;
     private float timer2;
+    
+    // Menu
+    private bool Off;
 
     private void Escalade()
     {
         if (IsRock)
         {
-
             isTouchingWall = Physics2D.OverlapCircle(WallCheckRight.position, 0.1f, collisionLayers)||Physics2D.OverlapCircle(WallCheckLeft.position, 0.1f, collisionLayers);
-            verticalInput = Input.GetAxis("Vertical");
+            //verticalInput = Input.GetAxis("Vertical");
+            verticalInput = Input.GetKey(GameManager.GM.power) ? 1 : 0;
 
             if (isTouchingWall && verticalInput>0)
             {
@@ -119,12 +122,12 @@ public class Player : Photon.MonoBehaviour
 
     private void Hor()
     {
-        if (InputManager.instance.KeyDown("MoveRight") || (int)Input.GetAxisRaw("Horizontal") == -1)
+        if (Input.GetKey(GameManager.GM.right))
         {
             photonView.RPC("FlipTrue",PhotonTargets.AllBuffered);
             MoveForce = -1;
         }
-        else if (InputManager.instance.KeyDown("MoveLeft") || (int)Input.GetAxisRaw("Horizontal") == 1)
+        else if (Input.GetKey(GameManager.GM.left))
         {
             photonView.RPC("FlipFalse",PhotonTargets.AllBuffered);
             MoveForce = 1;
@@ -140,25 +143,26 @@ public class Player : Photon.MonoBehaviour
         IsGrounded = Physics2D.OverlapCircle(GroundCheck.position, GroundCheckRadius, collisionLayers);
         if (IsGrounded)
         {
-            if (InputManager.instance.KeyDown("Jump"))
+            if (Input.GetKey(GameManager.GM.jump))
             {
                 rb.velocity = new Vector2(rb.velocity.x, JumpForce);
                 jumpsound.Play();
                 anim.SetBool("Isjumping",!IsGrounded);
-                Debug.Log("Ca marche");
+                // Debug.Log("Ca marche");
             }
         }
         anim.SetBool("Isjumping",!IsGrounded);
     }
+
     void ChangeSprite()
     {
-       if(InputManager.instance.KeyDown("Transfo") && IsDefault)
+       if(Input.GetKey(GameManager.GM.transfo) && IsDefault)
        {
             IsRock = true;
             IsDefault = false;
             anim.SetBool("IsRock", IsRock);
        }
-       if(InputManager.instance.KeyDown("Transfo") && IsRock)
+       if(Input.GetKey(GameManager.GM.transfo) && IsRock)
        {
             IsRock = false;
             IsDefault = true;
@@ -191,13 +195,13 @@ public class Player : Photon.MonoBehaviour
 
     private void Tir()
     {
-        if (IsRock)
+        if (IsFlame)
         {
             if (!IsAvailable)
             {
                 return;
             }
-            if (InputManager.instance.KeyDown("Shoot"))
+            if (Input.GetKey(GameManager.GM.power)) // TODO: Power en forme de feu (à la place de la roulade)
             {
                 if (sr.flipX)
                 {
@@ -212,7 +216,6 @@ public class Player : Photon.MonoBehaviour
             }
         }
     }
-    
     
     public IEnumerator StartCooldown()
     {
