@@ -13,9 +13,9 @@ public class MenuManager : MonoBehaviour
     [SerializeField] public InputField JoinGameInput;
     [SerializeField] private GameObject StartButton;
     [SerializeField] private GameObject JoinButton;
-    [SerializeField] private GameObject OptionButton;
+    //[SerializeField] private GameObject OptionButton;
     [SerializeField] private GameObject OptionMenu;
-    
+
     private void Awake()
     {
         PhotonNetwork.ConnectUsingSettings("0.1");
@@ -28,25 +28,11 @@ public class MenuManager : MonoBehaviour
         UsernameMenu = Canvas.Find("UserNameCanvas").gameObject;
         UsernameInput = UsernameMenu.transform.Find("UserNameInput").gameObject.GetComponent<InputField>();
         StartButton = UsernameMenu.transform.Find("StartButton").gameObject;
-        OptionButton = UsernameMenu.transform.Find("OptionButton").gameObject;
+        //OptionButton = UsernameMenu.transform.Find("OptionButton").gameObject;
         ConnectPannel = Canvas.Find("MainMenuCanvas").gameObject;
         JoinGameInput = ConnectPannel.transform.Find("JoinInput").gameObject.GetComponent<InputField>();
         JoinButton = ConnectPannel.transform.Find("JoinButton").gameObject;
         OptionMenu = Canvas.Find("OptionMenuCanvas").gameObject;
-        /*
-        for(int i = 0; i < OptionMenu.transform.childCount; i++)
-        {
-            if(OptionMenu.transform.GetChild(i).name == "ForwardKey")
-                OptionMenu.transform.GetChild(i).GetComponentInChildren<Text>().text = GameManager.GM.forward.ToString();
-            else if(OptionMenu.transform.GetChild(i).name == "BackwardKey")
-                OptionMenu.transform.GetChild(i).GetComponentInChildren<Text>().text = GameManager.GM.backward.ToString();
-            else if(OptionMenu.transform.GetChild(i).name == "LeftKey")
-                OptionMenu.transform.GetChild(i).GetComponentInChildren<Text>().text = GameManager.GM.left.ToString();
-            else if(OptionMenu.transform.GetChild(i).name == "RightKey")
-                OptionMenu.transform.GetChild(i).GetComponentInChildren<Text>().text = GameManager.GM.right.ToString();
-            else if(OptionMenu.transform.GetChild(i).name == "JumpKey")
-                OptionMenu.transform.GetChild(i).GetComponentInChildren<Text>().text = GameManager.GM.jump.ToString();
-                */
     }
     
     public string Getgamename()
@@ -115,7 +101,6 @@ public class MenuManager : MonoBehaviour
     {
         PhotonNetwork.LoadLevel("MainGame");
     }
-
     public void ExitGame() 
     {
         Application.Quit();
