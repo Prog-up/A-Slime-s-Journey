@@ -125,12 +125,12 @@ public class Player : Photon.MonoBehaviour
         if (Input.GetKey(GameManager.GM.right))
         {
             photonView.RPC("FlipTrue",PhotonTargets.AllBuffered);
-            MoveForce = -1;
+            MoveForce = 1;
         }
         else if (Input.GetKey(GameManager.GM.left))
         {
             photonView.RPC("FlipFalse",PhotonTargets.AllBuffered);
-            MoveForce = 1;
+            MoveForce = -1;
         }
         else
         {
