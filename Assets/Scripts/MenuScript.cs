@@ -16,8 +16,8 @@ public class MenuScript : MonoBehaviour {
 	{
 		//Assign menuPanel to the Panel object in our Canvas
 		//Make sure it's not active when the game starts
-		menuPanel = transform.Find("Panel");
-		menuPanel.gameObject.SetActive(false);
+		menuPanel = transform;
+		//menuPanel.gameObject.SetActive(false);
 		waitingForKey = false;
 
 		/*iterate through each child of the panel and check
@@ -35,11 +35,11 @@ public class MenuScript : MonoBehaviour {
 				menuPanel.GetChild(i).GetComponentInChildren<Text>().text = GameManager.GM.right.ToString();
 			else if(menuPanel.GetChild(i).name == "JumpKey")
 				menuPanel.GetChild(i).GetComponentInChildren<Text>().text = GameManager.GM.jump.ToString();
-			else if(menuPanel.GetChild(i).name == "powerKey")
+			else if(menuPanel.GetChild(i).name == "PowerKey")
 				menuPanel.GetChild(i).GetComponentInChildren<Text>().text = GameManager.GM.power.ToString();
-			else if(menuPanel.GetChild(i).name == "transfoKey")
+			else if(menuPanel.GetChild(i).name == "TransfoKey")
 				menuPanel.GetChild(i).GetComponentInChildren<Text>().text = GameManager.GM.transfo.ToString();
-			else if(menuPanel.GetChild(i).name == "pauseKey")
+			else if(menuPanel.GetChild(i).name == "PauseKey")
 				menuPanel.GetChild(i).GetComponentInChildren<Text>().text = GameManager.GM.pause.ToString();
 		}
 	}

@@ -12,6 +12,7 @@ TagManager:
   - Rock
   - Cailloux
   - Heal
+  - Flame
   layers:
   - Default
   - TransparentFX

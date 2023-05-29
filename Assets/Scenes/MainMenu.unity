@@ -5212,7 +5212,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!95 &1170953614
 Animator:
   serializedVersion: 5
@@ -5223,7 +5223,7 @@ Animator:
   m_GameObject: {fileID: 1170953613}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: f5e3fabafb9e9b865bcc8a9246a9a104, type: 2}
+  m_Controller: {fileID: 9100000, guid: fa698c7b56d64f2f29d9f7ea78a9e4eb, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -8856,7 +8856,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Loading
+  m_Text: Loading...
 --- !u!222 &2070707264
 CanvasRenderer:
   m_ObjectHideFlags: 0

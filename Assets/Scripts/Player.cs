@@ -27,6 +27,7 @@ public class Player : Photon.MonoBehaviour
     public AudioSource jumpsound;
     public SpriteRenderer Destination; //TODO : Fix me
     public GameObject Life;
+    public GameObject Indicator;
 
     //Permet de connaitre la forme actuelle
     public bool IsDefault = true;
@@ -225,9 +226,19 @@ public class Player : Photon.MonoBehaviour
             IsFlame = true;
             anim.SetBool("IsFlame", IsFlame);
         }
-        else if (other.gameObject.CompareTag("Rock") && (!IsRock || !IsFlame))
+        else if (other.gameObject.CompareTag("Rock") && !(IsRock || IsFlame))
         {
-            Debug.Log("Press Transfo !");
+            // Debug.Log("Press Transfo !");
+            Indicator.GetComponent<Text>().text = "Press " + GameManager.GM.transfo.ToString() + " !";
+            Indicator.SetActive(true);
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.gameObject.CompareTag("Rock") || other.gameObject.CompareTag("Flame"))
+        {
+            Indicator.SetActive(false);
         }
     }
 
