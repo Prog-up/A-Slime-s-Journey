@@ -65,7 +65,6 @@ public class Player : Photon.MonoBehaviour
         if (IsRock)
         {
             isTouchingWall = Physics2D.OverlapCircle(WallCheckRight.position, 0.1f, collisionLayers)||Physics2D.OverlapCircle(WallCheckLeft.position, 0.1f, collisionLayers);
-            //verticalInput = Input.GetAxis("Vertical");
             verticalInput = Input.GetKey(GameManager.GM.power) ? 1 : 0;
 
             if (isTouchingWall && verticalInput>0)
@@ -153,23 +152,6 @@ public class Player : Photon.MonoBehaviour
         }
         anim.SetBool("Isjumping",!IsGrounded);
     }
-
-    /*void ChangeSprite()
-    {
-       if(Input.GetKey(GameManager.GM.transfo) && IsDefault)
-       {
-            IsRock = true;
-            IsDefault = false;
-            anim.SetBool("IsRock", IsRock);
-       }
-       if(Input.GetKey(GameManager.GM.transfo) && IsRock)
-       {
-            IsRock = false;
-            IsDefault = true;
-            anim.SetBool("IsRock", IsDefault);
-       }
-       anim.SetBool("IsRock", IsRock);
-    }*/
 
     void OnTriggerEnter2D(Collider2D other)
     {

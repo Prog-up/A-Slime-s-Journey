@@ -15,6 +15,7 @@ public class MenuManager : MonoBehaviour
     [SerializeField] private GameObject JoinButton;
     //[SerializeField] private GameObject OptionButton;
     [SerializeField] private GameObject OptionMenu;
+    public Animator transition;
 
     private void Awake()
     {
@@ -93,8 +94,15 @@ public class MenuManager : MonoBehaviour
     {
         if(JoinGameInput.text.Length > 0)
         {
-            PhotonNetwork.JoinOrCreateRoom(JoinGameInput.text.ToUpper(), new RoomOptions() { MaxPlayers = 2 }, TypedLobby.Default);
+            StartCoroutine(NextLevel());
         }
+    }
+
+    private IEnumerator NextLevel()
+    {
+        transition.SetTrigger("Start");
+        yield return new WaitForSeconds(1);
+        PhotonNetwork.JoinOrCreateRoom(JoinGameInput.text.ToUpper(), new RoomOptions() { MaxPlayers = 2 }, TypedLobby.Default);
     }
 
     private void OnJoinedRoom()

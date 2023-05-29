@@ -5212,7 +5212,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!95 &1170953614
 Animator:
   serializedVersion: 5
@@ -6308,6 +6308,7 @@ MonoBehaviour:
   StartButton: {fileID: 0}
   JoinButton: {fileID: 0}
   OptionMenu: {fileID: 0}
+  transition: {fileID: 1170953614}
 --- !u!1 &1426815417
 GameObject:
   m_ObjectHideFlags: 0
