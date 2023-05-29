@@ -18,6 +18,7 @@ public class GameManager : MonoBehaviour
     public (float, float)[] pos1 = new (float, float)[2] {(27.94f, -2.44f), (53.84f, 1.52f)};
     public (float, float)[] pos2 = new (float, float)[1] {(43.09f, -0.89f)};
     private bool ShouldSpawn = true;
+    
 
     private void Awake()
     {
