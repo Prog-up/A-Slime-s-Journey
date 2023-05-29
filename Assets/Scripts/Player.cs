@@ -147,7 +147,7 @@ public class Player : Photon.MonoBehaviour
                 rb.velocity = new Vector2(rb.velocity.x, JumpForce);
                 jumpsound.Play();
                 anim.SetBool("Isjumping",!IsGrounded);
-                // Debug.Log("Ca marche");
+                Debug.Log("Jump!");
             }
         }
         anim.SetBool("Isjumping",!IsGrounded);
@@ -218,7 +218,14 @@ public class Player : Photon.MonoBehaviour
             IsFlame = false;
             anim.SetBool("IsRock", IsRock);
         }
-        else if (other.gameObject.CompareTag("Rock") && !IsRock)
+        else if (other.gameObject.CompareTag("Flame") && Input.GetKey(GameManager.GM.transfo))
+        {
+            IsRock = false;
+            IsDefault = false;
+            IsFlame = true;
+            anim.SetBool("IsFlame", IsFlame);
+        }
+        else if (other.gameObject.CompareTag("Rock") && (!IsRock || !IsFlame))
         {
             Debug.Log("Press Transfo !");
         }
