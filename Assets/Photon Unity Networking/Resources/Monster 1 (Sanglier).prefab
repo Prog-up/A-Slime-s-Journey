@@ -424,7 +424,7 @@ GameObject:
   - component: {fileID: 6904128796136508089}
   - component: {fileID: 7188921890665517562}
   - component: {fileID: 2813947180635322007}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: WeakSpot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
