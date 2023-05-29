@@ -5,6 +5,8 @@ using UnityEngine;
 public class WeakSpot : MonoBehaviour
 {
 	public Animator animator;
+	
+	private float timer;
 
 	public AudioSource mortcochon;
 
@@ -20,15 +22,23 @@ public class WeakSpot : MonoBehaviour
 		{
 			animator.SetTrigger("Die");
 			alive = false;
-			PhotonNetwork.Destroy(transform.parent.gameObject);
 			mortcochon.Play();
+			StartCoroutine(StartCooldown());
+			
 		}
 		if (collision.CompareTag("Cailloux"))
 		{
 			animator.SetTrigger("Die");
 			alive = false;
-			PhotonNetwork.Destroy(transform.parent.gameObject);
 			mortcochon.Play();
+			StartCoroutine(StartCooldown());
+
 		}
 	}
+
+    public IEnumerator StartCooldown()
+    {
+	    yield return new WaitForSeconds(0.5f);
+	    PhotonNetwork.Destroy(transform.parent.gameObject);
+    }
 }
