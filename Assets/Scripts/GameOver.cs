@@ -9,6 +9,7 @@ public class GameOver : MonoBehaviour
     {
         PhotonNetwork.LoadLevel("MainGame");
         
+
     }
     
 

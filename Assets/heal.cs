@@ -9,7 +9,7 @@ public class heal : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            Destroy(gameObject, 0.1f);
+            PhotonNetwork.Destroy(gameObject);
         }
         
     }
