@@ -45,4 +45,5 @@ MonoBehaviour:
   - TaggedPlayer
   - FlipFalse
   - FlipTrue
+  - RPC_ChangeLevel
   DisableAutoOpenWizard: 1

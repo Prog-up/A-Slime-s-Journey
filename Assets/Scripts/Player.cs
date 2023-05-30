@@ -148,7 +148,6 @@ public class Player : Photon.MonoBehaviour
                 rb.velocity = new Vector2(rb.velocity.x, JumpForce);
                 jumpsound.Play();
                 anim.SetBool("Isjumping",!IsGrounded);
-                Debug.Log("Jump!");
             }
         }
         anim.SetBool("Isjumping",!IsGrounded);
@@ -176,7 +175,11 @@ public class Player : Photon.MonoBehaviour
                 anim.SetBool("Hurt1", true);
                 Hurt1 = true;
             }  
-        } 
+        }
+        else if (other.tag == "GG")
+        {
+            photonView.RPC("RPC_ChangeLevel",PhotonTargets.AllBuffered, "Level2Test");
+        }
     }
 
     private void Tir()
@@ -226,7 +229,7 @@ public class Player : Photon.MonoBehaviour
             IsFlame = true;
             anim.SetBool("IsFlame", IsFlame);
         }
-        else if (other.gameObject.CompareTag("Rock") || other.gameObject.CompareTag("Flame") && !(IsRock || IsFlame))
+        else if ((other.gameObject.CompareTag("Rock") || other.gameObject.CompareTag("Flame")) && !(IsRock || IsFlame))
         {
             // Debug.Log("Press Transfo !");
             Indicator.GetComponent<Text>().text = "Press " + GameManager.GM.transfo.ToString() + " !";
@@ -284,5 +287,15 @@ public class Player : Photon.MonoBehaviour
     {
         sr.flipX = false;
     }
-
+    
+    private void ChangeLevel()
+    {
+        photonView.RPC("RPC_ChangeLevel",PhotonTargets.AllBuffered);
+    }
+    
+    [PunRPC]
+    private void RPC_ChangeLevel(string level)
+    {
+        PhotonNetwork.LoadLevel(level);
+    }
 }
