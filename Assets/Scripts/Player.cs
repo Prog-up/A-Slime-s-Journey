@@ -27,6 +27,7 @@ public class Player : Photon.MonoBehaviour
     public AudioSource jumpsound;
     public SpriteRenderer Destination; //TODO : Fix me
     public GameObject Life;
+    public GameObject Indicator;
 
     //Permet de connaitre la forme actuelle
     public bool IsDefault = true;
@@ -147,7 +148,7 @@ public class Player : Photon.MonoBehaviour
                 rb.velocity = new Vector2(rb.velocity.x, JumpForce);
                 jumpsound.Play();
                 anim.SetBool("Isjumping",!IsGrounded);
-                // Debug.Log("Ca marche");
+                Debug.Log("Jump!");
             }
         }
         anim.SetBool("Isjumping",!IsGrounded);
@@ -218,9 +219,26 @@ public class Player : Photon.MonoBehaviour
             IsFlame = false;
             anim.SetBool("IsRock", IsRock);
         }
-        else if (other.gameObject.CompareTag("Rock") && !IsRock)
+        else if (other.gameObject.CompareTag("Flame") && Input.GetKey(GameManager.GM.transfo))
         {
-            Debug.Log("Press Transfo !");
+            IsRock = false;
+            IsDefault = false;
+            IsFlame = true;
+            anim.SetBool("IsFlame", IsFlame);
+        }
+        else if (other.gameObject.CompareTag("Rock") && !(IsRock || IsFlame))
+        {
+            // Debug.Log("Press Transfo !");
+            Indicator.GetComponent<Text>().text = "Press " + GameManager.GM.transfo.ToString() + " !";
+            Indicator.SetActive(true);
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.gameObject.CompareTag("Rock") || other.gameObject.CompareTag("Flame"))
+        {
+            Indicator.SetActive(false);
         }
     }
 

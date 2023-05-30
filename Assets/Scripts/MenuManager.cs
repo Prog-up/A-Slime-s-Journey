@@ -100,7 +100,8 @@ public class MenuManager : MonoBehaviour
 
     private IEnumerator NextLevel()
     {
-        transition.SetTrigger("Start");
+        //transition.SetTrigger("Start");
+        Canvas.Find("Image").gameObject.SetActive(true);
         yield return new WaitForSeconds(1);
         PhotonNetwork.JoinOrCreateRoom(JoinGameInput.text.ToUpper(), new RoomOptions() { MaxPlayers = 2 }, TypedLobby.Default);
     }
