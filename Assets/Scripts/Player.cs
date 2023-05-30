@@ -66,7 +66,7 @@ public class Player : Photon.MonoBehaviour
         if (IsRock)
         {
             isTouchingWall = Physics2D.OverlapCircle(WallCheckRight.position, 0.1f, collisionLayers)||Physics2D.OverlapCircle(WallCheckLeft.position, 0.1f, collisionLayers);
-            verticalInput = Input.GetKey(GameManager.GM.power) ? 1 : 0;
+            verticalInput = (Input.GetKey(GameManager.GM.power) && !Off)? 1 : 0;
 
             if (isTouchingWall && verticalInput>0)
             {
@@ -122,12 +122,12 @@ public class Player : Photon.MonoBehaviour
 
     private void Hor()
     {
-        if (Input.GetKey(GameManager.GM.right))
+        if (Input.GetKey(GameManager.GM.right) && !Off)
         {
             photonView.RPC("FlipFalse",PhotonTargets.AllBuffered);
             MoveForce = 1;
         }
-        else if (Input.GetKey(GameManager.GM.left))
+        else if (Input.GetKey(GameManager.GM.left) && !Off)
         {
             photonView.RPC("FlipTrue",PhotonTargets.AllBuffered);
             MoveForce = -1;
@@ -143,7 +143,7 @@ public class Player : Photon.MonoBehaviour
         IsGrounded = Physics2D.OverlapCircle(GroundCheck.position, GroundCheckRadius, collisionLayers);
         if (IsGrounded)
         {
-            if (Input.GetKey(GameManager.GM.jump))
+            if (Input.GetKey(GameManager.GM.jump) && !Off)
             {
                 rb.velocity = new Vector2(rb.velocity.x, JumpForce);
                 jumpsound.Play();
@@ -187,7 +187,7 @@ public class Player : Photon.MonoBehaviour
             {
                 return;
             }
-            if (Input.GetKey(GameManager.GM.power)) // TODO: Power en forme de feu (à la place de la roulade)
+            if (Input.GetKey(GameManager.GM.power) && !Off) // TODO: Power en forme de feu (à la place de la roulade)
             {
                 if (sr.flipX)
                 {
@@ -212,21 +212,21 @@ public class Player : Photon.MonoBehaviour
 
     private void OnTriggerStay2D(Collider2D other)
     { 
-        if (other.gameObject.CompareTag("Rock") && Input.GetKey(GameManager.GM.transfo))
+        if (other.gameObject.CompareTag("Rock") && Input.GetKey(GameManager.GM.transfo) && !Off)
         {
             IsRock = true;
             IsDefault = false;
             IsFlame = false;
             anim.SetBool("IsRock", IsRock);
         }
-        else if (other.gameObject.CompareTag("Flame") && Input.GetKey(GameManager.GM.transfo))
+        else if (other.gameObject.CompareTag("Flame") && Input.GetKey(GameManager.GM.transfo) && !Off)
         {
             IsRock = false;
             IsDefault = false;
             IsFlame = true;
             anim.SetBool("IsFlame", IsFlame);
         }
-        else if (other.gameObject.CompareTag("Rock") || other.gameObject.CompareTag("Flame") && !(IsRock || IsFlame) )
+        else if (other.gameObject.CompareTag("Rock") || other.gameObject.CompareTag("Flame") && !(IsRock || IsFlame))
         {
             // Debug.Log("Press Transfo !");
             Indicator.GetComponent<Text>().text = "Press " + GameManager.GM.transfo.ToString() + " !";
@@ -241,14 +241,13 @@ public class Player : Photon.MonoBehaviour
             Indicator.SetActive(false);
         }
     }
-
-    // Update is called once per frame
+    
     void Update()
     {
         if (photonView.isMine && photonView.gameObject.activeSelf)
         {
             CheckInput();
-            //ChangeSprite();
+            Off = GameManager.GM.InOptions;
         }
 
         if (Hurt1 == true)

@@ -10,8 +10,7 @@ using Random = UnityEngine.Random;
 public class GameManager : MonoBehaviour
 {
     public GameObject PlayerPrefab;
-    // private bool InPause = false;
-    private bool InOptions = false;
+    public bool InOptions = false;
     public GameObject GameCanvas;
     public GameObject disconnectUI;
     public GameObject PlayerFeed;
@@ -68,16 +67,12 @@ public class GameManager : MonoBehaviour
     private void Update()
     {
         PauseButton();
-        // Debug.Log("PlayerList = " + PhotonNetwork.playerList.Length);
-        // Debug.Log("PlayerCount = " + PhotonNetwork.room.PlayerCount);
-        // Debug.Log("ShouldSpawn = " + ShouldSpawn);
         Spawn();
-        
     }   
 
     private void PauseButton()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(GameManager.GM.pause) && !MenuScript.MS.waitingForKey)
         {
             PauseMenu();
         }
@@ -103,14 +98,17 @@ public class GameManager : MonoBehaviour
 
     public void PauseMenu()
     {
+        
         if (GameCanvas.transform.Find("OptionMenuCanvas").gameObject.activeSelf || GameCanvas.transform.Find("DisconnectMenu").gameObject.activeSelf)
         {
             GameCanvas.transform.Find("DisconnectMenu").gameObject.SetActive(false);
             GameCanvas.transform.Find("OptionMenuCanvas").gameObject.SetActive(false);
+            InOptions = false;
         }
         else
         {
             GameCanvas.transform.Find("DisconnectMenu").gameObject.SetActive(!GameCanvas.transform.Find("DisconnectMenu").gameObject.activeSelf);
+            InOptions = !InOptions;
         }
     }
 

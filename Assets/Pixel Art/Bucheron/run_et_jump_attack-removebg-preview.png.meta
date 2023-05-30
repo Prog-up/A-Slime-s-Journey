@@ -1,0 +1,895 @@
+fileFormatVersion: 2
+guid: 71947f18d5aaa62429f1d4bbffe6590a
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: run_et_jump_attack-removebg-preview_0
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 444
+        width: 48
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b62e43f3696b3be4ab43bee84d4c57d5
+      internalID: 422510791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: run_et_jump_attack-removebg-preview_1
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 444
+        width: 48
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63bb80eacc919a24d8b415e11ec036bf
+      internalID: 1067097850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: run_et_jump_attack-removebg-preview_2
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 444
+        width: 62
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0aba14d4c442d0d4fa8918521dc854f1
+      internalID: -1968264730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: run_et_jump_attack-removebg-preview_3
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 451
+        width: 68
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3311849040a8d24faa075d634c090fe
+      internalID: -2144396191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: run_et_jump_attack-removebg-preview_4
+      rect:
+        serializedVersion: 2
+        x: 347
+        y: 449
+        width: 48
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a508393171af9ab4e9abe97ec3ca7235
+      internalID: 1101527791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: run_et_jump_attack-removebg-preview_5
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 444
+        width: 44
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fd2683ea24d1864d84488039c5a1f16
+      internalID: 1478337549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: run_et_jump_attack-removebg-preview_6
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 363
+        width: 41
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ceb95c9b7928301479a2af1dff3f2231
+      internalID: -1311914777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: run_et_jump_attack-removebg-preview_7
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 361
+        width: 40
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f50229e4f226b4b4eb057c3e8a6e49f6
+      internalID: 771704546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: run_et_jump_attack-removebg-preview_8
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 365
+        width: 43
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c2141bc8b01ee143b9d8a6d09f9acfd
+      internalID: 951538544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: run_et_jump_attack-removebg-preview_9
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 363
+        width: 39
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4cbee109f1f5eac4abaa2ab14f4ec098
+      internalID: 1119167909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: run_et_jump_attack-removebg-preview_10
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 363
+        width: 36
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 363c387d4ca8bae41b6f184df58bfaae
+      internalID: 711106561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: run_et_jump_attack-removebg-preview_11
+      rect:
+        serializedVersion: 2
+        x: 446
+        y: 363
+        width: 33
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22f5e2ea978ef07479cc2353035eeae1
+      internalID: 1667696640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: run_et_jump_attack-removebg-preview_12
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 277
+        width: 52
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf186f28960cb924b98083c17ac5c5c6
+      internalID: 1264861077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: run_et_jump_attack-removebg-preview_13
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 277
+        width: 44
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cfeba038d9c60543a025b4814c1c11f
+      internalID: 1941820463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: run_et_jump_attack-removebg-preview_14
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 277
+        width: 49
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e0fcf0cf14e9ee43b2e1898a030b6a2
+      internalID: 389078811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: run_et_jump_attack-removebg-preview_15
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 277
+        width: 46
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3e8d7fbda58ed74e92cfcd50d58bea6
+      internalID: -1947720249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: run_et_jump_attack-removebg-preview_16
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 277
+        width: 47
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 475dbc8bacdb0f94f9b977004022c099
+      internalID: -2145967951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: run_et_jump_attack-removebg-preview_17
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 277
+        width: 38
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fa09d7218fc4a84785fb642a7fa51d7
+      internalID: -430000352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: run_et_jump_attack-removebg-preview_18
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 194
+        width: 47
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 252e1ae4a440867488a185d5680f85d8
+      internalID: -1322099506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: run_et_jump_attack-removebg-preview_19
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 194
+        width: 34
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcdfe3df6b2a17447988630ef3db70d6
+      internalID: 768729035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: run_et_jump_attack-removebg-preview_20
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 194
+        width: 50
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 193c2edc5629c684db233d8f29a47195
+      internalID: 733234611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: run_et_jump_attack-removebg-preview_21
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 194
+        width: 48
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05b5bae56e9aa684dbbab04e707ce69b
+      internalID: -1684591264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: run_et_jump_attack-removebg-preview_22
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 194
+        width: 33
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d6d8e80df3d7b64ebe4a2d2342c28fa
+      internalID: 1131289689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: run_et_jump_attack-removebg-preview_23
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 194
+        width: 50
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 931fdf82763941248baecd201f4cdc1c
+      internalID: 1219215051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: run_et_jump_attack-removebg-preview_24
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 110
+        width: 48
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fad6ff7e56bdf4449c4f0191ef33fc1
+      internalID: 2132442902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: run_et_jump_attack-removebg-preview_25
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 110
+        width: 49
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58611943a8ffe6c4b87fc774c125ff07
+      internalID: 607692136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: run_et_jump_attack-removebg-preview_26
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 110
+        width: 47
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b590584c016f5954399b8f717e385ea8
+      internalID: 1541742455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: run_et_jump_attack-removebg-preview_27
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 110
+        width: 48
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1efce0bfdda701246a6d5cede0737063
+      internalID: 800068560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: run_et_jump_attack-removebg-preview_28
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 27
+        width: 34
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de7bfa8e1e643c4448df56ede4f6f669
+      internalID: -1197776110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: run_et_jump_attack-removebg-preview_29
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 27
+        width: 38
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97129c178847e6448bf1f6d9680d2689
+      internalID: 1355404731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: run_et_jump_attack-removebg-preview_30
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 27
+        width: 42
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdf93bf4b87b7d74684cc101d89c1473
+      internalID: -1416570517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: run_et_jump_attack-removebg-preview_31
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 27
+        width: 42
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b60581fe9e309504ebbc0cf3b1696fab
+      internalID: -275315157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: run_et_jump_attack-removebg-preview_32
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 27
+        width: 43
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01fb8242406506e4c9b9d5f3cb29b714
+      internalID: -576583484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: run_et_jump_attack-removebg-preview_33
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 26
+        width: 38
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca6d751175447e34e85880bb92ea2c67
+      internalID: 508758980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      run_et_jump_attack-removebg-preview_16: -2145967951
+      run_et_jump_attack-removebg-preview_7: 771704546
+      run_et_jump_attack-removebg-preview_19: 768729035
+      run_et_jump_attack-removebg-preview_4: 1101527791
+      run_et_jump_attack-removebg-preview_9: 1119167909
+      run_et_jump_attack-removebg-preview_3: -2144396191
+      run_et_jump_attack-removebg-preview_14: 389078811
+      run_et_jump_attack-removebg-preview_6: -1311914777
+      run_et_jump_attack-removebg-preview_18: -1322099506
+      run_et_jump_attack-removebg-preview_5: 1478337549
+      run_et_jump_attack-removebg-preview_23: 1219215051
+      run_et_jump_attack-removebg-preview_28: -1197776110
+      run_et_jump_attack-removebg-preview_20: 733234611
+      run_et_jump_attack-removebg-preview_2: -1968264730
+      run_et_jump_attack-removebg-preview_22: 1131289689
+      run_et_jump_attack-removebg-preview_15: -1947720249
+      run_et_jump_attack-removebg-preview_0: 422510791
+      run_et_jump_attack-removebg-preview_8: 951538544
+      run_et_jump_attack-removebg-preview_21: -1684591264
+      run_et_jump_attack-removebg-preview_25: 607692136
+      run_et_jump_attack-removebg-preview_30: -1416570517
+      run_et_jump_attack-removebg-preview_24: 2132442902
+      run_et_jump_attack-removebg-preview_29: 1355404731
+      run_et_jump_attack-removebg-preview_26: 1541742455
+      run_et_jump_attack-removebg-preview_33: 508758980
+      run_et_jump_attack-removebg-preview_27: 800068560
+      run_et_jump_attack-removebg-preview_13: 1941820463
+      run_et_jump_attack-removebg-preview_32: -576583484
+      run_et_jump_attack-removebg-preview_17: -430000352
+      run_et_jump_attack-removebg-preview_31: -275315157
+      run_et_jump_attack-removebg-preview_11: 1667696640
+      run_et_jump_attack-removebg-preview_12: 1264861077
+      run_et_jump_attack-removebg-preview_1: 1067097850
+      run_et_jump_attack-removebg-preview_10: 711106561
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
