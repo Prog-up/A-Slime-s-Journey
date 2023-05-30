@@ -8,6 +8,7 @@ public class BearTrap : MonoBehaviour
 	public Animator animator;
 	private bool Activated;
 	public GameObject Hitbox;
+
 	
     // Start is called before the first frame update
     void Start()
@@ -18,10 +19,16 @@ public class BearTrap : MonoBehaviour
 
 	void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.CompareTag("Player") || other.gameObject.CompareTag("Cailloux"))
+        if(Activated == false)
+        {
+        if ((other.gameObject.CompareTag("Player") || other.gameObject.CompareTag("Cailloux")))
         {
             animator.SetTrigger("activated");
+            Activated = true;
             PhotonNetwork.Destroy(Hitbox);
+            Destroy(Hitbox, 0.5F);
+            Debug.Log("activated = " + Activated );
+        }
         }
     }
 }

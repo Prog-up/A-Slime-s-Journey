@@ -138,7 +138,6 @@ public class MenuController : MonoBehaviour
             Debug.Log("La room est pleine. Impossible de rejoindre."); // TODO: test
             // Affichez un message à l'utilisateur ou déclenchez une action appropriée.
             PhotonNetwork.LoadLevel("GameOver");
-            
         }
     }
 }
