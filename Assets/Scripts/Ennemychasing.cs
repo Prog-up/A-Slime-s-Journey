@@ -5,7 +5,6 @@ using UnityEngine;
 public class Ennemychasing : MonoBehaviour
 {
 	public float speed;
-	public Transform[] waypoints;
 	public Transform target;
 	public Rigidbody2D rb;
 	public bool Alive;
@@ -28,6 +27,7 @@ public class Ennemychasing : MonoBehaviour
 
 	void Update()
 	{
+		player = GameObject.FindGameObjectWithTag("Player");
 		MoveEnnemy();
 		
         
@@ -43,7 +43,7 @@ public class Ennemychasing : MonoBehaviour
 
         if (villager.x-player.transform.position.x > 0)
 		{
-			if (Vector2.Distance(transform.position, player.transform.position) < 7f) //(transform.position.x-pos.x < 10)
+			if (Vector2.Distance(transform.position, player.transform.position) < 10f) //(transform.position.x-pos.x < 10)
 			{
 				rb.AddForce(Vector2.left * speed, ForceMode2D.Force);
 				if (Vector2.Distance(transform.position, player.transform.position) < 2f) //(transform.position.x-pos.x < 10)
