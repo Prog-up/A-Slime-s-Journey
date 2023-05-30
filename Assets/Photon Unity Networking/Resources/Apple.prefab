@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 7478189960424040070}
   - component: {fileID: -4438352508723591790}
   - component: {fileID: 2276141465542384062}
+  - component: {fileID: 521995885424336721}
   m_Layer: 0
   m_Name: Apple
   m_TagString: Heal
@@ -124,3 +125,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6383f635a5079945be19e1c9c05d587, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &521995885424336721
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7478189960424040071}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ownerId: 0
+  group: 0
+  OwnerShipWasTransfered: 0
+  prefixBackup: -1
+  synchronization: 3
+  onSerializeTransformOption: 3
+  onSerializeRigidBodyOption: 2
+  ownershipTransfer: 0
+  ObservedComponents:
+  - {fileID: 7478189960424040069}
+  ObservedComponentsFoldoutOpen: 1
+  viewIdField: 0
+  instantiationId: -1
+  currentMasterID: -1
+  isRuntimeInstantiated: 0
