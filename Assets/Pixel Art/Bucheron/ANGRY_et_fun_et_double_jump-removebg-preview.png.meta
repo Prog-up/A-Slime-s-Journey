@@ -1,0 +1,873 @@
+fileFormatVersion: 2
+guid: ba82f45ee888ffb40991fd8a66b88254
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ANGRY_et_fun_et_double_jump-removebg-preview_0
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 445
+        width: 41
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eed1274f3f389494fba7f84263e91b1d
+      internalID: 1002721584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ANGRY_et_fun_et_double_jump-removebg-preview_1
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 503
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a70d165dd07951f419bc79c4183caf65
+      internalID: -1182052549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ANGRY_et_fun_et_double_jump-removebg-preview_2
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 503
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36763e74500c4e04c98917ce72e06072
+      internalID: 349197417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ANGRY_et_fun_et_double_jump-removebg-preview_3
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 504
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55698460ef163214d9e1ff09c6f306d3
+      internalID: -1288479222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ANGRY_et_fun_et_double_jump-removebg-preview_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 445
+        width: 40
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 564364f57700e5f4b865e818e9be1e05
+      internalID: 1630263119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ANGRY_et_fun_et_double_jump-removebg-preview_5
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 445
+        width: 42
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45b431915d47a50428ad532d136f5740
+      internalID: 111641698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ANGRY_et_fun_et_double_jump-removebg-preview_6
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 445
+        width: 47
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 2, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91d084b0bbd0dfe41a660561ef21cf6a
+      internalID: -1540365979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ANGRY_et_fun_et_double_jump-removebg-preview_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 359
+        width: 42
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07ea99ddb0bf97e4fa40af2a4e3c90a7
+      internalID: -1697392908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ANGRY_et_fun_et_double_jump-removebg-preview_8
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 359
+        width: 42
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e1f7d6768aa1b0429d36ec8d224840f
+      internalID: 1915588770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ANGRY_et_fun_et_double_jump-removebg-preview_9
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 359
+        width: 42
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7bcde7e8e3a9fc4e8f2d5fcad136ba1
+      internalID: 1839147661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ANGRY_et_fun_et_double_jump-removebg-preview_10
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 359
+        width: 46
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eefd332a03e81204788c7cf974270661
+      internalID: 335721618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ANGRY_et_fun_et_double_jump-removebg-preview_11
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 359
+        width: 46
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f506d98913d37d40981883fa3902426
+      internalID: -607474730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ANGRY_et_fun_et_double_jump-removebg-preview_12
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 359
+        width: 42
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93d2f5f2fff86aa41bf3eefdea6fd4c8
+      internalID: 1260727849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ANGRY_et_fun_et_double_jump-removebg-preview_13
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 283
+        width: 42
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d20d151f1efeb74e891262ae556d42c
+      internalID: -1210159869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ANGRY_et_fun_et_double_jump-removebg-preview_14
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 281
+        width: 52
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 166e21ebdce12b44a9c2e7c1837f2d89
+      internalID: -55346870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ANGRY_et_fun_et_double_jump-removebg-preview_15
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 282
+        width: 47
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4faf2e1ef0189c944924768a04ca7b0b
+      internalID: -1763453185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ANGRY_et_fun_et_double_jump-removebg-preview_16
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 283
+        width: 47
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04f15eb434aaaab46b8a5e31ef66c45b
+      internalID: -1117473629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ANGRY_et_fun_et_double_jump-removebg-preview_17
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 279
+        width: 47
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e24bfafa43f635d4ba819993946cf11b
+      internalID: 25064148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ANGRY_et_fun_et_double_jump-removebg-preview_18
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 274
+        width: 48
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8ab4f879fd59a04dbf9e7be9f3ecf48
+      internalID: 146752890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ANGRY_et_fun_et_double_jump-removebg-preview_19
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 189
+        width: 30
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f27a541774b99174eb10ae1541d53866
+      internalID: -348575498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ANGRY_et_fun_et_double_jump-removebg-preview_20
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 187
+        width: 38
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2832580c7ecfff46a6570639f1747c9
+      internalID: -1538287278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ANGRY_et_fun_et_double_jump-removebg-preview_21
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 187
+        width: 42
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d041dadcb815c64897c9c37f5d3df9c
+      internalID: -541855323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ANGRY_et_fun_et_double_jump-removebg-preview_22
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 187
+        width: 42
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 148241c3b6159474aa5413ec28929e69
+      internalID: -314102922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ANGRY_et_fun_et_double_jump-removebg-preview_23
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 102
+        width: 40
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 052824a155713fa4188ac41b5e7faf5d
+      internalID: -1763303067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ANGRY_et_fun_et_double_jump-removebg-preview_24
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 102
+        width: 42
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd9504c44e2bc6e49b2dc5727a1f8dc8
+      internalID: 52489594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ANGRY_et_fun_et_double_jump-removebg-preview_25
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 102
+        width: 42
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9eba8ecfd64ea2748b9990100db4b2c0
+      internalID: 248666160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ANGRY_et_fun_et_double_jump-removebg-preview_26
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 102
+        width: 43
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3480b5c4e7a87ee4189330772ce1c095
+      internalID: -1471249354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ANGRY_et_fun_et_double_jump-removebg-preview_27
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 102
+        width: 42
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58b7ed75f6ed5a849b2ea0211bfa7539
+      internalID: 1184461074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ANGRY_et_fun_et_double_jump-removebg-preview_28
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 102
+        width: 44
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a814c6e0ec5b6c548903f2bd15ce8210
+      internalID: 1997176229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ANGRY_et_fun_et_double_jump-removebg-preview_29
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 18
+        width: 27
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83d77f94a2c028e489604ac4fd0213ea
+      internalID: -1584022155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ANGRY_et_fun_et_double_jump-removebg-preview_30
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 18
+        width: 27
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28220fc9af7500a47b6294dd1788d670
+      internalID: -253270886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ANGRY_et_fun_et_double_jump-removebg-preview_31
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 18
+        width: 26
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2993670c580570641bf246b9ae25dbc4
+      internalID: -1151863040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ANGRY_et_fun_et_double_jump-removebg-preview_32
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 18
+        width: 26
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0517de9f284fa24eabe33b5e5781998
+      internalID: 519866174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      ANGRY_et_fun_et_double_jump-removebg-preview_6: -1540365979
+      ANGRY_et_fun_et_double_jump-removebg-preview_16: -1117473629
+      ANGRY_et_fun_et_double_jump-removebg-preview_9: 1839147661
+      ANGRY_et_fun_et_double_jump-removebg-preview_27: 1184461074
+      ANGRY_et_fun_et_double_jump-removebg-preview_14: -55346870
+      ANGRY_et_fun_et_double_jump-removebg-preview_2: 349197417
+      ANGRY_et_fun_et_double_jump-removebg-preview_7: -1697392908
+      ANGRY_et_fun_et_double_jump-removebg-preview_13: -1210159869
+      ANGRY_et_fun_et_double_jump-removebg-preview_23: -1763303067
+      ANGRY_et_fun_et_double_jump-removebg-preview_3: -1288479222
+      ANGRY_et_fun_et_double_jump-removebg-preview_11: -607474730
+      ANGRY_et_fun_et_double_jump-removebg-preview_26: -1471249354
+      ANGRY_et_fun_et_double_jump-removebg-preview_25: 248666160
+      ANGRY_et_fun_et_double_jump-removebg-preview_5: 111641698
+      ANGRY_et_fun_et_double_jump-removebg-preview_18: 146752890
+      ANGRY_et_fun_et_double_jump-removebg-preview_4: 1630263119
+      ANGRY_et_fun_et_double_jump-removebg-preview_28: 1997176229
+      ANGRY_et_fun_et_double_jump-removebg-preview_17: 25064148
+      ANGRY_et_fun_et_double_jump-removebg-preview_20: -1538287278
+      ANGRY_et_fun_et_double_jump-removebg-preview_31: -1151863040
+      ANGRY_et_fun_et_double_jump-removebg-preview_1: -1182052549
+      ANGRY_et_fun_et_double_jump-removebg-preview_8: 1915588770
+      ANGRY_et_fun_et_double_jump-removebg-preview_24: 52489594
+      ANGRY_et_fun_et_double_jump-removebg-preview_32: 519866174
+      ANGRY_et_fun_et_double_jump-removebg-preview_0: 1002721584
+      ANGRY_et_fun_et_double_jump-removebg-preview_12: 1260727849
+      ANGRY_et_fun_et_double_jump-removebg-preview_10: 335721618
+      ANGRY_et_fun_et_double_jump-removebg-preview_19: -348575498
+      ANGRY_et_fun_et_double_jump-removebg-preview_21: -541855323
+      ANGRY_et_fun_et_double_jump-removebg-preview_15: -1763453185
+      ANGRY_et_fun_et_double_jump-removebg-preview_22: -314102922
+      ANGRY_et_fun_et_double_jump-removebg-preview_30: -253270886
+      ANGRY_et_fun_et_double_jump-removebg-preview_29: -1584022155
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

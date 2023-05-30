@@ -1,0 +1,829 @@
+fileFormatVersion: 2
+guid: ad6196b5e6c1ffc4d8740a5ea35b5166
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: idle_et_jump_et_hurt-removebg-preview_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 442
+        width: 48
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ab0e79add1bafb469dde7dd8eeea2b7
+      internalID: -349259462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: idle_et_jump_et_hurt-removebg-preview_1
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 442
+        width: 48
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a323239a3c1e72f4bb6779b66b29dc5c
+      internalID: -1715703496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: idle_et_jump_et_hurt-removebg-preview_2
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 442
+        width: 47
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f059c84a900c18a44909272b3fd6c519
+      internalID: 652495533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: idle_et_jump_et_hurt-removebg-preview_3
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 442
+        width: 48
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f66c97c66cf6404993148cd41c4cba7
+      internalID: -717379353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: idle_et_jump_et_hurt-removebg-preview_4
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 357
+        width: 31
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e90a4f658ec36a54a98d9467b71382b7
+      internalID: 1864773223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: idle_et_jump_et_hurt-removebg-preview_5
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 357
+        width: 28
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 310269d12af651345880e81a0ffa16fe
+      internalID: 1711782708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: idle_et_jump_et_hurt-removebg-preview_6
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 357
+        width: 26
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4e3e25919599074588f02597e43e8f9
+      internalID: -441546213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: idle_et_jump_et_hurt-removebg-preview_7
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 357
+        width: 48
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6cbebdfbd9167644bf36b2bf838e157
+      internalID: -1877665262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: idle_et_jump_et_hurt-removebg-preview_8
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 357
+        width: 30
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50f1fc4525c33964da3b3f4f27c9df68
+      internalID: -1294132768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: idle_et_jump_et_hurt-removebg-preview_9
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 357
+        width: 25
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e86efa4359abeb346aa87705b8075773
+      internalID: -50449178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: idle_et_jump_et_hurt-removebg-preview_10
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 272
+        width: 53
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c009e5d6d48c4d74eb5197d1cb00b337
+      internalID: -658582661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: idle_et_jump_et_hurt-removebg-preview_11
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 272
+        width: 32
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13a647cf400382d49a506e116df328ca
+      internalID: -480870198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: idle_et_jump_et_hurt-removebg-preview_12
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 272
+        width: 55
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a71479f29e737442b38ed2cc4f27e7e
+      internalID: 1720721089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: idle_et_jump_et_hurt-removebg-preview_13
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 272
+        width: 52
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 855f9040de6ce824fa3a95c240e564a7
+      internalID: 434591138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: idle_et_jump_et_hurt-removebg-preview_14
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 272
+        width: 31
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21ee0e05d30e4334db9af16bfc8cca5f
+      internalID: -1938261487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: idle_et_jump_et_hurt-removebg-preview_15
+      rect:
+        serializedVersion: 2
+        x: 429
+        y: 272
+        width: 59
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ae61bff8d02ba241a2060b010f45f11
+      internalID: 710242805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: idle_et_jump_et_hurt-removebg-preview_16
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 186
+        width: 48
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d52be031656c5d44b367d9801fc44c1
+      internalID: -1565154386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: idle_et_jump_et_hurt-removebg-preview_17
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 186
+        width: 44
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b281370bd7b77704fab954260d0c7696
+      internalID: -1093469167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: idle_et_jump_et_hurt-removebg-preview_18
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 186
+        width: 37
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e00b71e07da1c0d4ab6f69751403244a
+      internalID: -1383034838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: idle_et_jump_et_hurt-removebg-preview_19
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 186
+        width: 50
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59fa09962b6939b4a9f09ac098cf030e
+      internalID: -1463683152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: idle_et_jump_et_hurt-removebg-preview_20
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 186
+        width: 48
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33c3400b6439f4a4fafc947ac35427bc
+      internalID: 1739057846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: idle_et_jump_et_hurt-removebg-preview_21
+      rect:
+        serializedVersion: 2
+        x: 451
+        y: 186
+        width: 37
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b1ffb26845ee5a40a0357e9e94b428a
+      internalID: -1032955858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: idle_et_jump_et_hurt-removebg-preview_22
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 101
+        width: 48
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d278c35a903bde479e0cd82c4293440
+      internalID: -1916746165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: idle_et_jump_et_hurt-removebg-preview_23
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 101
+        width: 48
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1130853ae3627db44a7e612103781661
+      internalID: 286771831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: idle_et_jump_et_hurt-removebg-preview_24
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 101
+        width: 48
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ee6fbf81b6a23d4fb03d1af731c2735
+      internalID: -2012950771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: idle_et_jump_et_hurt-removebg-preview_25
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 108
+        width: 48
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 635c183befcd9d24daf5909fd7a85df4
+      internalID: -1324779020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: idle_et_jump_et_hurt-removebg-preview_26
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 106
+        width: 47
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 648f7a61731edf54b922656d7ae5bc41
+      internalID: 1919148737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: idle_et_jump_et_hurt-removebg-preview_27
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 101
+        width: 48
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b4da22ab0d3eaa4f825399ed69fa46c
+      internalID: -138295883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: idle_et_jump_et_hurt-removebg-preview_28
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 15
+        width: 49
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da2e231df9cf70e4dadae9aea8c4cb31
+      internalID: 1605963485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: idle_et_jump_et_hurt-removebg-preview_29
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 15
+        width: 48
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f560ca0fbcdc454d9c3bbb4f4f0b017
+      internalID: -764232500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: idle_et_jump_et_hurt-removebg-preview_30
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 15
+        width: 48
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f085052a884ea8c4a94c4c998d50271c
+      internalID: -1322055415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      idle_et_jump_et_hurt-removebg-preview_9: -50449178
+      idle_et_jump_et_hurt-removebg-preview_12: 1720721089
+      idle_et_jump_et_hurt-removebg-preview_18: -1383034838
+      idle_et_jump_et_hurt-removebg-preview_15: 710242805
+      idle_et_jump_et_hurt-removebg-preview_20: 1739057846
+      idle_et_jump_et_hurt-removebg-preview_30: -1322055415
+      idle_et_jump_et_hurt-removebg-preview_10: -658582661
+      idle_et_jump_et_hurt-removebg-preview_16: -1565154386
+      idle_et_jump_et_hurt-removebg-preview_26: 1919148737
+      idle_et_jump_et_hurt-removebg-preview_27: -138295883
+      idle_et_jump_et_hurt-removebg-preview_19: -1463683152
+      idle_et_jump_et_hurt-removebg-preview_24: -2012950771
+      idle_et_jump_et_hurt-removebg-preview_2: 652495533
+      idle_et_jump_et_hurt-removebg-preview_29: -764232500
+      idle_et_jump_et_hurt-removebg-preview_7: -1877665262
+      idle_et_jump_et_hurt-removebg-preview_1: -1715703496
+      idle_et_jump_et_hurt-removebg-preview_25: -1324779020
+      idle_et_jump_et_hurt-removebg-preview_11: -480870198
+      idle_et_jump_et_hurt-removebg-preview_5: 1711782708
+      idle_et_jump_et_hurt-removebg-preview_21: -1032955858
+      idle_et_jump_et_hurt-removebg-preview_8: -1294132768
+      idle_et_jump_et_hurt-removebg-preview_22: -1916746165
+      idle_et_jump_et_hurt-removebg-preview_17: -1093469167
+      idle_et_jump_et_hurt-removebg-preview_6: -441546213
+      idle_et_jump_et_hurt-removebg-preview_13: 434591138
+      idle_et_jump_et_hurt-removebg-preview_23: 286771831
+      idle_et_jump_et_hurt-removebg-preview_0: -349259462
+      idle_et_jump_et_hurt-removebg-preview_14: -1938261487
+      idle_et_jump_et_hurt-removebg-preview_4: 1864773223
+      idle_et_jump_et_hurt-removebg-preview_28: 1605963485
+      idle_et_jump_et_hurt-removebg-preview_3: -717379353
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
