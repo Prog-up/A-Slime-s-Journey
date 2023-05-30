@@ -79,18 +79,22 @@ public class GameManager2 : MonoBehaviour
 
     public void Spawn()
     {
-        for (int i = 0; i < pos.Length; i++)
+        if (ShouldSpawn && PhotonNetwork.room.PlayerCount == 1)
         {
-            PhotonNetwork.InstantiateSceneObject(Enemy1.name, new Vector2(pos[i].Item1, pos[i].Item2), Quaternion.identity, 0, null);
+            for (int i = 0; i < pos.Length; i++)
+            {
+                PhotonNetwork.InstantiateSceneObject(Enemy1.name, new Vector2(pos[i].Item1, pos[i].Item2), Quaternion.identity, 0, null);
+            }
+            for (int i = 0; i < pos2.Length; i++)
+            {
+                PhotonNetwork.InstantiateSceneObject(Enemy2.name, new Vector2(pos2[i].Item1, pos2[i].Item2), Quaternion.identity, 0, null);
+            }
+            for (int i = 0; i < pos3.Length; i++)
+            {
+                PhotonNetwork.InstantiateSceneObject(Enemy3.name, new Vector2(pos3[i].Item1, pos3[i].Item2), Quaternion.identity, 0, null);
+            }
         }
-        for (int i = 0; i < pos2.Length; i++)
-        {
-            PhotonNetwork.InstantiateSceneObject(Enemy2.name, new Vector2(pos2[i].Item1, pos2[i].Item2), Quaternion.identity, 0, null);
-        }
-		for (int i = 0; i < pos3.Length; i++)
-        {
-            PhotonNetwork.InstantiateSceneObject(Enemy3.name, new Vector2(pos3[i].Item1, pos3[i].Item2), Quaternion.identity, 0, null);
-        }
+        ShouldSpawn = false;
     }
     public void PauseMenu()
     {
