@@ -8,6 +8,7 @@ public class GameOver : MonoBehaviour
     public void Respawn()
     {
         PhotonNetwork.LoadLevel("MainGame");
+        
     }
     
 

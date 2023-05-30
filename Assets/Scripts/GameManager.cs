@@ -71,7 +71,21 @@ public class GameManager : MonoBehaviour
         // Debug.Log("PlayerList = " + PhotonNetwork.playerList.Length);
         // Debug.Log("PlayerCount = " + PhotonNetwork.room.PlayerCount);
         // Debug.Log("ShouldSpawn = " + ShouldSpawn);
+        Spawn();
+        
+    }   
 
+    private void PauseButton()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            PauseMenu();
+        }
+    }
+
+
+    public void Spawn()
+    {
         if (ShouldSpawn && PhotonNetwork.room.PlayerCount == 1)
         {
             for (int i = 0; i < pos1.Length; i++)
@@ -85,14 +99,6 @@ public class GameManager : MonoBehaviour
         }
 
         ShouldSpawn = false;
-    }   
-
-    private void PauseButton()
-    {
-        if (Input.GetKeyDown(KeyCode.Escape))
-        {
-            PauseMenu();
-        }
     }
 
     public void PauseMenu()

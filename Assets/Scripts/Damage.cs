@@ -44,7 +44,6 @@ public class Damage : MonoBehaviour
         if (collision.CompareTag("Enemy") && photonView.isMine)
         {
             life--;
-            Debug.Log("Damage");
             switch (life)
             {
                 case 2:
