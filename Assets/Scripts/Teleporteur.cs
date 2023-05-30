@@ -10,6 +10,7 @@ public class Teleporteur : MonoBehaviour
         if (collision.gameObject.tag == "Player")
         {
             PhotonNetwork.LoadLevel("Level2Test");
+            Damage.life = 3;
         }
     }
 }
