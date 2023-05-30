@@ -19,11 +19,16 @@ public class BearTrap : MonoBehaviour
 
 	void OnTriggerEnter2D(Collider2D other)
     {
-        if ((other.gameObject.CompareTag("Player") || other.gameObject.CompareTag("Cailloux")) && !Activated)
+        if(Activated == false)
+        {
+        if ((other.gameObject.CompareTag("Player") || other.gameObject.CompareTag("Cailloux")))
         {
             animator.SetTrigger("activated");
             Activated = true;
             PhotonNetwork.Destroy(Hitbox);
+            Destroy(Hitbox, 0.5F);
+            Debug.Log("activated = " + Activated );
+        }
         }
     }
 }
