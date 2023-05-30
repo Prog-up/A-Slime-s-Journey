@@ -11,6 +11,9 @@ GameObject:
   - component: {fileID: 5459951776491038131}
   - component: {fileID: 5459951776491038130}
   - component: {fileID: 5459951776491038129}
+  - component: {fileID: 4002383187555046090}
+  - component: {fileID: 79678505206507292}
+  - component: {fileID: 3670943238292292590}
   m_Layer: 0
   m_Name: Axeman
   m_TagString: Untagged
@@ -111,3 +114,68 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.5259158, y: 0.58}
   m_EdgeRadius: 0
+--- !u!114 &4002383187555046090
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5459951776491038128}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22306c74a305d1c40a834a814abae17a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 2
+  waypoints: []
+  target: {fileID: 0}
+  rb: {fileID: 79678505206507292}
+  Alive: 0
+  graphic: {fileID: 5459951776491038130}
+  player: {fileID: 0}
+  IsGrounded: 0
+  JumpForce: 5
+  Capteur: {fileID: 0}
+  Capteur2: {fileID: 0}
+  anim: {fileID: 3670943238292292590}
+--- !u!50 &79678505206507292
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5459951776491038128}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
+--- !u!95 &3670943238292292590
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5459951776491038128}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: d5fe08928900692408ee917a71294bd2, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
