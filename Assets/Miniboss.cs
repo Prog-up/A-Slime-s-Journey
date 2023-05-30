@@ -11,7 +11,6 @@ public class Miniboss : MonoBehaviour
     public bool Alive;
     public SpriteRenderer graphic;
     public GameObject player;
-    public LayerMask collisionLayers;
     public bool IsGrounded = false;
     public float JumpForce;
     public Transform Capteur;
@@ -19,18 +18,22 @@ public class Miniboss : MonoBehaviour
 
     public Animator anim;
 
+    public GameObject WeakSpot;
+
+    public float life;
+    
+
 
     // Start is called before the first frame update
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player");
+        life = 10;
     }
 
     void Update()
     {
         MoveEnnemy();
-		
-        
     }
 
 
@@ -43,7 +46,7 @@ public class Miniboss : MonoBehaviour
 
         if (villager.x-player.transform.position.x > 0)
         {
-            if (Vector2.Distance(transform.position, player.transform.position) < 7f) //(transform.position.x-pos.x < 10)
+            if (Vector2.Distance(transform.position, player.transform.position) < 9f) //(transform.position.x-pos.x < 10)
             {
                 rb.AddForce(Vector2.left * speed, ForceMode2D.Force);
                 if (Vector2.Distance(transform.position, player.transform.position) < 2f) //(transform.position.x-pos.x < 10)
@@ -60,8 +63,12 @@ public class Miniboss : MonoBehaviour
         else
         {
 			
-            if (Vector3.Distance(transform.position, player.transform.position) < 7f)//(villager.x-pos.x > -10)
+            if (Vector3.Distance(transform.position, player.transform.position) < 10f)//(villager.x-pos.x > -10)
             {
+                if (Vector2.Distance(transform.position, player.transform.position) <8f || Vector2.Distance(transform.position, player.transform.position) >6f)
+                {
+                    rb.AddForce(new Vector2(1,1)* speed);
+                }
                 rb.AddForce(Vector2.right * speed, ForceMode2D.Force);
                 if (Vector2.Distance(transform.position, player.transform.position) < 2f) //(transform.position.x-pos.x < 10)
                 {
