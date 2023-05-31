@@ -5,7 +5,6 @@ using UnityEngine;
 public class Miniboss : MonoBehaviour
 {
     public float speed;
-    public Transform[] waypoints;
     public Transform target;
     public Rigidbody2D rb;
     public bool Alive;
@@ -18,11 +17,15 @@ public class Miniboss : MonoBehaviour
 
     public Animator anim;
 
-    public GameObject WeakSpot;
+    public GameObject WeakSpotH;
+	
+	public GameObject WeakSpotS;
+	
+	public float timer;
+
 
     public float life;
-    
-
+  
 
     // Start is called before the first frame update
     void Start()
@@ -33,7 +36,18 @@ public class Miniboss : MonoBehaviour
 
     void Update()
     {
-        MoveEnnemy();
+		timer += Time.deltaTime;
+		if (timer>0.5f)
+		{
+			MoveEnnemy();
+			timer = 0f;
+		}
+        
+    }
+
+	public IEnumerator StartCooldown()
+    {
+	    yield return new WaitForSeconds(0.5f);
     }
 
 
@@ -67,7 +81,8 @@ public class Miniboss : MonoBehaviour
             {
                 if (Vector2.Distance(transform.position, player.transform.position) <8f || Vector2.Distance(transform.position, player.transform.position) >6f)
                 {
-                    rb.AddForce(new Vector2(1,1)* speed);
+                    rb.AddForce(new Vector2(1,0)* speed);
+
                 }
                 rb.AddForce(Vector2.right * speed, ForceMode2D.Force);
                 if (Vector2.Distance(transform.position, player.transform.position) < 2f) //(transform.position.x-pos.x < 10)
