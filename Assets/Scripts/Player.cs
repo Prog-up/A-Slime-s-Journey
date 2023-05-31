@@ -192,6 +192,7 @@ public class Player : Photon.MonoBehaviour
             }
             if (Input.GetKey(GameManager.GM.power) && !Off)
             {
+                Debug.Log("Tir !");
                 if (sr.flipX)
                 {
                     PhotonNetwork.InstantiateSceneObject(projectile.name, LaunchOffset2.position, new Quaternion(0f, 180f, 0f, 0f), 0, null);
