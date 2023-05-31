@@ -226,7 +226,7 @@ public class Player : Photon.MonoBehaviour
             IsFlame = true;
             anim.SetBool("IsFlame", IsFlame);
         }
-        else if (other.gameObject.CompareTag("Rock") || other.gameObject.CompareTag("Flame") && !(IsRock || IsFlame))
+        else if (photonView.isMine &&((other.gameObject.CompareTag("Rock") || other.gameObject.CompareTag("Flame")) && !(IsRock || IsFlame)))
         {
             // Debug.Log("Press Transfo !");
             Indicator.GetComponent<Text>().text = "Press " + GameManager.GM.transfo.ToString() + " !";
