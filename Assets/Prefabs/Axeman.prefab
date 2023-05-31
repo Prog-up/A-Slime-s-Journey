@@ -1,5 +1,63 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &770738120227404233
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3970567187365945076}
+  - component: {fileID: 8373989696152549998}
+  m_Layer: 0
+  m_Name: WeakSpotH
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3970567187365945076
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 770738120227404233}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5459951776491038131}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &8373989696152549998
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 770738120227404233}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.04419706, y: 0.30395222}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.24374042, y: 0.09682751}
+  m_EdgeRadius: 0
 --- !u!1 &5459951776491038128
 GameObject:
   m_ObjectHideFlags: 0
@@ -32,7 +90,8 @@ Transform:
   m_LocalPosition: {x: -4.5746, y: -0.6953, z: 0}
   m_LocalScale: {x: 4.093141, y: 4.629132, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 3970567187365945076}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -126,7 +185,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22306c74a305d1c40a834a814abae17a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 2
+  speed: 0.5
   waypoints: []
   target: {fileID: 8179612259239588884, guid: 43bab9ca1ca5c714ea2e21c108c6d61e, type: 3}
   rb: {fileID: 79678505206507292}
@@ -138,7 +197,8 @@ MonoBehaviour:
   Capteur: {fileID: 0}
   Capteur2: {fileID: 0}
   anim: {fileID: 3670943238292292590}
-  WeakSpot: {fileID: 0}
+  WeakSpotH: {fileID: 0}
+  WeakspotS: {fileID: 0}
   life: 0
 --- !u!50 &79678505206507292
 Rigidbody2D:

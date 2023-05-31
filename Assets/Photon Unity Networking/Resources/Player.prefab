@@ -1203,6 +1203,37 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!1 &5857665245338147324
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2482380290358467408}
+  m_Layer: 6
+  m_Name: LaunchOffset2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2482380290358467408
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5857665245338147324}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
+  m_LocalPosition: {x: -0.66, y: -0.29, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8179612259239588884}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!1 &6020943303742644261
 GameObject:
   m_ObjectHideFlags: 0
@@ -1671,6 +1702,7 @@ Transform:
   - {fileID: 2603438787816082114}
   - {fileID: 841070092681449445}
   - {fileID: 3176128774607913265}
+  - {fileID: 2482380290358467408}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1832,7 +1864,7 @@ MonoBehaviour:
   WallCheckLeft: {fileID: 5771771229128592085}
   projectile: {fileID: 6016551358141180298, guid: d4b825117826a1d43a14a78133661e7a, type: 3}
   LaunchOffset: {fileID: 2603438787816082114}
-  LaunchOffset2: {fileID: 0}
+  LaunchOffset2: {fileID: 2482380290358467408}
   CooldownDuration: 1.5
   IsAvailable: 1
 --- !u!114 &2196262747904822369
@@ -2084,6 +2116,9 @@ MonoBehaviour:
   - Type: 4
     SynchronizeType: 2
     Name: Hurt2
+  - Type: 4
+    SynchronizeType: 0
+    Name: IsFlame
   m_SynchronizeLayers:
   - SynchronizeType: 2
     LayerIndex: 0

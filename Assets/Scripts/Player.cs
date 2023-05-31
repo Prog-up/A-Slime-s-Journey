@@ -190,11 +190,11 @@ public class Player : Photon.MonoBehaviour
             {
                 return;
             }
-            if (Input.GetKey(GameManager.GM.power) && !Off) // TODO: Power en forme de feu (à la place de la roulade)
+            if (Input.GetKey(GameManager.GM.power) && !Off)
             {
                 if (sr.flipX)
                 {
-                    PhotonNetwork.InstantiateSceneObject(projectile.name, LaunchOffset2.position, Quaternion.identity, 0, null);
+                    PhotonNetwork.InstantiateSceneObject(projectile.name, LaunchOffset2.position, new Quaternion(0f, 180f, 0f, 0f), 0, null);
                 }
                 else
                 {
@@ -229,7 +229,7 @@ public class Player : Photon.MonoBehaviour
             IsFlame = true;
             anim.SetBool("IsFlame", IsFlame);
         }
-        else if ((other.gameObject.CompareTag("Rock") || other.gameObject.CompareTag("Flame")) && !(IsRock || IsFlame))
+        else if ((other.gameObject.CompareTag("Rock") && !IsRock) || (other.gameObject.CompareTag("Flame") && !IsFlame))
         {
             // Debug.Log("Press Transfo !");
             Indicator.GetComponent<Text>().text = "Press " + GameManager.GM.transfo.ToString() + " !";
