@@ -94,13 +94,13 @@ public class MenuManager : MonoBehaviour
     {
         if(JoinGameInput.text.Length > 0)
         {
+            ConnectPannel.transform.Find("Error").gameObject.SetActive(false);
             StartCoroutine(NextLevel());
         }
     }
 
     private IEnumerator NextLevel()
     {
-        //transition.SetTrigger("Start");
         Canvas.Find("Image").gameObject.SetActive(true);
         yield return new WaitForSeconds(1);
         PhotonNetwork.JoinOrCreateRoom(JoinGameInput.text.ToUpper(), new RoomOptions() { MaxPlayers = 2 }, TypedLobby.Default);
@@ -136,6 +136,8 @@ public class MenuManager : MonoBehaviour
         {
             Debug.Log("La room est pleine. Impossible de rejoindre."); // TODO: test
             // Affichez un message à l'utilisateur ou déclenchez une action appropriée.
+            ConnectPannel.transform.Find("Error").gameObject.SetActive(true);
+            Canvas.Find("Image").gameObject.SetActive(false);
         }
     }
 }
