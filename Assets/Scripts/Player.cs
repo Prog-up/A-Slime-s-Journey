@@ -31,7 +31,7 @@ public class Player : Photon.MonoBehaviour
     public AudioSource MusicLvl1;
     public AudioSource MusicLvl2;
     public AudioSource MusicBoss;
-    public Animator transition;
+    //public Animator transition;
 
     //Permet de connaitre la forme actuelle
     public bool IsDefault = true;
@@ -193,18 +193,14 @@ public class Player : Photon.MonoBehaviour
         }
         else if (other.tag == "GG")
         {
-            //transition.SetTrigger("Restart");
-            StartCoroutine(WaitTeleport());
-            //transition.SetTrigger("Start");
+            IsRock = false;
+            IsDefault = true;
+            IsFlame = false;
+            Damage.life = 3;
+            StartCoroutine(StartCooldown(true));
         }
     }
-
-    private IEnumerator WaitTeleport()
-    {
-        yield return new WaitForSeconds(2);
-        transform.position = new Vector3(380f, transform.position.y, transform.position.z);
-    }
-
+    
     private void Tir()
     {
         if (IsFlame)
@@ -230,11 +226,15 @@ public class Player : Photon.MonoBehaviour
         }
     }
     
-    public IEnumerator StartCooldown()
+    public IEnumerator StartCooldown(bool telep = false)
     {
         IsAvailable = false;
         yield return new WaitForSeconds(CooldownDuration);
         IsAvailable = true;
+        if (telep)
+        {
+            transform.position = new Vector3(380f, transform.position.y, transform.position.z);
+        }
     }
 
     private void OnTriggerStay2D(Collider2D other)
@@ -310,16 +310,5 @@ public class Player : Photon.MonoBehaviour
     private void FlipFalse()
     {
         sr.flipX = false;
-    }
-    
-    private void ChangeLevel()
-    {
-        photonView.RPC("RPC_ChangeLevel",PhotonTargets.AllBuffered);
-    }
-    
-    [PunRPC]
-    private void RPC_ChangeLevel(string level)
-    {
-        PhotonNetwork.LoadLevel(level);
     }
 }

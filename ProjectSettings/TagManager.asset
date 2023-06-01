@@ -15,6 +15,7 @@ TagManager:
   - Flame
   - Level1
   - Level2
+  - boss
   layers:
   - Default
   - TransparentFX

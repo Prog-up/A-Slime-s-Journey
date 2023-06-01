@@ -77,9 +77,10 @@ public class GameManager : MonoBehaviour
     {
         PauseButton();
         Spawn();
-        if(Damage.life == 0)
+        if(Damage.life <= 0)
         {
             PhotonNetwork.Destroy(gameObject);
+            Debug.Log("ca destroy");
         }
     }   
 

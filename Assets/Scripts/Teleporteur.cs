@@ -11,10 +11,15 @@ public class Teleporteur : MonoBehaviour
         if (collision.gameObject.tag == "Player")
         {
             transition.SetTrigger("Start");
-            //PhotonNetwork.LoadLevel("Level2Test");
-            Damage.life = 3;
-            // GameManager.GM.ChangeLevel("Level2Test");
-            // PhotonView.RPC("RPC_ChangeLevel", PhotonTargets.All, "Level2Test");
+            StartCoroutine(WaitTeleport(collision.transform));
+            
         }
+    }
+    
+    private IEnumerator WaitTeleport(Transform Player)
+    {
+        yield return new WaitForSeconds(1);
+        //Player.position = new Vector3(380f, Player.position.y, Player.position.z);
+        transition.SetTrigger("Restart");
     }
 }
