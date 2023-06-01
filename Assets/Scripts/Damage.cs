@@ -102,7 +102,7 @@ public class Damage : MonoBehaviour
             if(this.photonView.isMine)
             {
                 // Destroy(this);
-                PhotonNetwork.Destroy(transform.parent.gameObject);
+                PhotonNetwork.Destroy(this.photonView);
             }
         }
 	}
