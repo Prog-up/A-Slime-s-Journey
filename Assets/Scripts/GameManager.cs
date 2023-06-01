@@ -19,7 +19,11 @@ public class GameManager : MonoBehaviour
     public GameObject Enemy2;
     public (float, float)[] pos1 = new (float, float)[2] {(27.94f, -2.44f), (53.84f, 1.52f)};
     public (float, float)[] pos2 = new (float, float)[1] {(43.09f, -0.89f)};
-    private bool ShouldSpawn = true;
+    public bool ShouldSpawn = true;
+
+    public int dead = 0;
+
+    public int nbAlive => PhotonNetwork.room.PlayerCount - dead; 
     
     //Used for singleton
     public static GameManager GM;
@@ -32,10 +36,16 @@ public class GameManager : MonoBehaviour
     public KeyCode power {get; set;}
     public KeyCode transfo {get; set;}
     public KeyCode pause {get; set;}
+    
 
+    public bool GetShouldSpawn()
+    {
+        return ShouldSpawn;
+    }
     private void Awake()
     {
         SpawnPlayer();
+        Spawn();
         
         //Singleton pattern
         if(GM == null)
@@ -81,7 +91,9 @@ public class GameManager : MonoBehaviour
 
     public void Spawn()
     {
-        if (ShouldSpawn && PhotonNetwork.room.PlayerCount == 1)
+        Debug.Log(nbAlive);
+        Debug.Log(ShouldSpawn && nbAlive == 0);
+        if (ShouldSpawn)
         {
             for (int i = 0; i < pos1.Length; i++)
             {

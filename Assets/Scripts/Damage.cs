@@ -60,6 +60,8 @@ public class Damage : MonoBehaviour
                     heart2.SetActive(false);
                     heart1.SetActive(false);
                     life--;
+                    GameManager.GM.dead ++;
+                    Debug.Log("nb alive = " + GameManager.GM.nbAlive);
                     PhotonNetwork.LoadLevel("GameOver");
                     break;
                 case  < 0:
@@ -113,8 +115,12 @@ public class Damage : MonoBehaviour
     {
         if (transform.position.y < -5)
         {
-            if (photonView.isMine) 
+            if (photonView.isMine)
+            {
                 PhotonNetwork.LoadLevel("GameOver");
+                GameManager.GM.dead ++;
+            }
+                
         }
     }
 }
