@@ -202,7 +202,7 @@ public class Player : Photon.MonoBehaviour
     private IEnumerator WaitTeleport()
     {
         yield return new WaitForSeconds(2);
-        transform.position = new Vector3(280f, transform.position.y, transform.position.z);
+        transform.position = new Vector3(380f, transform.position.y, transform.position.z);
     }
 
     private void Tir()
