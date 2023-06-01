@@ -45,6 +45,7 @@ public class GameManager : MonoBehaviour
     private void Awake()
     {
         SpawnPlayer();
+        Spawn();
         
         //Singleton pattern
         if(GM == null)
@@ -90,7 +91,7 @@ public class GameManager : MonoBehaviour
 
     public void Spawn()
     {
-        if (ShouldSpawn)
+        if (ShouldSpawn && PhotonNetwork.room.PlayerCount == 1 )
         {
             for (int i = 0; i < pos1.Length; i++)
             {
