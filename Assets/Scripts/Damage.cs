@@ -41,7 +41,7 @@ public class Damage : MonoBehaviour
             }
             return;
         }
-        if (collision.CompareTag("Enemy") && photonView.isMine)
+        if ((collision.CompareTag("Enemy") && photonView.isMine) || (collision.CompareTag("boss") && photonView.isMine))
         {
             life--;
             switch (life)
