@@ -78,6 +78,10 @@ public class GameManager : MonoBehaviour
     {
         PauseButton();
         Spawn();
+        if(Damage.life == 0)
+        {
+            PhotonNetwork.Destroy(this.PlayerPrefab);
+        }
     }   
 
     private void PauseButton()
