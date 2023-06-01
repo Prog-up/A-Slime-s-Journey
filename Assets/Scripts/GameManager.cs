@@ -20,7 +20,9 @@ public class GameManager : MonoBehaviour
     public GameObject Enemy2;
     public (float, float)[] pos1 = new (float, float)[2] {(27.94f, -2.44f), (53.84f, 1.52f)};
     public (float, float)[] pos2 = new (float, float)[1] {(43.09f, -0.89f)};
-    private bool ShouldSpawn = true;
+    public bool ShouldSpawn = true;
+    public int dead = 0;
+    public int nbAlive => PhotonNetwork.room.PlayerCount - dead; 
     private float SpawnPlayerMinPos = -1f;
     private float SpawnPlayerMaxPos = 1f;
     
@@ -35,6 +37,10 @@ public class GameManager : MonoBehaviour
     public KeyCode power {get; set;}
     public KeyCode transfo {get; set;}
     public KeyCode pause {get; set;}
+    public bool GetShouldSpawn()
+    {
+        return ShouldSpawn;
+    }
 
     private void Awake()
     {
@@ -84,7 +90,7 @@ public class GameManager : MonoBehaviour
 
     public void Spawn()
     {
-        if (ShouldSpawn && PhotonNetwork.room.PlayerCount == 1)
+        if (ShouldSpawn)
         {
             for (int i = 0; i < pos1.Length; i++)
             {
