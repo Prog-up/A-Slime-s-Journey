@@ -70,7 +70,6 @@ public class Damage : MonoBehaviour
                     heart1.SetActive(true);
                     life = 3;
                     PhotonNetwork.Destroy(transform.parent.gameObject);
-                    Debug.Log(transform.parent.gameObject.name);
                     break;
                 default:
                     break;
@@ -101,8 +100,8 @@ public class Damage : MonoBehaviour
         {
             if(this.photonView.isMine)
             {
-                // Destroy(this);
-                PhotonNetwork.Destroy(this.photonView);
+                Destroy(this);
+                PhotonNetwork.Destroy(gameObject);
             }
         }
 	}
