@@ -69,7 +69,7 @@ public class Damage : MonoBehaviour
                     heart2.SetActive(true);
                     heart1.SetActive(true);
                     life = 3;
-                    PhotonNetwork.Destroy(GameManager.GM.PlayerPrefab);
+                    PhotonNetwork.Destroy(transform.parent.gameObject);
                     break;
                 default:
                     break;
