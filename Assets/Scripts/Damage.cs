@@ -94,16 +94,6 @@ public class Damage : MonoBehaviour
             }
             
         }
-        
-        
-        if(life == 0)
-        {
-            if(this.photonView.isMine)
-            {
-                Destroy(this);
-                PhotonNetwork.Destroy(gameObject);
-            }
-        }
 	}
     public IEnumerator StartCooldown()
     {
