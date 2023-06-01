@@ -12,7 +12,7 @@ public class Player : Photon.MonoBehaviour
     public SpriteRenderer sr;
     public Text PlayerNameText;
 
-   //Deplacements
+    //Deplacements
     public bool IsGrounded = false;
     private bool IsWalledRight = false;
     private bool IsWalledLeft = false;
@@ -28,6 +28,10 @@ public class Player : Photon.MonoBehaviour
     public SpriteRenderer Destination; //TODO : Fix me
     public GameObject Life;
     public GameObject Indicator;
+    public AudioSource MusicLvl1;
+    public AudioSource MusicLvl2;
+    public AudioSource MusicBoss;
+    public Animator transition;
 
     //Permet de connaitre la forme actuelle
     public bool IsDefault = true;
@@ -155,13 +159,24 @@ public class Player : Photon.MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        /*if (other.gameObject.CompareTag("Rock") && Input.GetKey(GameManager.GM.transfo))
+        if (other.tag == "Level1")
         {
-            IsRock = true;
-            IsDefault = false;
-            IsFlame = false;
-            anim.SetBool("IsRock", IsRock);
-        }*/
+            MusicLvl2.Stop();
+            MusicBoss.Stop();
+            MusicLvl1.Play();
+        }
+        else if (other.tag == "Level2")
+        {
+            MusicLvl1.Stop();
+            MusicBoss.Stop();
+            MusicLvl2.Play();
+        }
+        else if (other.tag == "BossArea")
+        {
+            MusicLvl1.Stop();
+            MusicLvl2.Stop();
+            MusicBoss.Play();
+        }
 
         if (other.gameObject.CompareTag("Enemy"))
         {
@@ -178,8 +193,16 @@ public class Player : Photon.MonoBehaviour
         }
         else if (other.tag == "GG")
         {
-            photonView.RPC("RPC_ChangeLevel",PhotonTargets.AllBuffered, "Level2Test");
+            //transition.SetTrigger("Restart");
+            StartCoroutine(WaitTeleport());
+            //transition.SetTrigger("Start");
         }
+    }
+
+    private IEnumerator WaitTeleport()
+    {
+        yield return new WaitForSeconds(2);
+        transform.position = new Vector3(380f, transform.position.y, transform.position.z);
     }
 
     private void Tir()
@@ -190,11 +213,12 @@ public class Player : Photon.MonoBehaviour
             {
                 return;
             }
-            if (Input.GetKey(GameManager.GM.power) && !Off) // TODO: Power en forme de feu (à la place de la roulade)
+            if (Input.GetKey(GameManager.GM.power) && !Off)
             {
+                Debug.Log("Tir !");
                 if (sr.flipX)
                 {
-                    PhotonNetwork.InstantiateSceneObject(projectile.name, LaunchOffset2.position, Quaternion.identity, 0, null);
+                    PhotonNetwork.InstantiateSceneObject(projectile.name, LaunchOffset2.position, new Quaternion(0f, 180f, 0f, 0f), 0, null);
                 }
                 else
                 {

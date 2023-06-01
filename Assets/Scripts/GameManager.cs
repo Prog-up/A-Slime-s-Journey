@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Security.Cryptography;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
@@ -19,7 +20,11 @@ public class GameManager : MonoBehaviour
     public GameObject Enemy2;
     public (float, float)[] pos1 = new (float, float)[2] {(27.94f, -2.44f), (53.84f, 1.52f)};
     public (float, float)[] pos2 = new (float, float)[1] {(43.09f, -0.89f)};
-    private bool ShouldSpawn = true;
+    public bool ShouldSpawn = true;
+    public int dead = 0;
+    public int nbAlive => PhotonNetwork.room.PlayerCount - dead; 
+    private float SpawnPlayerMinPos = -1f;
+    private float SpawnPlayerMaxPos = 1f;
     
     //Used for singleton
     public static GameManager GM;
@@ -32,10 +37,15 @@ public class GameManager : MonoBehaviour
     public KeyCode power {get; set;}
     public KeyCode transfo {get; set;}
     public KeyCode pause {get; set;}
+    public bool GetShouldSpawn()
+    {
+        return ShouldSpawn;
+    }
 
     private void Awake()
     {
         SpawnPlayer();
+        Spawn();
         
         //Singleton pattern
         if(GM == null)
@@ -60,7 +70,6 @@ public class GameManager : MonoBehaviour
         power = (KeyCode) System.Enum.Parse(typeof(KeyCode), PlayerPrefs.GetString("powerKey", "Z"));
         transfo = (KeyCode) System.Enum.Parse(typeof(KeyCode), PlayerPrefs.GetString("transfoKey", "S"));
         pause = (KeyCode) System.Enum.Parse(typeof(KeyCode), PlayerPrefs.GetString("pauseKey", "Escape"));
-
         GameCanvas.transform.Find("RoomName").gameObject.GetComponent<Text>().text = "Room name = " + PhotonNetwork.room.Name;
     }
 
@@ -68,6 +77,10 @@ public class GameManager : MonoBehaviour
     {
         PauseButton();
         Spawn();
+        if(Damage.life == 0)
+        {
+            PhotonNetwork.Destroy(gameObject);
+        }
     }   
 
     private void PauseButton()
@@ -81,7 +94,7 @@ public class GameManager : MonoBehaviour
 
     public void Spawn()
     {
-        if (ShouldSpawn && PhotonNetwork.room.PlayerCount == 1)
+        if (ShouldSpawn && PhotonNetwork.room.PlayerCount == 1 )
         {
             for (int i = 0; i < pos1.Length; i++)
             {

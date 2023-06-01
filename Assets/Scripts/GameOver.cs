@@ -8,8 +8,10 @@ public class GameOver : MonoBehaviour
     public void Respawn()
     {
         PhotonNetwork.LoadLevel("MainGame");
-        
-
+        Debug.Log("respawn");
+        Debug.Log(GameManager.GM.ShouldSpawn);
+        GameManager.GM.Spawn();
+        GameManager.GM.dead --;
     }
     
 

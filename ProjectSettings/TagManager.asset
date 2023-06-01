@@ -13,6 +13,8 @@ TagManager:
   - Cailloux
   - Heal
   - Flame
+  - Level1
+  - Level2
   layers:
   - Default
   - TransparentFX
@@ -52,4 +54,7 @@ TagManager:
     locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Foreground
+    uniqueID: 4161725347
     locked: 0

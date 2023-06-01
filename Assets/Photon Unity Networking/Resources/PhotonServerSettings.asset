@@ -46,4 +46,5 @@ MonoBehaviour:
   - FlipFalse
   - FlipTrue
   - RPC_ChangeLevel
+  - EndLevel1
   DisableAutoOpenWizard: 1
