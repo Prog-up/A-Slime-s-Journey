@@ -62,6 +62,7 @@ public class Damage : MonoBehaviour
                     life--;
                     GameManager.GM.dead ++;
                     Debug.Log("nb alive = " + GameManager.GM.nbAlive);
+                    PhotonNetwork.Destroy(transform.parent.gameObject);
                     PhotonNetwork.LoadLevel("GameOver");
                     break;
                 case  < 0:
@@ -69,7 +70,7 @@ public class Damage : MonoBehaviour
                     heart2.SetActive(true);
                     heart1.SetActive(true);
                     life = 3;
-                    PhotonNetwork.Destroy(transform.parent.gameObject);
+                    
                     break;
                 default:
                     break;
