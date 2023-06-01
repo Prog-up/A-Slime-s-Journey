@@ -70,7 +70,6 @@ public class GameManager : MonoBehaviour
         power = (KeyCode) System.Enum.Parse(typeof(KeyCode), PlayerPrefs.GetString("powerKey", "Z"));
         transfo = (KeyCode) System.Enum.Parse(typeof(KeyCode), PlayerPrefs.GetString("transfoKey", "S"));
         pause = (KeyCode) System.Enum.Parse(typeof(KeyCode), PlayerPrefs.GetString("pauseKey", "Escape"));
-
         GameCanvas.transform.Find("RoomName").gameObject.GetComponent<Text>().text = "Room name = " + PhotonNetwork.room.Name;
     }
 
@@ -80,7 +79,7 @@ public class GameManager : MonoBehaviour
         Spawn();
         if(Damage.life == 0)
         {
-            PhotonNetwork.Destroy(this.PlayerPrefab);
+            PhotonNetwork.Destroy(gameObject);
         }
     }   
 
