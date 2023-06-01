@@ -2566,6 +2566,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Transition
       objectReference: {fileID: 0}
+    - target: {fileID: 8123588820554413319, guid: 9fea3c216b288984fa7c7de8f21a6865, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9fea3c216b288984fa7c7de8f21a6865, type: 3}
 --- !u!224 &290103460 stripped
@@ -2652,7 +2656,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &327172413
 RectTransform:
   m_ObjectHideFlags: 0

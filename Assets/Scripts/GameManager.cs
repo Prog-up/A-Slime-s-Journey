@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Security.Cryptography;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
@@ -20,6 +21,8 @@ public class GameManager : MonoBehaviour
     public (float, float)[] pos1 = new (float, float)[2] {(27.94f, -2.44f), (53.84f, 1.52f)};
     public (float, float)[] pos2 = new (float, float)[1] {(43.09f, -0.89f)};
     private bool ShouldSpawn = true;
+    private float SpawnPlayerMinPos = -1f;
+    private float SpawnPlayerMaxPos = 1f;
     
     //Used for singleton
     public static GameManager GM;
