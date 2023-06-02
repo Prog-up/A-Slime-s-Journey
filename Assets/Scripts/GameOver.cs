@@ -14,7 +14,6 @@ public class GameOver : MonoBehaviour
         GameManager.GM.dead --;
     }
     
-
     public void MainMenu()
     {
         PhotonNetwork.LoadLevel("MainMenu");

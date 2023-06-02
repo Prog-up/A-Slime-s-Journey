@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Security.Cryptography.X509Certificates;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -31,7 +32,7 @@ public class Player : Photon.MonoBehaviour
     public AudioSource MusicLvl1;
     public AudioSource MusicLvl2;
     public AudioSource MusicBoss;
-    public Animator transition;
+    //public Animator transition;
 
     //Permet de connaitre la forme actuelle
     public bool IsDefault = true;
@@ -193,18 +194,14 @@ public class Player : Photon.MonoBehaviour
         }
         else if (other.tag == "GG")
         {
-            //transition.SetTrigger("Restart");
-            StartCoroutine(WaitTeleport());
-            //transition.SetTrigger("Start");
+            IsRock = false;
+            IsDefault = true;
+            IsFlame = false;
+            Damage.life = 3;
+            StartCoroutine(StartCooldown(true));
         }
     }
-
-    private IEnumerator WaitTeleport()
-    {
-        yield return new WaitForSeconds(2);
-        transform.position = new Vector3(380f, transform.position.y, transform.position.z);
-    }
-
+    
     private void Tir()
     {
         if (IsFlame)
@@ -219,10 +216,12 @@ public class Player : Photon.MonoBehaviour
                 if (sr.flipX)
                 {
                     PhotonNetwork.InstantiateSceneObject(projectile.name, LaunchOffset2.position, new Quaternion(0f, 180f, 0f, 0f), 0, null);
+                    //Instantiate(projectile, LaunchOffset.position, new Quaternion(0f, 180f, 0f, 0f));
                 }
                 else
                 {
                     PhotonNetwork.InstantiateSceneObject(projectile.name, LaunchOffset.position, Quaternion.identity, 0, null);
+                    //Instantiate(projectile, LaunchOffset2.position, Quaternion.identity);
                 }
                 
                 StartCoroutine(StartCooldown());
@@ -230,11 +229,15 @@ public class Player : Photon.MonoBehaviour
         }
     }
     
-    public IEnumerator StartCooldown()
+    public IEnumerator StartCooldown(bool telep = false)
     {
         IsAvailable = false;
         yield return new WaitForSeconds(CooldownDuration);
         IsAvailable = true;
+        if (telep)
+        {
+            transform.position = new Vector3(380f, transform.position.y, transform.position.z);
+        }
     }
 
     private void OnTriggerStay2D(Collider2D other)
@@ -310,16 +313,5 @@ public class Player : Photon.MonoBehaviour
     private void FlipFalse()
     {
         sr.flipX = false;
-    }
-    
-    private void ChangeLevel()
-    {
-        photonView.RPC("RPC_ChangeLevel",PhotonTargets.AllBuffered);
-    }
-    
-    [PunRPC]
-    private void RPC_ChangeLevel(string level)
-    {
-        PhotonNetwork.LoadLevel(level);
     }
 }

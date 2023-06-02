@@ -23,6 +23,7 @@ public class Miniboss : MonoBehaviour
 	
 	public float timer;
 
+	public AudioSource degats;
 
     public float life;
   
@@ -36,20 +37,39 @@ public class Miniboss : MonoBehaviour
 
     void Update()
     {
+		MoveEnnemy();
 		timer += Time.deltaTime;
-		if (timer>0.5f)
+		if (timer % 2 != 0)
 		{
 			MoveEnnemy();
-			timer = 0f;
 		}
-        
+        if (life == 0)
+		{
+			Destroy(gameObject);
+		}
     }
 
-	public IEnumerator StartCooldown()
+	private void OnTriggerEnter2D(Collider2D collision)
+	{
+		if (collision.CompareTag("Player"))
+		{
+			anim.SetBool("Hurt",true);
+			degats.Play();
+			StartCoroutine(StartCooldown());
+		}
+		if (collision.CompareTag("Cailloux"))
+		{
+			anim.SetBool("Hurt",true);
+			degats.Play();
+			StartCoroutine(StartCooldown());
+		}
+	}
+	IEnumerator StartCooldown()
     {
+		life -=1 ;
 	    yield return new WaitForSeconds(0.5f);
+		anim.SetBool("Hurt",false);
     }
-
 
     // Update is called once per frame
     
@@ -62,6 +82,11 @@ public class Miniboss : MonoBehaviour
         {
             if (Vector2.Distance(transform.position, player.transform.position) < 9f) //(transform.position.x-pos.x < 10)
             {
+				if (Vector2.Distance(transform.position, player.transform.position) <8f && Vector2.Distance(transform.position, player.transform.position) >7.5f )
+                {
+                    rb.AddForce(new Vector2(1,4));
+
+                }
                 rb.AddForce(Vector2.left * speed, ForceMode2D.Force);
                 if (Vector2.Distance(transform.position, player.transform.position) < 2f) //(transform.position.x-pos.x < 10)
                 {
@@ -70,6 +95,7 @@ public class Miniboss : MonoBehaviour
                 else
                 {
                     anim.SetBool("punch", false);
+
                 }
             }
             graphic.flipX = true;
@@ -79,9 +105,9 @@ public class Miniboss : MonoBehaviour
 			
             if (Vector3.Distance(transform.position, player.transform.position) < 10f)//(villager.x-pos.x > -10)
             {
-                if (Vector2.Distance(transform.position, player.transform.position) <8f || Vector2.Distance(transform.position, player.transform.position) >6f)
+                if (Vector2.Distance(transform.position, player.transform.position) <8f && Vector2.Distance(transform.position, player.transform.position) >7.5f )
                 {
-                    rb.AddForce(new Vector2(1,0)* speed);
+                    rb.AddForce(new Vector2(1,4));
 
                 }
                 rb.AddForce(Vector2.right * speed, ForceMode2D.Force);
@@ -96,7 +122,6 @@ public class Miniboss : MonoBehaviour
             }
             graphic.flipX = false;
         }
-
-		
     }
 }
+
