@@ -32,7 +32,7 @@ public class Player : Photon.MonoBehaviour
     public AudioSource MusicLvl1;
     public AudioSource MusicLvl2;
     public AudioSource MusicBoss;
-    //public Animator transition;
+    public Animator transition;
 
     //Permet de connaitre la forme actuelle
     public bool IsDefault = true;
@@ -198,6 +198,7 @@ public class Player : Photon.MonoBehaviour
             IsDefault = true;
             IsFlame = false;
             Damage.life = 3;
+            transition.SetTrigger("Start");
             StartCoroutine(StartCooldown(true));
         }
     }
@@ -237,6 +238,7 @@ public class Player : Photon.MonoBehaviour
         if (telep)
         {
             transform.position = new Vector3(380f, transform.position.y, transform.position.z);
+            transition.SetTrigger("Restart");
         }
     }
 

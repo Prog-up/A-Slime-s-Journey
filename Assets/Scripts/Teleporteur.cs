@@ -10,9 +10,8 @@ public class Teleporteur : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
-            transition.SetTrigger("Start");
+            //transition.SetTrigger("Start");
             StartCoroutine(WaitTeleport(collision.transform));
-            
         }
     }
     
@@ -20,6 +19,6 @@ public class Teleporteur : MonoBehaviour
     {
         yield return new WaitForSeconds(1);
         //Player.position = new Vector3(380f, Player.position.y, Player.position.z);
-        transition.SetTrigger("Restart");
+        //transition.SetTrigger("Restart");
     }
 }
