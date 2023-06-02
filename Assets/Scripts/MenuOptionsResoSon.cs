@@ -12,6 +12,10 @@ public class MenuOptionsResoSon : MonoBehaviour
     public Slider slider;
     public Text txtVolume;
 
+
+    public bool IsFullScreen = true;
+    public Text FScreen;
+
     void Start()
     {
         SetResolution();
@@ -21,7 +25,7 @@ public class MenuOptionsResoSon : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKey(GameManager.GM.pause));
+        if(Input.GetKey(GameManager.GM.pause))
         {
             PhotonNetwork.LoadLevel("MainMenu");
         }
@@ -32,12 +36,24 @@ public class MenuOptionsResoSon : MonoBehaviour
         switch(resolution.value)
         {
             case 0:
-                Screen.SetResolution(640,360,true);
+                Screen.SetResolution(640,360,IsFullScreen);
                 break;
             case 1:
-            Screen.SetResolution(1920,1080,true);
+                Screen.SetResolution(1920,1080,IsFullScreen);
                 break;
+        }
+    }
 
+    public void ChangeFscreen()
+    {
+        IsFullScreen = !IsFullScreen;
+        if(IsFullScreen)
+        {
+            FScreen.text = "Fullscreen";
+        }
+        else
+        {
+            FScreen.text = "Windowed";
         }
     }
 
