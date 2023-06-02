@@ -93,6 +93,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6214152372874874356}
+  - {fileID: 5921489541381149850}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -192,16 +193,16 @@ MonoBehaviour:
   Alive: 0
   graphic: {fileID: 5459951776491038130}
   player: {fileID: 0}
-  IsGrounded: 0
   JumpForce: 5
   Capteur: {fileID: 0}
   Capteur2: {fileID: 0}
   anim: {fileID: 3670943238292292590}
-  WeakSpotH: {fileID: 0}
-  WeakSpotS: {fileID: 0}
   timer: 0
   degats: {fileID: 8314650467163315672}
   life: 0
+  shot: 0
+  arrow: {fileID: 5002605618239934127, guid: a1ee7753def79764980f166b8a65bcab, type: 3}
+  arrowPos: {fileID: 5921489541381149850}
 --- !u!50 &79678505206507292
 Rigidbody2D:
   serializedVersion: 4
@@ -339,3 +340,34 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!1 &5608289945300156881
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5921489541381149850}
+  m_Layer: 0
+  m_Name: source
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5921489541381149850
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5608289945300156881}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.211, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5459951776491038131}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

@@ -10,42 +10,40 @@ public class Miniboss : MonoBehaviour
     public bool Alive;
     public SpriteRenderer graphic;
     public GameObject player;
-    public bool IsGrounded = false;
     public float JumpForce;
     public Transform Capteur;
     public Transform Capteur2;
 
     public Animator anim;
-
-    public GameObject WeakSpotH;
-	
-	public GameObject WeakSpotS;
-	
-	public float timer;
+    public float timer;
 
 	public AudioSource degats;
+	
+	public float life;
+	public bool shot;
+	public GameObject arrow;
 
-    public float life;
-  
-
+	public Transform arrowPos;
+    
     // Start is called before the first frame update
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player");
         life = 10;
+        shot = false;
     }
 
     void Update()
     {
 		MoveEnnemy();
-		timer += Time.deltaTime;
-		if (timer % 2 != 0)
-		{
-			MoveEnnemy();
-		}
-        if (life == 0)
+		if (life <= 0)
 		{
 			Destroy(gameObject);
+		}
+		if (life <= 5 && shot==false)
+		{
+			shot = true;
+			Angry();
 		}
     }
 
@@ -122,6 +120,19 @@ public class Miniboss : MonoBehaviour
             }
             graphic.flipX = false;
         }
+    }
+
+    void Angry()
+    {
+	    anim.SetTrigger("angry");
+	    rb.velocity = new Vector2(10, 10).normalized;
+	    StartCoroutine(StartCooldown2());
+	    PhotonNetwork.InstantiateSceneObject(arrow.name, arrowPos.position, Quaternion.identity, 0, null);
+    }
+    
+    IEnumerator StartCooldown2()
+    {
+	    yield return new WaitForSeconds(1f);
     }
 }
 
