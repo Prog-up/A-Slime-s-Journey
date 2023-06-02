@@ -125,14 +125,15 @@ public class Miniboss : MonoBehaviour
     void Angry()
     {
 	    anim.SetTrigger("angry");
-	    rb.velocity = new Vector2(10, 10).normalized;
+	    rb.AddForce(new Vector2(1,100));
 	    StartCoroutine(StartCooldown2());
-	    PhotonNetwork.InstantiateSceneObject(arrow.name, arrowPos.position, Quaternion.identity, 0, null);
+	    
     }
     
     IEnumerator StartCooldown2()
     {
-	    yield return new WaitForSeconds(1f);
+	    yield return new WaitForSeconds(2f);
+	    PhotonNetwork.InstantiateSceneObject(arrow.name, arrowPos.position, Quaternion.identity, 0, null);
     }
 }
 
