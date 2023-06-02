@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Security.Cryptography.X509Certificates;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -215,10 +216,12 @@ public class Player : Photon.MonoBehaviour
                 if (sr.flipX)
                 {
                     PhotonNetwork.InstantiateSceneObject(projectile.name, LaunchOffset2.position, new Quaternion(0f, 180f, 0f, 0f), 0, null);
+                    //Instantiate(projectile, LaunchOffset.position, new Quaternion(0f, 180f, 0f, 0f));
                 }
                 else
                 {
                     PhotonNetwork.InstantiateSceneObject(projectile.name, LaunchOffset.position, Quaternion.identity, 0, null);
+                    //Instantiate(projectile, LaunchOffset2.position, Quaternion.identity);
                 }
                 
                 StartCoroutine(StartCooldown());
