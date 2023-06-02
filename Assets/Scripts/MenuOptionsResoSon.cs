@@ -25,10 +25,15 @@ public class MenuOptionsResoSon : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKey(GameManager.GM.pause))
+        if(Input.GetKeyDown(KeyCode.Escape))
         {
             PhotonNetwork.LoadLevel("MainMenu");
         }
+    }
+
+    public void ToMainMenu()
+    {
+        PhotonNetwork.LoadLevel("MainMenu");
     }
 
     public void SetResolution()
