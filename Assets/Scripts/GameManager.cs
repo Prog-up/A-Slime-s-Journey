@@ -84,12 +84,19 @@ public class GameManager : MonoBehaviour
         {
             GameCanvas.transform.Find("GameOver").gameObject.SetActive(IsDead);
         }
-    }   
-
+    }
     private void PauseButton()
     {
         if (Input.GetKeyDown(GameManager.GM.pause) && !MenuScript.MS.waitingForKey)
         {
+            if (InOptions)
+            {
+                Cursor.visible = true; 
+            }
+            else
+            {
+                Cursor.visible = false; 
+            }
             PauseMenu();
         }
     }
