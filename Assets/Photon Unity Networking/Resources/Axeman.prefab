@@ -135,8 +135,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -133241949
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: -349259462, guid: ad6196b5e6c1ffc4d8740a5ea35b5166, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -199,8 +199,10 @@ MonoBehaviour:
   anim: {fileID: 3670943238292292590}
   timer: 0
   degats: {fileID: 8314650467163315672}
+  death: {fileID: 0}
   life: 0
   shot: 0
+  shot2: 0
   arrow: {fileID: 5002605618239934127, guid: a1ee7753def79764980f166b8a65bcab, type: 3}
   arrowPos: {fileID: 5921489541381149850}
 --- !u!50 &79678505206507292
