@@ -12,6 +12,8 @@ public class Damage : MonoBehaviour
     public bool IsAvailable = true;
     public float CooldownDuration = 2.0f;
     public PhotonView photonView;
+
+    public AudioSource healing;
 	/*public GameObject deathScreenUI;
     public Button restartButton;
     public Button mainMenuButton;*/
@@ -22,6 +24,7 @@ public class Damage : MonoBehaviour
         {
             if (collision.CompareTag("Heal") && photonView.isMine)
             {
+                healing.Play();
                 switch (life)
                 {
                     case 2:
@@ -75,6 +78,7 @@ public class Damage : MonoBehaviour
         }
         if (collision.CompareTag("Heal") && photonView.isMine)
         {
+            healing.Play();
             switch (life)
             {
                 case 2:
