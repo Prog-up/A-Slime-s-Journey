@@ -44,6 +44,12 @@ public class GameManager : MonoBehaviour
         return ShouldSpawn;
     }
 
+    void Start()
+    {
+        // Hides the cursor...
+        Cursor.visible = false; 
+    }
+
     private void Awake()
     {
         SpawnPlayer();
@@ -89,7 +95,16 @@ public class GameManager : MonoBehaviour
     private void PauseButton()
     {
         if (Input.GetKeyDown(GameManager.GM.pause) && !MenuScript.MS.waitingForKey)
-        {transform.Find("UI").gameObject.SetActive(true);
+        {
+            transform.Find("UI").gameObject.SetActive(true);
+            if (InOptions)
+            {
+                Cursor.visible = true; 
+            }
+            else
+            {
+                Cursor.visible = false; 
+            }
             PauseMenu();
         }
     }
