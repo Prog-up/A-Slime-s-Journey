@@ -21,13 +21,21 @@ public class Miniboss : MonoBehaviour
 	public AudioSource death;
 	
 	public float life;
+	public float maxlife = 10;
 	public bool shot;
 
 	public bool shot2;
 	public GameObject arrow;
 
 	public Transform arrowPos;
+
+	[SerializeField] FloatHealth healthbar;
     
+	
+	private void Awake()
+	{
+		healthbar = GetComponentInChildren<FloatHealth>();
+	}
     // Start is called before the first frame update
     void Start()
     {
@@ -35,8 +43,10 @@ public class Miniboss : MonoBehaviour
         life = 10;
         shot = false;
         shot2 = false;
+        healthbar.UpdateHealthBar(life, maxlife);
     }
 
+    
     void Update()
     {
 	    player = GameObject.FindGameObjectWithTag("Player");
@@ -71,12 +81,14 @@ public class Miniboss : MonoBehaviour
 		{
 			anim.SetBool("Hurt",true);
 			degats.Play();
+			healthbar.UpdateHealthBar(life, maxlife);
 			StartCoroutine(StartCooldown());
 		}
 		if (collision.CompareTag("Cailloux"))
 		{
 			anim.SetBool("Hurt",true);
 			degats.Play();
+			healthbar.UpdateHealthBar(life, maxlife);
 			StartCoroutine(StartCooldown());
 		}
 	}
