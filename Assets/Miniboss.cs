@@ -21,7 +21,7 @@ public class Miniboss : MonoBehaviour
 	public AudioSource death;
 	
 	public float life;
-	public float maxlife = 10;
+	public float maxlife = 20;
 	public bool shot;
 
 	public bool shot2;
@@ -40,7 +40,7 @@ public class Miniboss : MonoBehaviour
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player");
-        life = 10;
+        life = maxlife;
         shot = false;
         shot2 = false;
         healthbar.UpdateHealthBar(life, maxlife);
@@ -49,8 +49,7 @@ public class Miniboss : MonoBehaviour
     
     void Update()
     {
-	    player = GameObject.FindGameObjectWithTag("Player");
-		MoveEnnemy();
+	    MoveEnnemy();
 		if (life <= 0)
 		{
 			anim.SetTrigger("death");
@@ -72,7 +71,7 @@ public class Miniboss : MonoBehaviour
     IEnumerator StartCooldown3()
     {
 	    yield return new WaitForSeconds(0.5f);
-	    PhotonNetwork.Destroy(transform.parent.gameObject);
+	    Destroy(gameObject);
     }
 
 	private void OnTriggerEnter2D(Collider2D collision)
@@ -80,14 +79,20 @@ public class Miniboss : MonoBehaviour
 		if (collision.CompareTag("Player"))
 		{
 			anim.SetBool("Hurt",true);
-			degats.Play();
+			if (life >= 1)
+			{
+				degats.Play();
+			}
 			healthbar.UpdateHealthBar(life, maxlife);
 			StartCoroutine(StartCooldown());
 		}
 		if (collision.CompareTag("Cailloux"))
 		{
 			anim.SetBool("Hurt",true);
-			degats.Play();
+			if (life >= 1)
+			{
+				degats.Play();
+			}
 			healthbar.UpdateHealthBar(life, maxlife);
 			StartCoroutine(StartCooldown());
 		}
@@ -108,14 +113,14 @@ public class Miniboss : MonoBehaviour
 
         if (villager.x-player.transform.position.x > 0)
         {
-            if (Vector2.Distance(transform.position, player.transform.position) < 9f) //(transform.position.x-pos.x < 10)
+            if (Vector2.Distance(transform.position, player.transform.position) < 10f) //(transform.position.x-pos.x < 10)
             {
 				if (Vector2.Distance(transform.position, player.transform.position) <8f && Vector2.Distance(transform.position, player.transform.position) >7.5f )
                 {
-                    rb.AddForce(new Vector2(1,4));
+                    rb.AddForce(new Vector2(2,3));
 
                 }
-                rb.AddForce(Vector2.left * speed, ForceMode2D.Force);
+                rb.AddForce(Vector2.left * speed*2, ForceMode2D.Force);
                 if (Vector2.Distance(transform.position, player.transform.position) < 2f) //(transform.position.x-pos.x < 10)
                 {
                     anim.SetBool("punch", true);
@@ -135,7 +140,7 @@ public class Miniboss : MonoBehaviour
             {
                 if (Vector2.Distance(transform.position, player.transform.position) <8f && Vector2.Distance(transform.position, player.transform.position) >7.5f )
                 {
-                    rb.AddForce(new Vector2(1,4));
+                    rb.AddForce(new Vector2(2,3));
 
                 }
                 rb.AddForce(Vector2.right * speed, ForceMode2D.Force);
@@ -162,9 +167,8 @@ public class Miniboss : MonoBehaviour
     
     IEnumerator StartCooldown2()
     {
-	    
 	    yield return new WaitForSeconds(2f);
-	    var c = transform.position.y+5;
+	    var c = transform.position.y+4;
 	    transform.position = new Vector3(transform.position.x,c,transform.position.z);
 	    PhotonNetwork.InstantiateSceneObject(arrow.name, arrowPos.position, Quaternion.identity, 0, null);
     }
