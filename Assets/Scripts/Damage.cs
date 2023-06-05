@@ -114,7 +114,7 @@ public class Damage : MonoBehaviour
 
     private void Death()
     {
-        transform.parent.position = new Vector3(-100f, 0f, 0f);
+        transform.parent.position = new Vector3(-100f, -1f, 0f);
         life = 3;
         GameManager.GM.IsDead = true;
         GameManager.GM.dead ++;
