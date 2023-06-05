@@ -62,8 +62,12 @@ public class Player : Photon.MonoBehaviour
 
     private bool Hurt1 = false;
     private bool Hurt2 = false;
+    
+    private bool Hurt3 = false;
     private float timer;
     private float timer2;
+    private float timer3;
+    
     private bool InGameOverMenu = false;
     
     // Menu
@@ -206,8 +210,17 @@ public class Player : Photon.MonoBehaviour
             }
             else
             {
-                anim.SetBool("Hurt1", true);
-                Hurt1 = true;
+                if (IsFlame)
+                {
+                    anim.SetBool("Hurt3", true);
+                    Hurt3 = true;
+                }
+                else
+                {
+                    anim.SetBool("Hurt1", true);
+                    Hurt1 = true;
+                }
+                
             }  
         }
         else if (other.tag == "GG")
@@ -338,6 +351,12 @@ public class Player : Photon.MonoBehaviour
         {
             timer2 += Time.deltaTime;
         }
+
+        if (Hurt3)
+        {
+            timer3 += Time.deltaTime;
+        }
+        
         if (timer > 2)
         {
             timer = 0;
@@ -350,6 +369,14 @@ public class Player : Photon.MonoBehaviour
             anim.SetBool("Hurt2", false);
             Hurt2 = false;
         }
+        
+        if (timer3 > 2)
+        {
+            timer3 = 0;
+            anim.SetBool("Hurt3", false);
+            Hurt3 = false;
+        }
+        
     }
 
     [PunRPC]

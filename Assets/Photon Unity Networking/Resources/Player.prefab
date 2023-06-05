@@ -1879,7 +1879,8 @@ MonoBehaviour:
   IsAvailable: 1
   CooldownDuration: 2
   photonView: {fileID: 2196262747904822369}
-  healing: {fileID: 0}
+  admin: 0
+  healing: {fileID: 4133807391110341187}
 --- !u!61 &3831711764170469016
 BoxCollider2D:
   m_ObjectHideFlags: 0
