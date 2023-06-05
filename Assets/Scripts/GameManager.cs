@@ -89,7 +89,7 @@ public class GameManager : MonoBehaviour
     private void PauseButton()
     {
         if (Input.GetKeyDown(GameManager.GM.pause) && !MenuScript.MS.waitingForKey)
-        {transform.Find("UI").gameObject.SetActive(true);
+        {
             PauseMenu();
         }
     }
