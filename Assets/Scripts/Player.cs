@@ -52,6 +52,7 @@ public class Player : Photon.MonoBehaviour
     private float climbSpeed = 3f;
     private float verticalInput;
     public ProjectileBehaviour projectile;
+    public GameObject projectileGM;
     public Transform LaunchInMenuset;
     public Transform LaunchInMenuset2;
 
@@ -162,34 +163,38 @@ public class Player : Photon.MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.tag == "Level1")
+        if (photonView.isMine)
         {
-            MusicLvl2.Stop();
-            MusicBoss.Stop();
-            MusicLvl1.Play();
-            MusicGameOver.Stop();
+            if (other.tag == "Level1")
+            {
+                MusicLvl2.Stop();
+                MusicBoss.Stop();
+                MusicLvl1.Play();
+                MusicGameOver.Stop();
+            }
+            else if (other.tag == "Level2")
+            {
+                MusicLvl1.Stop();
+                MusicBoss.Stop();
+                MusicLvl2.Play();
+                MusicGameOver.Stop();
+            }
+            else if (other.tag == "BossArea")
+            {
+                MusicLvl1.Stop();
+                MusicLvl2.Stop();
+                MusicBoss.Play();
+                MusicGameOver.Stop();
+            }
+            else if (other.tag == "GameOver")
+            {
+                MusicLvl1.Stop();
+                MusicLvl2.Stop();
+                MusicBoss.Stop();
+                MusicGameOver.Play();
+            }
         }
-        else if (other.tag == "Level2")
-        {
-            MusicLvl1.Stop();
-            MusicBoss.Stop();
-            MusicLvl2.Play();
-            MusicGameOver.Stop();
-        }
-        else if (other.tag == "BossArea")
-        {
-            MusicLvl1.Stop();
-            MusicLvl2.Stop();
-            MusicBoss.Play();
-            MusicGameOver.Stop();
-        }
-        else if (other.tag == "GameOver")
-        {
-            MusicLvl1.Stop();
-            MusicLvl2.Stop();
-            MusicBoss.Stop();
-            MusicGameOver.Play();
-        }
+        
 
         if (other.gameObject.CompareTag("Enemy"))
         {
@@ -228,13 +233,13 @@ public class Player : Photon.MonoBehaviour
                 Debug.Log("Tir !");
                 if (sr.flipX)
                 {
-                    PhotonNetwork.InstantiateSceneObject(projectile.name, LaunchInMenuset2.position, new Quaternion(0f, 180f, 0f, 0f), 0, null);
-                    //Instantiate(projectile, LaunchInMenuset.position, new Quaternion(0f, 180f, 0f, 0f));
+                    // PhotonNetwork.InstantiateSceneObject(projectile.name, LaunchInMenuset2.position, new Quaternion(0f, 180f, 0f, 0f), 0, null);
+                    Instantiate(projectileGM, LaunchInMenuset.position, new Quaternion(0f, 180f, 0f, 0f));
                 }
                 else
                 {
-                    PhotonNetwork.InstantiateSceneObject(projectile.name, LaunchInMenuset.position, Quaternion.identity, 0, null);
-                    //Instantiate(projectile, LaunchInMenuset2.position, Quaternion.identity);
+                    // PhotonNetwork.InstantiateSceneObject(projectile.name, LaunchInMenuset.position, Quaternion.identity, 0, null);
+                    Instantiate(projectileGM, LaunchInMenuset2.position, Quaternion.identity);
                 }
                 
                 StartCoroutine(StartCooldown());

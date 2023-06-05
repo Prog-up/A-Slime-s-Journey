@@ -26,7 +26,7 @@ public class ProjectileBehaviour : MonoBehaviour
     
     void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag != "Player" && collision.gameObject.tag != "boss")
+        if (collision.gameObject.tag != "boss")
         {
             Destroy(gameObject);
         }
