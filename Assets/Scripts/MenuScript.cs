@@ -47,15 +47,6 @@ public class MenuScript : MonoBehaviour {
 	}
 
 
-	void Update ()
-	{
-		//Escape key will open or close the panel
-		/*if(Input.GetKeyDown(KeyCode.Escape) && !menuPanel.gameObject.activeSelf)
-			menuPanel.gameObject.SetActive(true);
-		else if(Input.GetKeyDown(KeyCode.Escape) && menuPanel.gameObject.activeSelf)
-			menuPanel.gameObject.SetActive(false);*/
-	}
-
 	void OnGUI()
 	{
 		/*keyEvent dictates what key our user presses

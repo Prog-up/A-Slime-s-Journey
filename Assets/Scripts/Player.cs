@@ -321,10 +321,10 @@ public class Player : Photon.MonoBehaviour
                 }
             }
         }
-        else
+        /*else
         {
             InMenu = false;
-        }
+        }*/
         
         if (photonView.isMine && photonView.gameObject.activeSelf)
         {
