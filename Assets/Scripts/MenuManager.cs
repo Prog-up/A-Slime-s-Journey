@@ -73,7 +73,15 @@ public class MenuManager : MonoBehaviour
     {
         UsernameMenu.SetActive(false);
         ConnectPannel.SetActive(true);
-        PhotonNetwork.playerName = UsernameInput.text;
+        if(UsernameInput.text.ToUpper() == "KKK")
+        {
+            PhotonNetwork.playerName = "Stop Omid !";
+        }
+        else
+        {
+            PhotonNetwork.playerName = UsernameInput.text;
+        }
+        
     }
 
     public void ChangeRoomNameInput()

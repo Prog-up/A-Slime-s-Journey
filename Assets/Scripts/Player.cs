@@ -98,10 +98,7 @@ public class Player : Photon.MonoBehaviour
 
     }
 
-    public string Getplayername()
-    {
-        return PlayerNameText.text;
-    }
+
 
     private void Awake()
     {
