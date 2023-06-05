@@ -310,6 +310,9 @@ public class Player : Photon.MonoBehaviour
             else
             {
                 InMenu = false;
+                IsDefault = true;
+                IsRock = false;
+                IsFlame = false;
                 transform.position = new Vector3(0f, transform.position.y, transform.position.z);
                 GetComponent<SpriteRenderer>().enabled = true;
                 if (photonView.isMine)
