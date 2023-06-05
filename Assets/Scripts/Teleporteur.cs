@@ -11,7 +11,7 @@ public class Teleporteur : MonoBehaviour
         if (collision.gameObject.tag == "Player")
         {
             //transition.SetTrigger("Start");
-            StartCoroutine(WaitTeleport(collision.transform));
+            //StartCoroutine(WaitTeleport(collision.transform));
         }
     }
     
