@@ -96,7 +96,6 @@ public class GameManager : MonoBehaviour
     {
         if (Input.GetKeyDown(GameManager.GM.pause) && !MenuScript.MS.waitingForKey)
         {
-            transform.Find("UI").gameObject.SetActive(true);
             if (InOptions)
             {
                 Cursor.visible = true; 
