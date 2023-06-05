@@ -13,14 +13,27 @@ public class Damage : MonoBehaviour
     public float CooldownDuration = 2.0f;
     public PhotonView photonView;
 
+    public bool admin;
     public AudioSource healing;
 	/*public GameObject deathScreenUI;
     public Button restartButton;
     public Button mainMenuButton;*/
 
+    void Start()
+    {
+        if(PhotonNetwork.playerName.ToLower() == "admin")
+        {
+            admin = true;
+        }
+        else
+        {
+            admin = false;
+        }
+    }
+
     void OnTriggerEnter2D(Collider2D collision)
 	{
-        if (IsAvailable == false)
+        if (IsAvailable == false && !admin)
         {
             if (collision.CompareTag("Heal") && photonView.isMine)
             {
@@ -44,7 +57,7 @@ public class Damage : MonoBehaviour
             }
             return;
         }
-        if ((collision.CompareTag("Enemy") && photonView.isMine) || (collision.CompareTag("boss") && photonView.isMine))
+        if (((collision.CompareTag("Enemy") && photonView.isMine) || (collision.CompareTag("boss") && photonView.isMine)) && !admin)
         {
             life--;
             switch (life)

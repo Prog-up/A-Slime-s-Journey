@@ -45,10 +45,12 @@ public class MenuController : MonoBehaviour
         if(UsernameInput.text.Length >= 3)
         {
             for(int i = 0; i < UsernameInput.text.Length; i++)
+            {
                 if(UsernameInput.text[i] != ' ')
                 {
                     StartButton.SetActive(true);
                 }
+            }  
         }
         else
         {
@@ -67,9 +69,15 @@ public class MenuController : MonoBehaviour
         if(JoinGameInput.text.Length > 0)
         { 
             for(int i = 0; i < JoinGameInput.text.Length; i++)
+            {
                 if(JoinGameInput.text[i] != ' ')
-            JoinButton.SetActive(true);
-            JoinSoloButton.SetActive(true);
+                {
+                    JoinButton.SetActive(true);
+                JoinSoloButton.SetActive(true);
+                }
+            
+            }
+                
         }
         else
         {
