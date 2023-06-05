@@ -49,6 +49,7 @@ public class Miniboss : MonoBehaviour
     
     void Update()
     {
+	    player = GameObject.FindGameObjectWithTag("Player");
 	    MoveEnnemy();
 		if (life <= 0)
 		{
@@ -143,7 +144,7 @@ public class Miniboss : MonoBehaviour
                     rb.AddForce(new Vector2(2,3));
 
                 }
-                rb.AddForce(Vector2.right * speed, ForceMode2D.Force);
+                rb.AddForce(Vector2.right * speed*2, ForceMode2D.Force);
                 if (Vector2.Distance(transform.position, player.transform.position) < 2f) //(transform.position.x-pos.x < 10)
                 {
                     anim.SetBool("punch", true);

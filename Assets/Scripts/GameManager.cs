@@ -18,8 +18,8 @@ public class GameManager : MonoBehaviour
     public GameObject FeedGrid;
     public GameObject Enemy1;
     public GameObject Enemy2;
-    public (float, float)[] pos1 = new (float, float)[2] {(27.94f, -2.44f), (53.84f, 1.52f)};
-    public (float, float)[] pos2 = new (float, float)[1] {(43.09f, -0.89f)};
+    public (float, float)[] pos1 = new (float, float)[4] {(27.94f, -2.44f), (53.84f, 1.52f), (204f,-1.4f), (141.5f,-1.45f)};
+    public (float, float)[] pos2 = new (float, float)[4] {(43.09f, -0.89f), (152.4f,13f), (212.58f,-3.9f), (107.0791f,4.06f)};
     public bool ShouldSpawn = true;
     public int dead = 0;
     public int nbAlive => PhotonNetwork.room.PlayerCount - dead; 
@@ -42,12 +42,6 @@ public class GameManager : MonoBehaviour
     public bool GetShouldSpawn()
     {
         return ShouldSpawn;
-    }
-
-    void Start()
-    {
-        // Hides the cursor...
-        Cursor.visible = false; 
     }
 
     private void Awake()
@@ -90,8 +84,7 @@ public class GameManager : MonoBehaviour
         {
             GameCanvas.transform.Find("GameOver").gameObject.SetActive(IsDead);
         }
-    }   
-
+    }
     private void PauseButton()
     {
         if (Input.GetKeyDown(GameManager.GM.pause) && !MenuScript.MS.waitingForKey)
