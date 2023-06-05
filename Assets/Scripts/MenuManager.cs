@@ -56,7 +56,7 @@ public class MenuManager : MonoBehaviour
     }
     public void ChangeUserNameInput()
     {
-        if(UsernameInput.text.Length >= 3)
+        if(UsernameInput.text.Length >= 2)
         {
             for(int i = 0; i < UsernameInput.text.Length; i++)
                 if(UsernameInput.text[i] != ' ')
@@ -77,10 +77,19 @@ public class MenuManager : MonoBehaviour
         {
             PhotonNetwork.playerName = "Stop Omid !";
         }
+        else if(UsernameInput.text.ToUpper() == "JM")
+        {
+            PhotonNetwork.playerName = "01001010 01001101";
+        }
+        else if(UsernameInput.text.ToUpper() == "JM")
+        {
+            PhotonNetwork.playerName = "01001010 01000101 01000001 01001110 00100000 01001101 01000001 01001100 01001111";
+        }
         else
         {
             PhotonNetwork.playerName = UsernameInput.text;
         }
+
         
     }
 
