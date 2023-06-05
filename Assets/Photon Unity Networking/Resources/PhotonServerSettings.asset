@@ -47,4 +47,5 @@ MonoBehaviour:
   - FlipTrue
   - RPC_ChangeLevel
   - EndLevel1
+  - SpawnProjectile
   DisableAutoOpenWizard: 1

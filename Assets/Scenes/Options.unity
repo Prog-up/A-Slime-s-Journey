@@ -2323,7 +2323,7 @@ MonoBehaviour:
   slider: {fileID: 1763862559}
   txtVolume: {fileID: 387677204}
   IsFullScreen: 1
-  FScreen: {fileID: 0}
+  FScreen: {fileID: 1602177650}
 --- !u!114 &1657645214
 MonoBehaviour:
   m_ObjectHideFlags: 0

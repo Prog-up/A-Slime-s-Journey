@@ -41,7 +41,7 @@ public class MenuOptionsResoSon : MonoBehaviour
         switch(resolution.value)
         {
             case 0:
-                Screen.SetResolution(640,360,IsFullScreen);
+                Screen.SetResolution(1920,1080,IsFullScreen);
                 break;
             case 1:
                 Screen.SetResolution(1920,1080,IsFullScreen);
@@ -55,10 +55,12 @@ public class MenuOptionsResoSon : MonoBehaviour
         if(IsFullScreen)
         {
             FScreen.text = "Fullscreen";
+            Debug.Log(IsFullScreen);
         }
         else
         {
             FScreen.text = "Windowed";
+            Debug.Log(IsFullScreen);
         }
     }
 
