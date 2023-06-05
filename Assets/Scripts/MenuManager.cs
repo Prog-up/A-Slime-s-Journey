@@ -129,16 +129,5 @@ public class MenuManager : MonoBehaviour
         OptionMenu.SetActive(false);
         UsernameMenu.SetActive(true);
     }
-    
-    public void OnJoinRoomFailed(short returnCode, string message)
-    {
-        if (returnCode == ErrorCode.GameFull)
-        {
-            Debug.Log("La room est pleine. Impossible de rejoindre."); // TODO: test
-            // Affichez un message à l'utilisateur ou déclenchez une action appropriée.
-            ConnectPannel.transform.Find("Error").gameObject.SetActive(true);
-            Canvas.Find("Image").gameObject.SetActive(false);
-        }
-    }
 }
 
