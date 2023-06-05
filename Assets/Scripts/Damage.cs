@@ -18,63 +18,8 @@ public class Damage : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collision)
 	{
-        if (photonView.isMine)
+        if (IsAvailable == false)
         {
-            if (IsAvailable == false)
-            {
-                if (collision.CompareTag("Heal") && photonView.isMine)
-                {
-                    switch (life)
-                    {
-                        case 2:
-                            life += 1;
-                            heart3.SetActive(true);
-                            break;
-                        case 1:
-                            life += 1;
-                            heart2.SetActive(true);
-                            break;
-                        case 3:
-                            break;
-                        default:
-                            break;
-                    }
-            
-                }
-                return;
-            }
-            if ((collision.CompareTag("Enemy") && photonView.isMine) || (collision.CompareTag("boss") && photonView.isMine))
-            {
-                life--;
-                switch (life)
-                {
-                    case 2:
-                        heart3.SetActive(false);
-                        StartCoroutine(StartCooldown());
-                        break;
-                    case 1:
-                        heart3.SetActive(false);
-                        heart2.SetActive(false);
-                        StartCoroutine(StartCooldown());
-                        break;
-                    case 0:
-                        heart3.SetActive(false);
-                        heart2.SetActive(false);
-                        heart1.SetActive(false);
-                        life--;
-                        Death();
-                        break;
-                    case  < 0:
-                        heart3.SetActive(true);
-                        heart2.SetActive(true);
-                        heart1.SetActive(true);
-                        life = 3;
-                    
-                        break;
-                    default:
-                        break;
-                }
-            }
             if (collision.CompareTag("Heal") && photonView.isMine)
             {
                 switch (life)
@@ -92,8 +37,60 @@ public class Damage : MonoBehaviour
                     default:
                         break;
                 }
-            
+        
             }
+            return;
+        }
+        if ((collision.CompareTag("Enemy") && photonView.isMine) || (collision.CompareTag("boss") && photonView.isMine))
+        {
+            life--;
+            switch (life)
+            {
+                case 2:
+                    heart3.SetActive(false);
+                    StartCoroutine(StartCooldown());
+                    break;
+                case 1:
+                    heart3.SetActive(false);
+                    heart2.SetActive(false);
+                    StartCoroutine(StartCooldown());
+                    break;
+                case 0:
+                    heart3.SetActive(false);
+                    heart2.SetActive(false);
+                    heart1.SetActive(false);
+                    life--;
+                    Death();
+                    break;
+                case  < 0:
+                    heart3.SetActive(true);
+                    heart2.SetActive(true);
+                    heart1.SetActive(true);
+                    life = 3;
+                
+                    break;
+                default:
+                    break;
+            }
+        }
+        if (collision.CompareTag("Heal") && photonView.isMine)
+        {
+            switch (life)
+            {
+                case 2:
+                    life += 1;
+                    heart3.SetActive(true);
+                    break;
+                case 1:
+                    life += 1;
+                    heart2.SetActive(true);
+                    break;
+                case 3:
+                    break;
+                default:
+                    break;
+            }
+        
         }
     }
     public IEnumerator StartCooldown()
