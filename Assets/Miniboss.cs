@@ -18,9 +18,12 @@ public class Miniboss : MonoBehaviour
     public float timer;
 
 	public AudioSource degats;
+	public AudioSource death;
 	
 	public float life;
 	public bool shot;
+
+	public bool shot2;
 	public GameObject arrow;
 
 	public Transform arrowPos;
@@ -31,20 +34,35 @@ public class Miniboss : MonoBehaviour
         player = GameObject.FindGameObjectWithTag("Player");
         life = 10;
         shot = false;
+        shot2 = false;
     }
 
     void Update()
     {
+	    player = GameObject.FindGameObjectWithTag("Player");
 		MoveEnnemy();
 		if (life <= 0)
 		{
-			Destroy(gameObject);
+			anim.SetTrigger("death");
+			death.Play();
+			StartCoroutine(StartCooldown3());
 		}
 		if (life <= 5 && shot==false)
 		{
 			shot = true;
 			Angry();
 		}
+		if (life <= 2 && shot2==false)
+		{
+			shot2 = true;
+			Angry();
+		}
+    }
+    
+    IEnumerator StartCooldown3()
+    {
+	    yield return new WaitForSeconds(0.5f);
+	    PhotonNetwork.Destroy(transform.parent.gameObject);
     }
 
 	private void OnTriggerEnter2D(Collider2D collision)
@@ -132,7 +150,10 @@ public class Miniboss : MonoBehaviour
     
     IEnumerator StartCooldown2()
     {
+	    
 	    yield return new WaitForSeconds(2f);
+	    var c = transform.position.y+5;
+	    transform.position = new Vector3(transform.position.x,c,transform.position.z);
 	    PhotonNetwork.InstantiateSceneObject(arrow.name, arrowPos.position, Quaternion.identity, 0, null);
     }
 }
