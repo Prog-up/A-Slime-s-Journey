@@ -117,6 +117,10 @@ public class Player : Photon.MonoBehaviour
             PlayerNameText.text = photonView.owner.name;
             PlayerNameText.color = Color.red;
             Life.SetActive(false);
+            MusicLvl2.Stop();
+            MusicBoss.Stop();
+            MusicLvl1.Stop();
+            MusicGameOver.Stop();
         }
     }
 
@@ -234,12 +238,14 @@ public class Player : Photon.MonoBehaviour
                 if (sr.flipX)
                 {
                     // PhotonNetwork.InstantiateSceneObject(projectile.name, LaunchInMenuset2.position, new Quaternion(0f, 180f, 0f, 0f), 0, null);
-                    Instantiate(projectileGM, LaunchInMenuset.position, new Quaternion(0f, 180f, 0f, 0f));
+                    // Instantiate(projectileGM, LaunchInMenuset.position, new Quaternion(0f, 180f, 0f, 0f));
+                    ShootLeft();
                 }
                 else
                 {
                     // PhotonNetwork.InstantiateSceneObject(projectile.name, LaunchInMenuset.position, Quaternion.identity, 0, null);
-                    Instantiate(projectileGM, LaunchInMenuset2.position, Quaternion.identity);
+                    // Instantiate(projectileGM, LaunchInMenuset2.position, Quaternion.identity);
+                    ShootRight();
                 }
                 
                 StartCoroutine(StartCooldown());
@@ -306,7 +312,10 @@ public class Player : Photon.MonoBehaviour
                 InMenu = false;
                 transform.position = new Vector3(0f, transform.position.y, transform.position.z);
                 GetComponent<SpriteRenderer>().enabled = true;
-                transform.Find("UI").gameObject.SetActive(true);
+                if (photonView.isMine)
+                {
+                    transform.Find("UI").gameObject.SetActive(true);
+                }
             }
         }
         else
@@ -353,5 +362,28 @@ public class Player : Photon.MonoBehaviour
     private void FlipFalse()
     {
         sr.flipX = false;
+    }
+    
+    public void ShootRight()
+    {
+        // Instantiation du projectile localement
+        GameObject projectile = Instantiate(projectileGM, LaunchInMenuset2.position, new Quaternion(0f, 0f, 0f, 0f));
+        // Envoi d'un RPC aux autres clients pour instancier le projectile chez eux
+        photonView.RPC("SpawnProjectile", PhotonTargets.Others, projectile.transform.position, projectile.transform.rotation);
+    }
+    
+    public void ShootLeft()
+    {
+        // Instantiation du projectile localement
+        GameObject projectile = Instantiate(projectileGM, LaunchInMenuset.position, new Quaternion(0f, 180f, 0f, 0f));
+        // Envoi d'un RPC aux autres clients pour instancier le projectile chez eux
+        photonView.RPC("SpawnProjectile", PhotonTargets.Others, projectile.transform.position, projectile.transform.rotation);
+    }
+
+    [PunRPC]
+    private void SpawnProjectile(Vector3 position, Quaternion rotation)
+    {
+        // Instantiation du projectile chez les autres clients
+        Instantiate(projectileGM, position, rotation);
     }
 }
