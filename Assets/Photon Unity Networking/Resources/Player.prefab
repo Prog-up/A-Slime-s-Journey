@@ -1420,7 +1420,7 @@ GameObject:
   - component: {fileID: 2112120980152152636}
   - component: {fileID: 5987447431492500850}
   m_Layer: 5
-  m_Name: Canvas (1)
+  m_Name: UI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1750,9 +1750,6 @@ MonoBehaviour:
   IsAvailable: 1
   CooldownDuration: 2
   photonView: {fileID: 2196262747904822369}
-  deathScreenUI: {fileID: 6589716445474422831}
-  restartButton: {fileID: 1439384319726051634}
-  mainMenuButton: {fileID: 4805172648090170969}
 --- !u!61 &3831711764170469016
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2255,8 +2252,8 @@ MonoBehaviour:
   WallCheckRight: {fileID: 3468281861604190669}
   WallCheckLeft: {fileID: 5771771229128592085}
   projectile: {fileID: 6016551358141180298, guid: d4b825117826a1d43a14a78133661e7a, type: 3}
-  LaunchOffset: {fileID: 2603438787816082114}
-  LaunchOffset2: {fileID: 2482380290358467408}
+  LaunchInMenuset: {fileID: 0}
+  LaunchInMenuset2: {fileID: 0}
   CooldownDuration: 1.5
   IsAvailable: 1
 --- !u!114 &2196262747904822369

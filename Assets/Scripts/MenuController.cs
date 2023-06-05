@@ -109,15 +109,8 @@ public class MenuController : MonoBehaviour
                 break;
             }
         }
-        
-        if (false && roomOptions.MaxPlayers == 2 && !pres)
-        {
-            PhotonNetwork.LoadLevel("Lobby");
-        }
-        else
-        {
-            PhotonNetwork.LoadLevel("MainGame");
-        }
+        PhotonNetwork.LoadLevel("MainGame");
+        GameManager.GM.InGame = true;
     }
 
     public void ExitGame() 

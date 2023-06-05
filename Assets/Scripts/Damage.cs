@@ -12,9 +12,9 @@ public class Damage : MonoBehaviour
     public bool IsAvailable = true;
     public float CooldownDuration = 2.0f;
     public PhotonView photonView;
-	public GameObject deathScreenUI;
+	/*public GameObject deathScreenUI;
     public Button restartButton;
-    public Button mainMenuButton;
+    public Button mainMenuButton;*/
 
     void OnTriggerEnter2D(Collider2D collision)
 	{
@@ -60,9 +60,7 @@ public class Damage : MonoBehaviour
                     heart2.SetActive(false);
                     heart1.SetActive(false);
                     life--;
-                    GameManager.GM.dead ++;
-                    Debug.Log("nb alive = " + GameManager.GM.nbAlive);
-                    PhotonNetwork.LoadLevel("GameOver");
+                    Death();
                     break;
                 case  < 0:
                     heart3.SetActive(true);
@@ -108,10 +106,17 @@ public class Damage : MonoBehaviour
         {
             if (photonView.isMine)
             {
-                PhotonNetwork.LoadLevel("GameOver");
-                GameManager.GM.dead ++;
+                Death();
             }
                 
         }
+    }
+
+    private void Death()
+    {
+        transform.parent.position = new Vector3(-100f, 0f, 0f);
+        life = 3;
+        GameManager.GM.IsDead = true;
+        GameManager.GM.dead ++;
     }
 }

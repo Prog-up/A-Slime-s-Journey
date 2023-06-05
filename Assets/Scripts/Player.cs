@@ -51,8 +51,8 @@ public class Player : Photon.MonoBehaviour
     private float climbSpeed = 3f;
     private float verticalInput;
     public ProjectileBehaviour projectile;
-    public Transform LaunchOffset;
-    public Transform LaunchOffset2;
+    public Transform LaunchInMenuset;
+    public Transform LaunchInMenuset2;
 
     private bool Isrolling = false;
     public float CooldownDuration = 1.5f;
@@ -62,16 +62,17 @@ public class Player : Photon.MonoBehaviour
     private bool Hurt2 = false;
     private float timer;
     private float timer2;
+    private bool InGameOverMenu = false;
     
     // Menu
-    private bool Off;
+    private bool InMenu;
 
     private void Escalade()
     {
         if (IsRock)
         {
             isTouchingWall = Physics2D.OverlapCircle(WallCheckRight.position, 0.1f, collisionLayers)||Physics2D.OverlapCircle(WallCheckLeft.position, 0.1f, collisionLayers);
-            verticalInput = (Input.GetKey(GameManager.GM.power) && !Off)? 1 : 0;
+            verticalInput = (Input.GetKey(GameManager.GM.power) && !InMenu)? 1 : 0;
 
             if (isTouchingWall && verticalInput>0)
             {
@@ -127,12 +128,12 @@ public class Player : Photon.MonoBehaviour
 
     private void Hor()
     {
-        if (Input.GetKey(GameManager.GM.right) && !Off)
+        if (Input.GetKey(GameManager.GM.right) && !InMenu)
         {
             photonView.RPC("FlipFalse",PhotonTargets.AllBuffered);
             MoveForce = 1;
         }
-        else if (Input.GetKey(GameManager.GM.left) && !Off)
+        else if (Input.GetKey(GameManager.GM.left) && !InMenu)
         {
             photonView.RPC("FlipTrue",PhotonTargets.AllBuffered);
             MoveForce = -1;
@@ -148,7 +149,7 @@ public class Player : Photon.MonoBehaviour
         IsGrounded = Physics2D.OverlapCircle(GroundCheck.position, GroundCheckRadius, collisionLayers);
         if (IsGrounded)
         {
-            if (Input.GetKey(GameManager.GM.jump) && !Off)
+            if (Input.GetKey(GameManager.GM.jump) && !InMenu)
             {
                 rb.velocity = new Vector2(rb.velocity.x, JumpForce);
                 jumpsound.Play();
@@ -211,18 +212,18 @@ public class Player : Photon.MonoBehaviour
             {
                 return;
             }
-            if (Input.GetKey(GameManager.GM.power) && !Off)
+            if (Input.GetKey(GameManager.GM.power) && !InMenu)
             {
                 Debug.Log("Tir !");
                 if (sr.flipX)
                 {
-                    PhotonNetwork.InstantiateSceneObject(projectile.name, LaunchOffset2.position, new Quaternion(0f, 180f, 0f, 0f), 0, null);
-                    //Instantiate(projectile, LaunchOffset.position, new Quaternion(0f, 180f, 0f, 0f));
+                    PhotonNetwork.InstantiateSceneObject(projectile.name, LaunchInMenuset2.position, new Quaternion(0f, 180f, 0f, 0f), 0, null);
+                    //Instantiate(projectile, LaunchInMenuset.position, new Quaternion(0f, 180f, 0f, 0f));
                 }
                 else
                 {
-                    PhotonNetwork.InstantiateSceneObject(projectile.name, LaunchOffset.position, Quaternion.identity, 0, null);
-                    //Instantiate(projectile, LaunchOffset2.position, Quaternion.identity);
+                    PhotonNetwork.InstantiateSceneObject(projectile.name, LaunchInMenuset.position, Quaternion.identity, 0, null);
+                    //Instantiate(projectile, LaunchInMenuset2.position, Quaternion.identity);
                 }
                 
                 StartCoroutine(StartCooldown());
@@ -244,23 +245,23 @@ public class Player : Photon.MonoBehaviour
 
     private void OnTriggerStay2D(Collider2D other)
     { 
-        if (other.gameObject.CompareTag("Rock") && Input.GetKey(GameManager.GM.transfo) && !Off)
+        if (other.gameObject.CompareTag("Rock") && Input.GetKey(GameManager.GM.transfo) && !InMenu)
         {
             IsRock = true;
             IsDefault = false;
             IsFlame = false;
             anim.SetBool("IsRock", IsRock);
         }
-        else if (other.gameObject.CompareTag("Flame") && Input.GetKey(GameManager.GM.transfo) && !Off)
+        else if (other.gameObject.CompareTag("Flame") && Input.GetKey(GameManager.GM.transfo) && !InMenu)
         {
             IsRock = false;
             IsDefault = false;
             IsFlame = true;
             anim.SetBool("IsFlame", IsFlame);
         }
-        else if ((other.gameObject.CompareTag("Rock") && !IsRock) || (other.gameObject.CompareTag("Flame") && !IsFlame))
+        else if (!InMenu && ((other.gameObject.CompareTag("Rock") && !IsRock) ||
+                             (other.gameObject.CompareTag("Flame") && !IsFlame)))
         {
-            // Debug.Log("Press Transfo !");
             Indicator.GetComponent<Text>().text = "Press " + GameManager.GM.transfo.ToString() + " !";
             Indicator.SetActive(true);
         }
@@ -276,10 +277,31 @@ public class Player : Photon.MonoBehaviour
     
     void Update()
     {
+        if (transform.position.x < -80)
+        {
+            if (GameManager.GM.IsDead)
+            {
+                InMenu = true;
+                GetComponent<SpriteRenderer>().enabled = false;
+                transform.Find("UI").gameObject.SetActive(false);
+            }
+            else
+            {
+                InMenu = false;
+                transform.position = new Vector3(0f, transform.position.y, transform.position.z);
+                GetComponent<SpriteRenderer>().enabled = true;
+                transform.Find("UI").gameObject.SetActive(true);
+            }
+        }
+        else
+        {
+            InMenu = false;
+        }
+        
         if (photonView.isMine && photonView.gameObject.activeSelf)
         {
             CheckInput();
-            Off = GameManager.GM.InOptions;
+            InMenu = GameManager.GM.InOptions;
         }
 
         if (Hurt1 == true)

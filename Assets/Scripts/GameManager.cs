@@ -25,6 +25,8 @@ public class GameManager : MonoBehaviour
     public int nbAlive => PhotonNetwork.room.PlayerCount - dead; 
     private float SpawnPlayerMinPos = -1f;
     private float SpawnPlayerMaxPos = 1f;
+    public bool IsDead = false;
+    public bool InGame;
     
     //Used for singleton
     public static GameManager GM;
@@ -46,6 +48,7 @@ public class GameManager : MonoBehaviour
     {
         SpawnPlayer();
         Spawn();
+        InGame = true;
         
         //Singleton pattern
         if(GM == null)
@@ -77,10 +80,9 @@ public class GameManager : MonoBehaviour
     {
         PauseButton();
         Spawn();
-        if(Damage.life <= 0)
+        if (InGame)
         {
-            PhotonNetwork.Destroy(gameObject);
-            Debug.Log("ca destroy");
+            GameCanvas.transform.Find("GameOver").gameObject.SetActive(IsDead);
         }
     }   
 
@@ -126,6 +128,11 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    private void GameOverMenu()
+    {
+         GameCanvas.transform.Find("GameOver").gameObject.SetActive(true);
+    }
+
     public void LeaveRoom()
     {
         PhotonNetwork.LeaveRoom();
@@ -159,5 +166,17 @@ public class GameManager : MonoBehaviour
     {
         GameCanvas.transform.Find("DisconnectMenu").gameObject.SetActive(!GameCanvas.transform.Find("DisconnectMenu").gameObject.activeSelf);
         GameCanvas.transform.Find("OptionMenuCanvas").gameObject.SetActive(!GameCanvas.transform.Find("OptionMenuCanvas").gameObject.activeSelf);
+    }
+    
+    public void Respawn()
+    {
+        IsDead = false;
+        GameManager.GM.dead --;
+    }
+    
+    public void MainMenu()
+    {
+        PhotonNetwork.LoadLevel("MainMenu");
+        InGame = false;
     }
 }
