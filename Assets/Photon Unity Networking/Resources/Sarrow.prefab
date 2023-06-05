@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 4923649540525725371}
   - component: {fileID: 5726961937314086433}
   - component: {fileID: 5330360022741317141}
+  - component: {fileID: 7521999318363046778}
   m_Layer: 0
   m_Name: Sarrow
   m_TagString: Enemy
@@ -147,7 +148,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d707ff47bf6bd3044aabda1b37c1d224, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  force: 8
+  force: 12
 --- !u!114 &5330360022741317141
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -175,3 +176,23 @@ MonoBehaviour:
   instantiationId: -1
   currentMasterID: -1
   isRuntimeInstantiated: 0
+--- !u!95 &7521999318363046778
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5002605618239934127}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 3603b8f3ab0a04f4f8a57f25d2e2e838, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0

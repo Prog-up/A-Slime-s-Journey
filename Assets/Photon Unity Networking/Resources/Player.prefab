@@ -2636,7 +2636,7 @@ MonoBehaviour:
     SynchronizeType: 2
     Name: Hurt2
   - Type: 4
-    SynchronizeType: 0
+    SynchronizeType: 2
     Name: IsFlame
   m_SynchronizeLayers:
   - SynchronizeType: 2
