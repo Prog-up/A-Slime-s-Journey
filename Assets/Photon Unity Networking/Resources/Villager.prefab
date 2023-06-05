@@ -206,8 +206,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c4dd7d6e8bdfc648935f3d6f28f98f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0.5
-  waypoints: []
+  speed: 1
   target: {fileID: 8179612259239588884, guid: 43bab9ca1ca5c714ea2e21c108c6d61e, type: 3}
   rb: {fileID: 5021893488156874248}
   Alive: 0
