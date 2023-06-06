@@ -1880,7 +1880,7 @@ MonoBehaviour:
   CooldownDuration: 2
   photonView: {fileID: 2196262747904822369}
   admin: 0
-  healing: {fileID: 0}
+  healing: {fileID: 4133807391110341187}
 --- !u!61 &3831711764170469016
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2738,6 +2738,9 @@ MonoBehaviour:
   - Type: 4
     SynchronizeType: 2
     Name: IsFlame
+  - Type: 4
+    SynchronizeType: 0
+    Name: Hurt3
   m_SynchronizeLayers:
   - SynchronizeType: 2
     LayerIndex: 0

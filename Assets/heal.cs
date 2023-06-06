@@ -9,8 +9,14 @@ public class heal : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            PhotonNetwork.Destroy(gameObject);
+            StartCoroutine(StartCooldown());
         }
         
+    }
+
+	public IEnumerator StartCooldown()
+    {
+	    yield return new WaitForSeconds(0.5f);
+	    PhotonNetwork.Destroy(gameObject);
     }
 }

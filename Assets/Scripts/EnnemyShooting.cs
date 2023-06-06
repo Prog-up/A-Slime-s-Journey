@@ -8,7 +8,10 @@ public class EnnemyShooting : MonoBehaviour
 
     public Transform arrowPos;
 
+	public SpriteRenderer graphic;
+
     private float timer;
+
     private GameObject player;
     
     // Start is called before the first frame update
@@ -20,6 +23,15 @@ public class EnnemyShooting : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+		var villager = transform.position;
+		if (villager.x-player.transform.position.x > 0)
+		{
+			graphic.flipX = false;
+		}
+		else
+		{
+			graphic.flipX = true;
+		}
         float distance = Vector2.Distance(transform.position, player.transform.position);
         if (distance < 25)
         {
