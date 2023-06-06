@@ -17,6 +17,7 @@ TagManager:
   - Level2
   - boss
   - GameOver
+  - random
   layers:
   - Default
   - TransparentFX

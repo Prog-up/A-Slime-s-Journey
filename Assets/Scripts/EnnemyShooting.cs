@@ -7,6 +7,8 @@ public class EnnemyShooting : MonoBehaviour
     public GameObject arrow;
 
     public Transform arrowPos;
+	
+	public Transform arrowPos2;
 
 	public SpriteRenderer graphic;
 
@@ -46,7 +48,15 @@ public class EnnemyShooting : MonoBehaviour
 
     void Shoot()
     {
-        //Instantiate(arrow, arrowPos.position, Quaternion.identity);
-        PhotonNetwork.InstantiateSceneObject(arrow.name, arrowPos.position, Quaternion.identity, 0, null);
+        var archer = transform.position;
+		if (archer.x-player.transform.position.x > 0)
+		{
+			PhotonNetwork.InstantiateSceneObject(arrow.name, arrowPos.position, Quaternion.identity, 0, null);
+		}
+		else
+		{
+			PhotonNetwork.InstantiateSceneObject(arrow.name, arrowPos2.position, Quaternion.identity, 0, null);
+		}
+        
     }
 }

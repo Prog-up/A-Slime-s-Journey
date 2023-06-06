@@ -34,13 +34,14 @@ public class ArrowScript : MonoBehaviour
             Destroy(gameObject);
         }
     }
-
+    
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.CompareTag("Player"))
+        if (other.tag == "Untagged")
         {
-            Destroy(gameObject, 0.1f);
+            Destroy(gameObject,0.1f);
         }
-        
     }
+
+    
 }
