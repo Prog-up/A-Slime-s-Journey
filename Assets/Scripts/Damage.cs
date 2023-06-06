@@ -37,7 +37,6 @@ public class Damage : MonoBehaviour
         {
             if (collision.CompareTag("Heal") && photonView.isMine)
             {
-                healing.Play();
                 switch (life)
                 {
                     case 2:
@@ -53,6 +52,7 @@ public class Damage : MonoBehaviour
                     default:
                         break;
                 }
+                healing.Play();
         
             }
             return;
@@ -91,7 +91,7 @@ public class Damage : MonoBehaviour
         }
         if (collision.CompareTag("Heal") && photonView.isMine)
         {
-            healing.Play();
+            
             switch (life)
             {
                 case 2:
@@ -107,6 +107,7 @@ public class Damage : MonoBehaviour
                 default:
                     break;
             }
+            healing.Play();
         
         }
     }

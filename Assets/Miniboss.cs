@@ -25,6 +25,8 @@ public class Miniboss : MonoBehaviour
 	public bool shot;
 
 	public bool shot2;
+
+	public bool shot3;
 	public GameObject arrow;
 
 	public Transform arrowPos;
@@ -43,6 +45,7 @@ public class Miniboss : MonoBehaviour
         life = maxlife;
         shot = false;
         shot2 = false;
+        shot3 = false;
         healthbar.UpdateHealthBar(life, maxlife);
     }
 
@@ -56,6 +59,11 @@ public class Miniboss : MonoBehaviour
 			anim.SetTrigger("death");
 			death.Play();
 			StartCoroutine(StartCooldown3());
+		}
+		if (life <= 10 && shot3==false)
+		{
+			shot3 = true;
+			Angry();
 		}
 		if (life <= 5 && shot==false)
 		{
@@ -71,7 +79,7 @@ public class Miniboss : MonoBehaviour
     
     IEnumerator StartCooldown3()
     {
-	    yield return new WaitForSeconds(0.5f);
+	    yield return new WaitForSeconds(0.7f);
 	    Destroy(gameObject);
     }
 
@@ -80,7 +88,7 @@ public class Miniboss : MonoBehaviour
 		if (collision.CompareTag("Player"))
 		{
 			anim.SetBool("Hurt",true);
-			if (life >= 1)
+			if (life >= 2)
 			{
 				degats.Play();
 			}
@@ -90,7 +98,7 @@ public class Miniboss : MonoBehaviour
 		if (collision.CompareTag("Cailloux"))
 		{
 			anim.SetBool("Hurt",true);
-			if (life >= 1)
+			if (life >= 2)
 			{
 				degats.Play();
 			}
