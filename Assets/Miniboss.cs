@@ -54,7 +54,7 @@ public class Miniboss : MonoBehaviour
     {
 	    player = GameObject.FindGameObjectWithTag("Player");
 	    MoveEnnemy();
-		if (life <= 0)
+		if (life <= -1)
 		{
 			anim.SetTrigger("death");
 			death.Play();

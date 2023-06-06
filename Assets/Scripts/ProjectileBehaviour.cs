@@ -28,7 +28,7 @@ public class ProjectileBehaviour : MonoBehaviour
     {
         if (collision.gameObject.tag != "boss")
         {
-            Destroy(gameObject);
+            Destroy(gameObject,0.1f);
         }
     }
 }
