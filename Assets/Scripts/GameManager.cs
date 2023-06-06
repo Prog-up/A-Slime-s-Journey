@@ -24,12 +24,17 @@ public class GameManager : MonoBehaviour
     public GameObject Archer;
 
     public GameObject Boss;
-    public (float, float)[] pos1 = new (float, float)[4] {(27.94f, -2.44f), (53.84f, 1.52f), (204f,-1.4f), (141.5f,-1.45f)};
-    public (float, float)[] pos2 = new (float, float)[4] {(43.09f, -0.89f), (152.4f,13f), (212.58f,-3.9f), (107.0791f,4.06f)};
 
-    public (float, float)[] pos3 = new (float, float)[7] { (403.914f, -1.74f), (437.11f, -1.74f), (475.7f, 1.01f), (496.65f, -1.74f), (531.75f, -1.75f), (564.64f,-1.75f), (590.06f,-1.75f)};
+    public (float, float)[] pos1 = new (float, float)[4] { (27.94f, -2.44f), (53.84f, 1.52f), (204f, -1.4f), (141.5f, -1.45f) };
+
+    public (float, float)[] pos2 = new (float, float)[4] { (43.09f, -0.89f), (152.4f, 13f), (212.58f, -3.9f), (107.0791f, 4.06f) };
+
+    public (float, float)[] pos3 = new (float, float)[7] { (403.914f, -1.74f), (437.11f, -1.74f), (475.7f, 1.01f), (496.65f, -1.74f), (531.75f, -1.75f), (564.64f, -1.75f), (590.06f, -1.75f) };
+
+    public (float, float)[] pos4 = new (float, float)[6] { (422.16f, 0.44f), (452.49f, 1.13f), (502.76f, -1.6f), (514.82f, 0.46f), (540.07f, 0.47f), (557.56f, 1.12f) };
     
-    public (float, float)[] pos4 = new (float, float)[6] {(422.16f, 0.44f), (452.49f,1.13f), (502.76f,-1.6f), (514.82f,0.46f), (540.07f, 0.47f), (557.56f, 1.12f)};
+    public (float, float)[] pos5 = new (float, float)[1] { (743.6f, -2.08f) };
+
     public bool ShouldSpawn = true;
     public int dead = 0;
     public int nbAlive => PhotonNetwork.room.PlayerCount - dead; 
@@ -155,6 +160,10 @@ public class GameManager : MonoBehaviour
             for (int i = 0; i < pos4.Length; i++)
             {
                 PhotonNetwork.InstantiateSceneObject(Archer.name, new Vector2(pos4[i].Item1, pos4[i].Item2), Quaternion.identity, 0, null);
+            }
+            for (int i = 0; i < pos5.Length; i++)
+            {
+                PhotonNetwork.InstantiateSceneObject(Boss.name, new Vector2(pos5[i].Item1, pos5[i].Item2), Quaternion.identity, 0, null);
             }
         }
 
