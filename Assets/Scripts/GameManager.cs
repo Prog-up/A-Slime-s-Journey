@@ -65,7 +65,6 @@ public class GameManager : MonoBehaviour
         SpawnPlayer();
         Spawn();
         InGame = true;
-        Debug.Log("");
 
         //Singleton pattern
         if(GM == null)
