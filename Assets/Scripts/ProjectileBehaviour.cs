@@ -10,6 +10,16 @@ public class ProjectileBehaviour : MonoBehaviour
     // Update is called once per frame
     private GameObject player;
 
+    private float timer;
+    
+    void Update()
+    {
+        timer += Time.deltaTime;
+        if (timer > 6)
+        {
+            Destroy(gameObject);
+        }
+    }
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player");
