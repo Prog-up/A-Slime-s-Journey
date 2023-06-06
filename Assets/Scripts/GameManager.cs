@@ -38,6 +38,12 @@ public class GameManager : MonoBehaviour
     public bool IsDead = false;
     public bool InGame;
     
+    // Timer
+    private bool TimeIsRunning = true;
+    private float TimeRemaining = 0;
+    private Text Timer;
+    
+    
     //Used for singleton
     public static GameManager GM;
 
@@ -59,7 +65,7 @@ public class GameManager : MonoBehaviour
         SpawnPlayer();
         Spawn();
         InGame = true;
-        
+
         //Singleton pattern
         if(GM == null)
         {
@@ -84,6 +90,7 @@ public class GameManager : MonoBehaviour
         transfo = (KeyCode) System.Enum.Parse(typeof(KeyCode), PlayerPrefs.GetString("transfoKey", "S"));
         pause = (KeyCode) System.Enum.Parse(typeof(KeyCode), PlayerPrefs.GetString("pauseKey", "Escape"));
         GameCanvas.transform.Find("RoomName").gameObject.GetComponent<Text>().text = "Room name = " + PhotonNetwork.room.Name;
+        Timer = GameCanvas.transform.Find("Timer").gameObject.GetComponent<Text>();
     }
 
     private void Update()
@@ -94,6 +101,23 @@ public class GameManager : MonoBehaviour
         {
             GameCanvas.transform.Find("GameOver").gameObject.SetActive(IsDead);
         }
+
+        if (TimeIsRunning)
+        {
+            if (TimeRemaining >= 0)
+            {
+                TimeRemaining += Time.deltaTime;
+                DisplayTime(TimeRemaining);
+            }
+        }
+    }
+    
+    void DisplayTime(float timeToDisplay)
+    {
+        timeToDisplay += 1;
+        float minutes = Mathf.FloorToInt(timeToDisplay / 60);
+        float seconds = Mathf.FloorToInt(timeToDisplay % 60);
+        Timer.text= string.Format("{0:00} : {1:00}", minutes, seconds);
     }
     private void PauseButton()
     {
