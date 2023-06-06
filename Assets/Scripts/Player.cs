@@ -230,7 +230,16 @@ public class Player : Photon.MonoBehaviour
             IsFlame = false;
             Damage.life = 3;
             transition.SetTrigger("Start");
-            StartCoroutine(StartCooldown(true));
+            StartCoroutine(StartCooldown(1));
+        }
+        else if (other.tag == "Door")
+        {
+            // IsRock = false;
+            // IsDefault = true;
+            // IsFlame = false;
+            // Damage.life = 3;
+            transition.SetTrigger("Start");
+            StartCoroutine(StartCooldown(2));
         }
     }
     
@@ -263,14 +272,19 @@ public class Player : Photon.MonoBehaviour
         }
     }
     
-    public IEnumerator StartCooldown(bool telep = false)
+    public IEnumerator StartCooldown(int telep = 0)
     {
         IsAvailable = false;
         yield return new WaitForSeconds(CooldownDuration);
         IsAvailable = true;
-        if (telep)
+        if (telep == 1)
         {
             transform.position = new Vector3(380f, -2.70f, transform.position.z);
+            transition.SetTrigger("Restart");
+        }
+        else if (telep == 2)
+        {
+            transform.position = new Vector3(715f, -2f, transform.position.z);
             transition.SetTrigger("Restart");
         }
     }
