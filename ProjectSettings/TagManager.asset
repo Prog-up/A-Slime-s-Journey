@@ -18,6 +18,7 @@ TagManager:
   - boss
   - GameOver
   - random
+  - Door
   layers:
   - Default
   - TransparentFX
