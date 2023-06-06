@@ -37,7 +37,6 @@ public class Damage : MonoBehaviour
         {
             if (collision.CompareTag("Heal") && photonView.isMine)
             {
-                healing.Play();
                 switch (life)
                 {
                     case 2:
@@ -53,6 +52,7 @@ public class Damage : MonoBehaviour
                     default:
                         break;
                 }
+                healing.Play();
         
             }
             return;
@@ -91,7 +91,7 @@ public class Damage : MonoBehaviour
         }
         if (collision.CompareTag("Heal") && photonView.isMine)
         {
-            healing.Play();
+            
             switch (life)
             {
                 case 2:
@@ -107,6 +107,7 @@ public class Damage : MonoBehaviour
                 default:
                     break;
             }
+            healing.Play();
         
         }
     }
@@ -131,6 +132,9 @@ public class Damage : MonoBehaviour
 
     private void Death()
     {
+        heart3.SetActive(true);
+        heart2.SetActive(true);
+        heart1.SetActive(true);
         transform.parent.position = new Vector3(-100f, -1f, 0f);
         life = 3;
         GameManager.GM.IsDead = true;

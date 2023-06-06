@@ -270,7 +270,7 @@ public class Player : Photon.MonoBehaviour
         IsAvailable = true;
         if (telep)
         {
-            transform.position = new Vector3(380f, transform.position.y, transform.position.z);
+            transform.position = new Vector3(380f, -2.70f, transform.position.z);
             transition.SetTrigger("Restart");
         }
     }
@@ -323,7 +323,7 @@ public class Player : Photon.MonoBehaviour
                 IsDefault = true;
                 IsRock = false;
                 IsFlame = false;
-                transform.position = new Vector3(0f, transform.position.y, transform.position.z);
+                transform.position = new Vector3(0f, -1.43f, transform.position.z);
                 GetComponent<SpriteRenderer>().enabled = true;
                 if (photonView.isMine)
                 {
