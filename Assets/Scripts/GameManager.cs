@@ -126,7 +126,7 @@ public class GameManager : MonoBehaviour
     }
     private void PauseButton()
     {
-        if (Input.GetKeyDown(GameManager.GM.pause) )//&& !MenuScript.MS.waitingForKey)
+        if (Input.GetKeyDown(GameManager.GM.pause) && !MenuScript.MS.waitingForKey)
         {
             /*if (InOptions)
             {
