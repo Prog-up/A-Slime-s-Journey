@@ -122,7 +122,7 @@ public class Miniboss : MonoBehaviour
 
         if (villager.x-player.transform.position.x > 0)
         {
-            if (Vector2.Distance(transform.position, player.transform.position) < 10f) //(transform.position.x-pos.x < 10)
+            if (Vector2.Distance(transform.position, player.transform.position) < 11f) //(transform.position.x-pos.x < 10)
             {
 				if (Vector2.Distance(transform.position, player.transform.position) <8f && Vector2.Distance(transform.position, player.transform.position) >7.5f )
                 {
@@ -145,7 +145,7 @@ public class Miniboss : MonoBehaviour
         else
         {
 			
-            if (Vector3.Distance(transform.position, player.transform.position) < 10f)//(villager.x-pos.x > -10)
+            if (Vector3.Distance(transform.position, player.transform.position) < 11f)//(villager.x-pos.x > -10)
             {
                 if (Vector2.Distance(transform.position, player.transform.position) <8f && Vector2.Distance(transform.position, player.transform.position) >7.5f )
                 {
