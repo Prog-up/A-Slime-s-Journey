@@ -27,7 +27,7 @@ public class GameManager : MonoBehaviour
 
     public (float, float)[] pos1 = new (float, float)[4] { (27.94f, -2.44f), (53.84f, 1.52f), (204f, -1.4f), (141.5f, -1.45f) };
 
-    public (float, float)[] pos2 = new (float, float)[4] { (43.09f, -0.89f), (152.4f, 13f), (212.58f, -3.9f), (107.0791f, 4.06f) };
+    public (float, float)[] pos2 = new (float, float)[7] { (43.09f, -0.89f), (152.4f, 13f), (212.58f, -3.9f), (107.0791f, 4.06f), (723.6017f,-3.066994f), (748f, -3.066994f), (734f, -3.066994f) };
 
     public (float, float)[] pos3 = new (float, float)[7] { (403.914f, -1.74f), (437.11f, -1.74f), (475.7f, 1.01f), (496.65f, -1.74f), (531.75f, -1.75f), (564.64f, -1.75f), (590.06f, -1.75f) };
 
