@@ -327,6 +327,14 @@ public class Player : Photon.MonoBehaviour
         {
             if (GameManager.GM.IsDead)
             {
+                if (IsRock)
+                {
+                    anim.SetBool("IsRock", false);
+                }
+                if (IsFlame)
+                {
+                    anim.SetBool("IsFlame", false);
+                }
                 InMenu = true;
                 GetComponent<SpriteRenderer>().enabled = false;
                 transform.Find("UI").gameObject.SetActive(false);

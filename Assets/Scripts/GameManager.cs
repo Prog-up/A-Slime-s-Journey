@@ -128,14 +128,14 @@ public class GameManager : MonoBehaviour
     {
         if (Input.GetKeyDown(GameManager.GM.pause) )//&& !MenuScript.MS.waitingForKey)
         {
-            if (InOptions)
+            /*if (InOptions)
             {
                 Cursor.visible = true; 
             }
             else
             {
                 Cursor.visible = false; 
-            }
+            }*/
             PauseMenu();
         }
     }
