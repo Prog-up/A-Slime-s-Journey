@@ -69,6 +69,7 @@ public class Player : Photon.MonoBehaviour
     private float timer3;
     
     private bool InGameOverMenu = false;
+    public GameObject End;
     
     // Menu
     private bool InMenu;
@@ -240,6 +241,12 @@ public class Player : Photon.MonoBehaviour
             // Damage.life = 3;
             transition.SetTrigger("Start");
             StartCoroutine(StartCooldown(2));
+        }
+        else if (other.tag == "Treasure")
+        {
+            InMenu = true;
+            End.SetActive(true);
+            End.transform.Find("Text").gameObject.GetComponent<Text>().text = "Congratulations! You have defeated the\nfinal boss and completed\nA Slime's Journey in " + (int)GameManager.GM.TimeRemaining + " minutes.\nYour skill and determination have paid off,\nand you are now a true champion.\n Enjoy this moment of triumph and savor the\nsatisfaction of your victory.\nWell done, adventurer!";
         }
     }
     

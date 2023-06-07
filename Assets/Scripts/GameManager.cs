@@ -45,7 +45,7 @@ public class GameManager : MonoBehaviour
     
     // Timer
     private bool TimeIsRunning = true;
-    private float TimeRemaining = 0;
+    public float TimeRemaining = 0;
     private Text Timer;
     
     
