@@ -1390,6 +1390,9 @@ AnimatorStateTransition:
   - m_ConditionMode: 2
     m_ConditionEvent: IsRock
     m_EventTreshold: 0
+  - m_ConditionMode: 2
+    m_ConditionEvent: Hurt3
+    m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 7870545369413532258}
   m_Solo: 0
