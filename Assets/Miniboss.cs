@@ -31,6 +31,8 @@ public class Miniboss : MonoBehaviour
 
 	public Transform arrowPos;
 
+	public GameObject Treasure;
+
 	[SerializeField] FloatHealth healthbar;
     
 	
@@ -81,6 +83,7 @@ public class Miniboss : MonoBehaviour
     {
 	    yield return new WaitForSeconds(0.7f);
 	    Destroy(gameObject);
+		PhotonNetwork.InstantiateSceneObject(Treasure.name, transform.position, Quaternion.identity, 0, null);
     }
 
 	private void OnTriggerEnter2D(Collider2D collision)

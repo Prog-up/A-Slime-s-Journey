@@ -587,6 +587,7 @@ MonoBehaviour:
   shot3: 0
   arrow: {fileID: 5002605618239934127, guid: a1ee7753def79764980f166b8a65bcab, type: 3}
   arrowPos: {fileID: 5921489541381149850}
+  Treasure: {fileID: 3895286967373867082, guid: 61d24cb431126ae4e9b26a9f38d04582, type: 3}
   healthbar: {fileID: 0}
 --- !u!50 &79678505206507292
 Rigidbody2D:
