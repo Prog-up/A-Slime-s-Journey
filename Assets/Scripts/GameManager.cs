@@ -140,6 +140,14 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    public void Settings()
+    {
+        Cursor.visible = true;
+        GameCanvas.transform.Find("DisconnectMenu").gameObject.SetActive(false);
+        GameCanvas.transform.Find("Settings").gameObject.SetActive(true);
+        InOptions = true;
+    }
+
 
     public void Spawn()
     {
