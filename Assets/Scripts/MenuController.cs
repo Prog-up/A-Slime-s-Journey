@@ -20,6 +20,7 @@ public class MenuController : MonoBehaviour
     private void Awake()
     {
         PhotonNetwork.ConnectUsingSettings(VersionName);
+        Cursor.visible = true;
     }
 
     public string getgamename()

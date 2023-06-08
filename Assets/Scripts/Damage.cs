@@ -132,6 +132,7 @@ public class Damage : MonoBehaviour
 
     private void Death()
     {
+        
         heart3.SetActive(true);
         heart2.SetActive(true);
         heart1.SetActive(true);

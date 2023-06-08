@@ -47,6 +47,18 @@ public class GameManager : MonoBehaviour
     private bool TimeIsRunning = true;
     public float TimeRemaining = 0;
     private Text Timer;
+
+    public void jsp()
+    {
+        if(Damage.life == 0)
+        {
+            InOptions = true;
+        }
+        else
+        {
+            InOptions = false;
+        }
+    }
     
     
     //Used for singleton
@@ -67,6 +79,7 @@ public class GameManager : MonoBehaviour
 
     private void Awake()
     {
+        Cursor.visible = false; 
         SpawnPlayer();
         Spawn();
         InGame = true;
@@ -102,9 +115,19 @@ public class GameManager : MonoBehaviour
     {
         PauseButton();
         Spawn();
+        jsp();
         if (InGame)
         {
             GameCanvas.transform.Find("GameOver").gameObject.SetActive(IsDead);
+        }
+
+        if(InOptions)
+        {
+            Cursor.visible = true;
+        }
+        else
+        {
+            Cursor.visible = false; 
         }
 
         if (TimeIsRunning)
@@ -128,14 +151,14 @@ public class GameManager : MonoBehaviour
     {
         if (Input.GetKeyDown(GameManager.GM.pause) )//&& !MenuScript.MS.waitingForKey)
         {
-            /*if (InOptions)
+            if (InOptions)
             {
                 Cursor.visible = true; 
             }
             else
             {
                 Cursor.visible = false; 
-            }*/
+            }
             PauseMenu();
         }
     }
