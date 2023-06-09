@@ -78,8 +78,7 @@ public class GameManager : MonoBehaviour
     }
 
     private void Awake()
-    {
-        Cursor.visible = false; 
+    { 
         SpawnPlayer();
         Spawn();
         InGame = true;
@@ -121,14 +120,6 @@ public class GameManager : MonoBehaviour
             GameCanvas.transform.Find("GameOver").gameObject.SetActive(IsDead);
         }
 
-        if(InOptions)
-        {
-            Cursor.visible = true;
-        }
-        else
-        {
-            Cursor.visible = false; 
-        }
 
         if (TimeIsRunning)
         {
@@ -151,21 +142,13 @@ public class GameManager : MonoBehaviour
     {
         if (Input.GetKeyDown(GameManager.GM.pause) )//&& !MenuScript.MS.waitingForKey)
         {
-            if (InOptions)
-            {
-                Cursor.visible = true; 
-            }
-            else
-            {
-                Cursor.visible = false; 
-            }
+            
             PauseMenu();
         }
     }
 
     public void Settings()
     {
-        Cursor.visible = true;
         GameCanvas.transform.Find("DisconnectMenu").gameObject.SetActive(false);
         GameCanvas.transform.Find("Settings").gameObject.SetActive(true);
         InOptions = true;
