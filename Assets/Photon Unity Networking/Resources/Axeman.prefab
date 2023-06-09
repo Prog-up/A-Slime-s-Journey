@@ -567,7 +567,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22306c74a305d1c40a834a814abae17a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1
+  speed: 1.1
   target: {fileID: 8179612259239588884, guid: 43bab9ca1ca5c714ea2e21c108c6d61e, type: 3}
   rb: {fileID: 79678505206507292}
   Alive: 0
