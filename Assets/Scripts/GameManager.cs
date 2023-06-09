@@ -25,7 +25,8 @@ public class GameManager : MonoBehaviour
 
     public GameObject Boss;
 
-    public (float, float)[] pos1 = new (float, float)[4] { (27.94f, -2.44f), (53.84f, 1.52f), (204f, -1.4f), (141.5f, -1.45f) };
+    public (float, float)[] pos0 = new (float, float)[1] { (27.94f, -2.44f)};
+    public (float, float)[] pos1 = new (float, float)[4] {(27.94f, -2.44f), (53.84f, 1.52f), (204f, -1.4f), (141.5f, -1.45f) };
 
     public (float, float)[] pos2 = new (float, float)[7] { (43.09f, -0.89f), (152.4f, 13f), (212.58f, -3.9f), (107.0791f, 4.06f), (723.6017f,-3.066994f), (748f, -3.066994f), (734f, -3.066994f) };
 
@@ -159,6 +160,10 @@ public class GameManager : MonoBehaviour
     {
         if (ShouldSpawn && PhotonNetwork.room.PlayerCount == 1 )
         {
+            for (int i = 0; i < pos0.Length; i++)
+            {
+                PhotonNetwork.InstantiateSceneObject(Enemy1.name, new Vector2(pos1[i].Item1, pos1[i].Item2), Quaternion.identity, 0, null);
+            }
             for (int i = 0; i < pos1.Length; i++)
             {
                 PhotonNetwork.InstantiateSceneObject(Enemy1.name, new Vector2(pos1[i].Item1, pos1[i].Item2), Quaternion.identity, 0, null);
