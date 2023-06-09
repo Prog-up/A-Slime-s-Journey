@@ -185,7 +185,7 @@ public class Player : Photon.MonoBehaviour
                 MusicLvl2.Play();
                 MusicGameOver.Stop();
             }
-            else if (other.tag == "BossArea")
+            else if (other.tag == "Boss area")
             {
                 MusicLvl1.Stop();
                 MusicLvl2.Stop();
@@ -441,5 +441,10 @@ public class Player : Photon.MonoBehaviour
     {
         // Instantiation du projectile chez les autres clients
         Instantiate(projectileGM, position, rotation);
+    }
+    
+    public void MainMenu()
+    {
+        PhotonNetwork.LoadLevel("MainMenu");
     }
 }
