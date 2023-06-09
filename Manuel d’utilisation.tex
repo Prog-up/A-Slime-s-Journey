@@ -1,0 +1,399 @@
+\documentclass[a4paper, 12pt, twoside]{article}
+
+
+%------------------------------------------------------------------------
+%
+% Author                :   arcln production
+% Last modification     :   2023.1.12
+%
+%------------------------------------------------------------------------
+
+
+%------ini
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[french]{babel}
+%\usepackage[english]{babel}
+
+
+%------geometry
+\usepackage[textheight=700pt, textwidth=500pt]{geometry}
+
+
+%------color
+\usepackage{xcolor}
+\definecolor{0010A1}{HTML}{0010A1}
+\definecolor{00f}{HTML}{0000ff}
+\definecolor{0ff}{HTML}{00ffff}
+\definecolor{656565}{HTML}{656565}
+
+%\renewcommand{\emph}{\textcolor{0010A1}}
+%\renewcommand{\em}{\color{0010A1}}
+
+\newcommand{\Emph}{\textcolor{0010A1}}
+
+\newcommand{\strong}[1]{\textcolor{0010A1}{\bf #1}}
+\newcommand{\st}{\color{0010A1}\bf}
+
+
+%------Code highlighting
+%---listings
+\usepackage{listings}
+
+\definecolor{cbg}{HTML}{272822}
+\definecolor{cfg}{HTML}{ececec}
+\definecolor{ccomment}{HTML}{686c58}
+\definecolor{ckw}{HTML}{f92672}
+\definecolor{cstring}{HTML}{e6db72}
+\definecolor{cstringlight}{HTML}{98980f}
+\definecolor{lightwhite}{HTML}{fafafa}
+
+\lstdefinestyle{DarkCodeStyle}{
+    backgroundcolor=\color{cbg},
+    commentstyle=\itshape\color{ccomment},
+    keywordstyle=\color{ckw},
+    numberstyle=\tiny\color{cbg},
+    stringstyle=\color{cstring},
+    basicstyle=\ttfamily\footnotesize\color{cfg},
+    breakatwhitespace=false,
+    breaklines=true,
+    captionpos=b,
+    keepspaces=true,
+    numbers=left,
+    numbersep=5pt,
+    showspaces=false,
+    showstringspaces=false,
+    showtabs=false,
+    tabsize=4,
+    xleftmargin=\leftskip
+}
+
+\lstdefinestyle{LightCodeStyle}{
+    backgroundcolor=\color{lightwhite},
+    commentstyle=\itshape\color{ccomment},
+    keywordstyle=\color{ckw},
+    numberstyle=\tiny\color{cbg},
+    stringstyle=\color{cstringlight},
+    basicstyle=\ttfamily\footnotesize\color{cbg},
+    breakatwhitespace=false,
+    breaklines=true,
+    captionpos=b,
+    keepspaces=true,
+    numbers=left,
+    numbersep=10pt,
+    showspaces=false,
+    showstringspaces=false,
+    showtabs=false,
+    tabsize=4,
+    frame=L,
+    xleftmargin=\leftskip
+}
+
+%\lstset{style=DarkCodeStyle}
+\lstset{style=LightCodeStyle}
+%Usage : \begin{lstlisting}[language=Caml, xleftmargin=xpt] ... \end{lstlisting}
+
+
+%---Algorithm
+\usepackage[linesnumbered,ruled,vlined]{algorithm2e}
+\SetKwInput{KwInput}{Input}
+\SetKwInput{KwOutput}{Output}
+
+\SetKwProg{Fn}{Function}{:}{}
+\SetKw{KwPrint}{Print}
+
+\newcommand\commfont[1]{\textit{\texttt{\textcolor{656565}{#1}}}}
+\SetCommentSty{commfont}
+\SetProgSty{texttt}
+\SetArgSty{textnormal}
+\SetFuncArgSty{textnormal}
+%\SetProgArgSty{texttt}
+
+\newenvironment{indalgo}[2][H]{
+    \begin{algoBox}
+        \begin{algorithm}[#1]
+            \caption{#2}
+}
+{
+        \end{algorithm}
+    \end{algoBox}
+}
+
+
+%---tcolorbox
+\usepackage[many]{tcolorbox}
+\DeclareTColorBox{emphBox}{O{black}O{lightwhite}}{
+    breakable,
+    outer arc=0pt,
+    arc=0pt,
+    top=0pt,
+    toprule=-.5pt,
+    right=0pt,
+    rightrule=-.5pt,
+    bottom=0pt,
+    bottomrule=-.5pt,
+    colframe=#1,
+    colback=#2,
+    enlarge left by=10pt,
+    width=\linewidth-\leftskip-10pt,
+}
+
+\DeclareTColorBox{algoBox}{O{black}O{lightwhite}}{
+    breakable,
+    arc=0pt,
+    top=0pt,
+    toprule=-.5pt,
+    right=0pt,
+    rightrule=-.5pt,
+    bottom=0pt,
+    bottomrule=-.5pt,
+    left=0pt,
+    leftrule=-.5pt,
+    colframe=#1,
+    colback=#2,
+    width=\linewidth-\leftskip-10pt,
+}
+
+
+%-------make the table of content clickable
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks,
+    citecolor=black,
+    filecolor=black,
+    linkcolor=black,
+    urlcolor=black
+}
+
+
+%------pictures
+\usepackage{graphicx}
+%\usepackage{wrapfig}
+
+\usepackage{tikz}
+%\usetikzlibrary{babel}             %Uncomment this to use circuitikz
+%\usetikzlibrary{shapes.geometric}  % To draw triangles in trees
+%\usepackage{circuitikz}            %Electrical circuits drawing
+
+
+%------tabular
+%\usepackage{color}
+%\usepackage{colortbl}
+%\usepackage{multirow}
+
+
+%------Mathpartir (inference rules)
+\usepackage{mathpartir}
+
+
+%------Physics
+%---Packages
+%\usepackage[version=4]{mhchem} %$\ce{NO4^2-}$
+
+%---Commands
+\newcommand{\link}[2]{\mathrm{#1} \! - \! \mathrm{#2}}
+\newcommand{\pt}[1]{\cdot 10^{#1}} % Power of ten
+\newcommand{\dt}[2][t]{\dfrac{\mathrm d #2}{\mathrm d #1}} % Derivative
+
+
+%------math
+%---Packages
+%\usepackage{textcomp}
+%\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{mathtools} % For abs
+\usepackage{stmaryrd} %for \llbracket and \rrbracket
+\usepackage{mathrsfs} %for \mathscr{x} (different from \mathcal{x})
+
+%---Commands
+%-Sets
+\newcommand{\N}{\mathbb{N}} %set N
+\newcommand{\Z}{\mathbb{Z}} %set Z
+\newcommand{\Q}{\mathbb{Q}} %set Q
+\newcommand{\R}{\mathbb{R}} %set R
+\newcommand{\C}{\mathbb{C}} %set C
+\newcommand{\U}{\mathbb{U}} %set U
+\newcommand{\seg}[2]{\left[ #1\ ;\ #2 \right]}
+\newcommand{\nset}[2]{\left\llbracket #1\ ;\ #2 \right\rrbracket}
+
+%-Exponantial / complexs
+\newcommand{\e}{\mathrm{e}}
+\newcommand{\cj}[1]{\overline{#1}} %overline for the conjugate.
+
+%-Vectors
+\newcommand{\vect}{\overrightarrow}
+\newcommand{\veco}[3]{\displaystyle \vect{#1}\binom{#2}{#3}} %vector + coord
+
+%-Limits
+\newcommand{\lm}[2][{}]{\lim\limits_{\substack{#2 \\ #1}}} %$\lm{x \to a} f$ or $\lm[x < a]{x \to a} f$
+\newcommand{\Lm}[3][{}]{\lm[#1]{#2} \left( #3 \right)} %$\Lm{x \to a}{f}$ or $\Lm[x < a]{x \to a}{f}$
+\newcommand{\tendsto}[1]{\xrightarrow[#1]{}}
+
+%-Integral
+\newcommand{\dint}[4][x]{\displaystyle \int_{#2}^{#3} #4 \mathrm{d} #1} %$\dint{a}{b}{f(x)}$ or $\dint[t]{a}{b}{f(t)}$
+
+%-left right
+\newcommand{\lr}[1]{\left( #1 \right)}
+\newcommand{\lrb}[1]{\left[ #1 \right]}
+\newcommand{\lrbb}[1]{\left\llbracket #1 \right\rrbracket}
+\newcommand{\set}[1]{\left\{ #1 \right\}}
+\newcommand{\abs}[1]{\left\lvert #1 \right\rvert}
+\newcommand{\ceil}[1]{\left\lceil #1 \right\rceil}
+\newcommand{\floor}[1]{\left\lfloor #1 \right\rfloor}
+\newcommand{\lrangle}[1]{\left\langle #1 \right\rangle}
+
+%-Others
+\newcommand{\para}{\ /\!/\ } %//
+\newcommand{\ssi}{\ \Leftrightarrow \ }
+\newcommand{\eqsys}[2]{\begin{cases} #1 \\ #2 \end{cases}}
+
+\newcommand{\med}[2]{\mathrm{med} \left[ #1\ ;\ #2 \right]}  %$\med{A}{B} -> med[A ; B]$
+\newcommand{\Circ}[2]{\mathscr{C}_{#1, #2}}
+
+\renewcommand{\le}{\leqslant}
+\renewcommand{\ge}{\geqslant}
+
+\newcommand{\oboxed}[1]{\textcolor{0010A1}{\boxed{\textcolor{black}{#1}}}} %orange boxed
+
+\newcommand{\rboxed}[1]{\begin{array}{|c} \hline #1 \\ \hline \end{array}} %boxed with right opened
+\newcommand{\lboxed}[1]{\begin{array}{c|} \hline #1 \\ \hline \end{array}} %boxed with left opened
+
+\newcommand{\orboxed}[1]{\textcolor{0010A1}{\rboxed{\textcolor{black}{#1}}}} %orange right boxed
+\newcommand{\olboxed}[1]{\textcolor{0010A1}{\lboxed{\textcolor{black}{#1}}}} %orange left boxed
+
+
+%------commands
+%---to quote
+\newcommand{\simplecit}[1]{\guillemotleft$\;$#1$\;$\guillemotright}
+\newcommand{\cit}[1]{\simplecit{\textcolor{656565}{#1}}}
+\newcommand{\quo}[1]{\cit{\it #1}}
+
+%---to indent
+\newcommand{\ind}[1][20pt]{\advance\leftskip + #1}
+\newcommand{\deind}[1][20pt]{\advance\leftskip - #1}
+
+%---to indent a text
+\newcommand{\indented}[2][20pt]{\par \ind[#1] #2 \par \deind[#1]}
+\newenvironment{indt}[2][20pt]{#2 \par \ind[#1]}{\par \deind} %Titled indented env
+
+%---title
+\newcommand{\thetitle}[2]{\begin{center}\textbf{{\LARGE \underline{\Emph{#1} :}} {\Large #2}}\end{center}}
+
+%---Maths environments
+%-Proofs
+\newenvironment{proof}[1][{}]{\begin{indt}{$\square$ #1}}{$\blacksquare$ \end{indt}}
+
+%-Maths parts (proposition, definition, ...)
+\newenvironment{mathpart}[1]{\begin{indt}{\boxed{\text{\textbf{#1}}}}}{\end{indt}}
+\newenvironment{mathbox}[1]{\boxed{\text{\textbf{#1}}}\begin{emphBox}}{\end{emphBox}}
+\newenvironment{mathul}[1]{\begin{indt}{\underline{\textbf{#1}}}}{\end{indt}}
+
+\newenvironment{theo}{\begin{mathpart}{Théorème}}{\end{mathpart}}
+\newenvironment{Theo}{\begin{mathbox}{Théorème}}{\end{mathbox}}
+
+\newenvironment{prop}{\begin{mathpart}{Proposition}}{\end{mathpart}}
+\newenvironment{Prop}{\begin{mathbox}{Proposition}}{\end{mathbox}}
+\newenvironment{props}{\begin{mathpart}{Propriétés}}{\end{mathpart}}
+
+\newenvironment{defi}{\begin{mathpart}{Définition}}{\end{mathpart}}
+\newenvironment{meth}{\begin{mathpart}{Méthode}}{\end{mathpart}}
+
+\newenvironment{Rq}{\begin{mathul}{Remarque :}}{\end{mathul}}
+\newenvironment{Rqs}{\begin{mathul}{Remarques :}}{\end{mathul}}
+
+\newenvironment{Ex}{\begin{mathul}{Exemple :}}{\end{mathul}}
+\newenvironment{Exs}{\begin{mathul}{Exemples :}}{\end{mathul}}
+
+
+%------Sections
+% To change section numbering :
+% \renewcommand\thesection{\Roman{section}}
+% \renewcommand\thesubsection{\arabic{subsection})}
+% \renewcommand\thesubsubsection{\textit \alph{subsubsection})}
+
+% To start numbering from 0
+% \setcounter{section}{-1}
+
+
+%------page style
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+
+\setlength{\headheight}{18pt}
+\setlength{\footskip}{50pt}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[LE, RO]{\textit{\textcolor{black}{\today}}}
+\fancyhead[RE, LO]{\large{\textsl{\Emph{\texttt{Dossier d'exploitation}}}}}
+
+\fancyfoot[RO, LE]{\textit{\texttt{\textcolor{black}{Page \thepage /}\pageref{LastPage}}}}
+\fancyfoot[LO, RE]{\includegraphics[scale=0.12]{arcln}}
+
+
+%------init lengths
+\setlength{\parindent}{0pt} %To avoid using \noindent everywhere.
+\setlength{\parskip}{3pt}
+
+% Mise en page française
+\usepackage[utf8]{inputenc}
+\usepackage[french]{babel}
+\usepackage{geometry}
+
+% Import d'images, couleurs
+\usepackage{graphicx,color}
+
+\usepackage{lipsum}
+
+\newcommand{\hsp}{\hspace{20pt}}
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+
+%---------------------------------Begin Document
+\begin{document}
+
+    \input{Page de garde Dosser d'exploitation.tex}
+
+    \thetitle{A Slime's Journey}{Manuel d’installation}
+
+    Bienvenue dans l'univers palpitant de "A Slime’s Journey" ! Ce manuel vous guidera à travers l’installation du jeu.
+
+    \begin{enumerate}
+     \item Assurez-vous d’être sous Windows 10 ou plus.
+     \item Téléchargez le .exe disponible sur notre site.
+     \item Exécutez ce dernier (vous aurez besoin des droits d’administrateur sur votre ordinateur).
+     \item Sélectionnez la langue  désirée.
+     \item Cliquez sur suivant puis sélectionnez la langue de l'installateur(français ou anglais).
+     \item Cliquez sur suivant, puis choisissez si vous voulez ou non une icône sur votre bureau.
+     \item Cliquez sur suivant puis installer, puis enfin terminer.
+     \item Vous êtes fin prêt pour jouer.
+    \end{enumerate}
+
+    \newpage
+
+    \thetitle{A Slime's Journey}{Manuel d’utilisation}
+
+    Bienvenue dans l'univers palpitant de "A Slime’s Journey" ! Ce manuel vous guidera à travers les commandes et les mécaniques de jeu pour que vous puissiez profiter pleinement de votre expérience de jeu.
+
+    \begin{enumerate}
+    \item Configuration système requise: Assurez-vous que votre système répond aux spécifications minimales suivantes :
+    \begin{itemize}
+      \item Système d'exploitation : Windows 10
+      \item Processeur : Intel Core i3 ou équivalent
+      \item Mémoire : 4 Go de RAM
+      \item Espace disque : 200 Mo disponibles
+    \end{itemize}
+    \item Menu principal: Au démarrage du jeu, vous serez accueilli par le menu principal. Utilisez votre souris pour naviguer entre les options et saisir votre pseudo et le nom de la partie à créer ou rejoindre.
+    \item Contrôles:
+    \begin{itemize}
+      \item Déplacement : Utilisez les touches “Q” et “D” pour vous déplacer horizontalement. Appuyez sur la touche “Espace” pour sauter.
+      \item Transformation : Appuyez sur la touche “S” pour effectuer une transformation lorsque vous êtes en contact avec un élément compatible, un message apparaîtra pour vous l’indiquer au cours de votre aventure.
+      \item Compétences spéciales : Utilisez la touche “Z” pour déclencher des compétences spéciales uniques. Celle-ci varie en fonction de la forme de votre slime, à noter que la première compétence se débloque avec la forme rocheuse et vous permet d’escalader les murs quand vous y êtes collés.
+      \item Pause : Appuyez sur la touche "Echap" pour mettre le jeu en pause et accéder au menu de pause et options, où vous pourrez modifier vos touches.
+    \end{itemize}
+    \item Objectif du jeu: Votre objectif est de traverser les niveaux en battant des ennemis, en évitant les pièges et en atteignant la sortie. Collectez des pommes pour regagner des coeurs.
+    \item Boss et niveaux supplémentaires: À la fin de certains niveaux, vous affronterez un boss redoutable. Utilisez vos compétences et votre agilité pour vaincre le boss et progresser vers de nouveaux défis.
+    \item Support technique: Si vous rencontrez des problèmes techniques ou si vous avez des questions, consultez notre site web officiel ou contactez directement notre équipe.
+  \end{enumerate}
+
+  Profitez de votre aventure dans "A Slime’s Journey" et que votre courage vous guide vers la victoire !
+\end{document}
