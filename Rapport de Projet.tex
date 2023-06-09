@@ -1019,6 +1019,13 @@
                 \label{fig:mesh1}
             \end{figure}
 
+            \begin{figure}[h]
+                \centering
+                \includegraphics[width=0.4\textwidth]{Box.jpg}
+                \caption{Boite du jeu}
+                \label{fig:mesh1}
+            \end{figure}
+
             Sur la reliure de la jaquette, on retrouve le nom de notre jeu, de notre groupe ainsi que le logo des jeux se jouant sur ordinateur.
 
             Au verso de la jaquette on peut y trouver une description de “A Slime’s journey” ainsi que des images du niveau un et deux et du logo de l’EPITA.
@@ -1034,10 +1041,25 @@
         \newpage
 
         \begin{indt}{\subsection{Installeur}}
-            Afin de créer un installateur correct, nous avons utilisé Inno Setup, un logiciel très connu permettant de créer des installateurs pour nos applications. Nous avons fait le choix de laisser l’utilisateur choisir l’emplacement où il souhaite installer le jeu, cependant, il aura besoin des droits d’administrateur sur son ordinateur afin de procéder à l’installation de “A Slime’s Journey”.
+            Pour créer l'installateur de notre jeu "A Slime's Journey" avec Inno Setup, nous avons suivi un processus bien défini. Tout d'abord, nous avons rassemblé tous les fichiers nécessaires à l'installation du jeu, y compris le fichier exécutable du jeu, les ressources, les bibliothèques et les fichiers de données. Ensuite, nous avons téléchargé et installé Inno Setup à partir du site officiel. Une fois le logiciel installé, nous avons ouvert Inno Setup Compiler et créé un nouveau fichier de script. À l'aide d'un éditeur de texte, nous avons configuré le script en spécifiant le nom du jeu, la version, la description et d'autres détails pertinents. Nous avons également défini des options d'installation telles que le dossier d'installation par défaut, les raccourcis du menu Démarrer et les options de désinstallation. Ensuite, nous avons défini les étapes d'installation spécifiques à notre jeu, telles que la création de dossiers, la copie des fichiers vers l'emplacement d'installation et la création de raccourcis. Une fois que le script était complet, nous l'avons compilé pour générer l'installateur, un fichier exécutable prêt à être distribué. Avant de le distribuer, nous avons testé l'installateur pour nous assurer que tout fonctionnait correctement, en vérifiant la copie des fichiers, la création des raccourcis et l'exécution du jeu. Enfin, nous avons distribué l'installateur aux joueurs via notre site web et d'autres canaux de distribution. Grâce à Inno Setup, nous avons pu créer un processus d'installation convivial et efficace pour notre jeu "A Slime's Journey", facilitant ainsi l'accès au jeu pour nos joueurs.
+
+            Pour désinstaller notre jeu "A Slime's Journey" sur Windows, vous pouvez suivre ces étapes simples. Tout d'abord, accédez au menu "Démarrer" en cliquant sur l'icône Windows située dans le coin inférieur gauche de l'écran. Ensuite, recherchez le panneau de contrôle en tapant "Panneau de contrôle" dans la barre de recherche. Cliquez sur l'option "Panneau de contrôle" qui apparaît dans les résultats de recherche.
+
+            Dans la fenêtre du Panneau de configuration, recherchez l'option "Programmes" ou "Programmes et fonctionnalités" et cliquez dessus. Une liste des programmes installés sur votre ordinateur s'affichera. Parcourez la liste jusqu'à ce que vous trouviez "A Slime's Journey". Une fois que vous l'avez trouvé, cliquez dessus pour le sélectionner.
+
+            Ensuite, recherchez l'option "Désinstaller" dans la barre de menus située en haut de la fenêtre. Cliquez sur cette option pour lancer le processus de désinstallation du jeu. Une fenêtre de confirmation peut apparaître pour vous demander de confirmer la désinstallation. Si c'est le cas, cliquez sur "Oui" ou "Désinstaller" pour continuer.
         \end{indt}
 
+        \newpage
+
         \begin{indt}{\subsection{Répartition des tâches}}
+            \begin{figure}[h]
+                \centering
+                \includegraphics[width=0.6\textwidth]{Work.jpg}
+                \caption{Notre groupe en plein développement}
+                \label{fig:mesh1}
+            \end{figure}
+
             Pour cette dernière phase du projet, nous avons réalisé une répartition des tâches efficace afin de finaliser avec succès le développement de notre jeu de plateforme, "A Slime's Journey". Chaque membre de l'équipe a contribué de manière significative à différents aspects du jeu, démontrant ainsi notre collaboration et notre engagement collectif.
 
             Omid s'est investi dans la mise en place de l'IA, apportant des comportements intelligents aux ennemis et aux personnages non joueurs, ce qui a enrichi l'expérience de jeu globale. Alexis s'est consacré à la capacité de transformation du personnage principal, offrant aux joueurs une expérience de jeu dynamique et divertissante. Enzo et Maxime ont assumé la responsabilité de la transformation du personnage et ont également créé un objet spécial qui permet aux joueurs de terminer le niveau et de progresser vers les futurs niveaux lorsque ceux-ci seront disponibles.
