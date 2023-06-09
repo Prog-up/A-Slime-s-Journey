@@ -33,7 +33,7 @@ public class Player : Photon.MonoBehaviour
     public AudioSource MusicLvl2;
     public AudioSource MusicBoss;
     public AudioSource MusicGameOver;
-    public AudioSource MusicVictory;
+    
     public Animator transition;
 
     //Permet de connaitre la forme actuelle
@@ -178,7 +178,7 @@ public class Player : Photon.MonoBehaviour
                 MusicBoss.Stop();
                 MusicLvl1.Play();
                 MusicGameOver.Stop();
-                MusicVictory.Stop();
+                
             }
             else if (other.tag == "Level2")
             {
@@ -186,7 +186,7 @@ public class Player : Photon.MonoBehaviour
                 MusicBoss.Stop();
                 MusicLvl2.Play();
                 MusicGameOver.Stop();
-                MusicVictory.Stop();
+                
             }
             else if (other.tag == "Boss area")
             {
@@ -194,7 +194,7 @@ public class Player : Photon.MonoBehaviour
                 MusicLvl2.Stop();
                 MusicBoss.Play();
                 MusicGameOver.Stop();
-                MusicVictory.Stop();
+                
             }
             else if (other.tag == "GameOver")
             {
@@ -202,7 +202,7 @@ public class Player : Photon.MonoBehaviour
                 MusicLvl2.Stop();
                 MusicBoss.Stop();
                 MusicGameOver.Play();
-                MusicVictory.Stop();
+                
             }
         }
         
@@ -258,7 +258,7 @@ public class Player : Photon.MonoBehaviour
                 MusicLvl2.Stop();
                 MusicBoss.Stop();
                 MusicGameOver.Stop();
-                MusicVictory.Play();
+                
             }
         }
     }
